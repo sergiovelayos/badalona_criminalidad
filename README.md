@@ -9,6 +9,7 @@ Estos datos se publican con periodicidad trimestral en un formato poco amigable 
 - El 10 de noviembre de 2024 había datos hasta el sedungo trimestre de 2024
 - Los conceptos cambian por lo que no podemos comparar un mismo concepto durante todo el periodo comprendido
 - Hay categorías que agregan sub categorías pero la suma de las subcategorías no coincide con las categorías. Por ejemplo: en el tercer trimestre
+- Los datos para un mismo periodo pueden cambiar.
 
 ¿Cómo obtener los datos desde el portal del ministerio?
 
