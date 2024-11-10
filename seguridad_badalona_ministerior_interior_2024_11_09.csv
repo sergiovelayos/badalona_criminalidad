@@ -1,628 +1,628 @@
 ﻿AÑO_TRIMESTRE;AÑO;TRIMESTRE;FECHA_INICIO;FECHA_FIN;TIPOLOGIA_PENAL_PROPER;NUEVA_TIPOLOGIA_PENAL_AGRUPADA;VALOR_ACUMULADO;VALOR_TRIMESTRE
-2015-1;2015;1;01/01/2015;31/03/2015;    01. Delitos Y Faltas (Eu);Delitos generales;2778;2778
-2015-2;2015;2;01/01/2015;30/06/2015;    01. Delitos Y Faltas (Eu);Delitos generales;5635;2857
-2015-3;2015;3;01/01/2015;30/09/2015;    01. Delitos Y Faltas (Eu);Delitos generales;8247;2612
-2015-4;2015;4;01/01/2015;31/12/2015;    01. Delitos Y Faltas (Eu);Delitos generales;10974;2727
-2016-1;2016;1;01/01/2016;31/03/2016;    01. Delitos Y Faltas (Eu);Delitos generales;2617;2617
-2016-2;2016;2;01/01/2016;30/06/2016;    01. Delitos Y Faltas (Eu);Delitos generales;5362;2745
-2016-3;2016;3;01/01/2016;30/09/2016;    01. Delitos Y Faltas (Eu);Delitos generales;7968;2606
-2016-4;2016;4;01/01/2016;31/12/2016;    01. Delitos Y Faltas (Eu);Delitos generales;10684;2716
-2016-1;2016;1;01/01/2016;31/03/2016;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
-2016-2;2016;2;01/01/2016;30/06/2016;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;1
-2016-3;2016;3;01/01/2016;30/09/2016;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;0
-2016-4;2016;4;01/01/2016;31/12/2016;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;3;1
-2017-1;2017;1;01/01/2017;31/03/2017;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2017-2;2017;2;01/01/2017;30/06/2017;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;-1
-2017-3;2017;3;01/01/2017;30/09/2017;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2017-4;2017;4;01/01/2017;31/12/2017;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2018-1;2018;1;01/01/2018;31/03/2018;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2018-2;2018;2;01/01/2018;30/06/2018;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
-2018-3;2018;3;01/01/2018;30/09/2018;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
-2018-4;2018;4;01/01/2018;31/12/2018;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
-2019-1;2019;1;01/01/2019;31/03/2019;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;2
-2019-2;2019;2;01/01/2019;30/06/2019;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;0
-2019-3;2019;3;01/01/2019;30/09/2019;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;0
-2019-4;2019;4;01/01/2019;31/12/2019;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;3;1
-2020-1;2020;1;01/01/2020;31/03/2020;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2020-2;2020;2;01/01/2020;30/06/2020;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2020-3;2020;3;01/01/2020;30/09/2020;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2020-4;2020;4;01/01/2020;31/12/2020;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2021-1;2021;1;01/01/2021;31/03/2021;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
-2021-2;2021;2;01/01/2021;30/06/2021;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
-2021-3;2021;3;01/01/2021;30/09/2021;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
-2021-4;2021;4;01/01/2021;31/12/2021;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
-2022-1;2022;1;01/01/2022;31/03/2022;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2022-2;2022;2;01/01/2022;30/06/2022;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2022-3;2022;3;01/01/2022;30/09/2022;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2022-4;2022;4;01/01/2022;31/12/2022;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
-2023-1;2023;1;01/01/2023;31/03/2023;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2023-2;2023;2;01/01/2023;30/06/2023;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;2
-2023-3;2021;3;01/01/2023;30/09/2023;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;0
-2023-4;2023;4;01/01/2023;31/12/2023;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;3;1
-2024-1;2021;1;01/01/2024;31/03/2024;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
-2024-2;2021;2;01/01/2024;30/06/2024;    01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
-2015-1;2015;1;01/01/2015;31/03/2015;    10. Tráfico De Drogas;Delitos de drogas;11;11
-2015-2;2015;2;01/01/2015;30/06/2015;    10. Tráfico De Drogas;Delitos de drogas;22;11
-2015-3;2015;3;01/01/2015;30/09/2015;    10. Tráfico De Drogas;Delitos de drogas;27;5
-2015-4;2015;4;01/01/2015;31/12/2015;    10. Tráfico De Drogas;Delitos de drogas;33;6
-2016-1;2016;1;01/01/2016;31/03/2016;    10. Tráfico De Drogas;Delitos de drogas;8;8
-2016-2;2016;2;01/01/2016;30/06/2016;    10. Tráfico De Drogas;Delitos de drogas;24;-1
-2016-3;2016;3;01/01/2016;30/09/2016;    10. Tráfico De Drogas;Delitos de drogas;28;-1
-2016-4;2016;4;01/01/2016;31/12/2016;    10. Tráfico De Drogas;Delitos de drogas;35;7
-2017-1;2017;1;01/01/2017;31/03/2017;    10. Tráfico De Drogas;Delitos de drogas;8;8
-2017-2;2017;2;01/01/2017;30/06/2017;    10. Tráfico De Drogas;Delitos de drogas;20;12
-2017-3;2017;3;01/01/2017;30/09/2017;    10. Tráfico De Drogas;Delitos de drogas;30;10
-2017-4;2017;4;01/01/2017;31/12/2017;    10. Tráfico De Drogas;Delitos de drogas;41;12
-2018-1;2018;1;01/01/2018;31/03/2018;    10. Tráfico De Drogas;Delitos de drogas;17;17
-2018-2;2018;2;01/01/2018;30/06/2018;    10. Tráfico De Drogas;Delitos de drogas;24;7
-2018-3;2018;3;01/01/2018;30/09/2018;    10. Tráfico De Drogas;Delitos de drogas;39;15
-2018-4;2018;4;01/01/2018;31/12/2018;    10. Tráfico De Drogas;Delitos de drogas;61;22
-2019-1;2019;1;01/01/2019;31/03/2019;    10. Tráfico De Drogas;Delitos de drogas;7;7
-2019-2;2019;2;01/01/2019;30/06/2019;    10. Tráfico De Drogas;Delitos de drogas;23;16
-2019-3;2019;3;01/01/2019;30/09/2019;    10. Tráfico De Drogas;Delitos de drogas;35;12
-2019-4;2019;4;01/01/2019;31/12/2019;    10. Tráfico De Drogas;Delitos de drogas;51;16
-2020-1;2020;1;01/01/2020;31/03/2020;    10. Tráfico De Drogas;Delitos de drogas;10;10
-2020-2;2020;2;01/01/2020;30/06/2020;    10. Tráfico De Drogas;Delitos de drogas;21;13
-2020-3;2020;3;01/01/2020;30/09/2020;    10. Tráfico De Drogas;Delitos de drogas;28;9
-2020-4;2020;4;01/01/2020;31/12/2020;    10. Tráfico De Drogas;Delitos de drogas;40;13
-2021-1;2021;1;01/01/2021;31/03/2021;    10. Tráfico De Drogas;Delitos de drogas;17;17
-2021-2;2021;2;01/01/2021;30/06/2021;    10. Tráfico De Drogas;Delitos de drogas;36;19
-2021-3;2021;3;01/01/2021;30/09/2021;    10. Tráfico De Drogas;Delitos de drogas;49;13
-2021-4;2021;4;01/01/2021;31/12/2021;    10. Tráfico De Drogas;Delitos de drogas;67;18
-2022-1;2022;1;01/01/2022;31/03/2022;    10. Tráfico De Drogas;Delitos de drogas;10;10
-2022-2;2022;2;01/01/2022;30/06/2022;    10. Tráfico De Drogas;Delitos de drogas;26;17
-2022-3;2022;3;01/01/2022;30/09/2022;    10. Tráfico De Drogas;Delitos de drogas;42;17
-2022-4;2022;4;01/01/2022;31/12/2022;    10. Tráfico De Drogas;Delitos de drogas;50;9
-2023-1;2023;1;01/01/2023;31/03/2023;    10. Tráfico De Drogas;Delitos de drogas;20;20
-2023-2;2023;2;01/01/2023;30/06/2023;    10. Tráfico De Drogas;Delitos de drogas;32;12
-2023-3;2023;3;01/01/2023;30/09/2023;    10. Tráfico De Drogas;Delitos de drogas;47;15
-2023-4;2023;4;01/01/2023;31/12/2023;    10. Tráfico De Drogas;Delitos de drogas;75;28
-2024-1;2024;1;01/01/2024;31/03/2024;    10. Tráfico De Drogas;Delitos de drogas;24;24
-2024-2;2024;2;01/01/2024;30/06/2024;    10. Tráfico De Drogas;Delitos de drogas;47;23
-2019-4;2019;4;01/01/2019;31/12/2019;    11. Resto De Criminalidad Convencional;Criminalidad convencional;4871;4824
-2021-4;2021;4;01/01/2021;31/12/2021;    11. Resto De Criminalidad Convencional;Criminalidad convencional;4821;
-2022-1;2022;1;01/01/2022;31/03/2022;    11. Resto De Criminalidad Convencional;Criminalidad convencional;1325;1325
-2022-2;2022;2;01/01/2022;30/06/2022;    11. Resto De Criminalidad Convencional;Criminalidad convencional;2592;1267
-2022-3;2022;3;01/01/2022;30/09/2022;    11. Resto De Criminalidad Convencional;Criminalidad convencional;3801;1209
-2022-4;2022;4;01/01/2022;31/12/2022;    11. Resto De Criminalidad Convencional;Criminalidad convencional;5067;1266
-2023-1;2023;1;01/01/2023;31/03/2023;    11. Resto De Criminalidad Convencional;Criminalidad convencional;1280;1280
-2023-2;2023;2;01/01/2023;30/06/2023;    11. Resto De Criminalidad Convencional;Criminalidad convencional;2558;1278
-2023-3;2021;3;01/01/2023;30/09/2023;    11. Resto De Criminalidad Convencional;Criminalidad convencional;3951;1396
-2023-4;2023;4;01/01/2023;31/12/2023;    11. Resto De Criminalidad Convencional;Criminalidad convencional;5433;1482
-2024-1;2021;1;01/01/2024;31/03/2024;    11. Resto De Criminalidad Convencional;Criminalidad convencional;1614;1614
-2024-2;2021;2;01/01/2024;30/06/2024;    11. Resto De Criminalidad Convencional;Criminalidad convencional;3151;1537
-2019-4;2019;4;01/01/2019;31/12/2019;    12. Estafas Informáticas;Ciberdelitos;1135;
-2021-4;2021;4;01/01/2021;31/12/2021;    12. Estafas Informáticas;Ciberdelitos;1512;
-2022-1;2022;1;01/01/2022;31/03/2022;    12. Estafas Informáticas;Ciberdelitos;508;508
-2022-2;2022;2;01/01/2022;30/06/2022;    12. Estafas Informáticas;Ciberdelitos;927;419
-2022-3;2022;3;01/01/2022;30/09/2022;    12. Estafas Informáticas;Ciberdelitos;1414;487
-2022-4;2022;4;01/01/2022;31/12/2022;    12. Estafas Informáticas;Ciberdelitos;1916;502
-2023-1;2023;1;01/01/2023;31/03/2023;    12. Estafas Informáticas;Ciberdelitos;480;480
-2023-2;2023;2;01/01/2023;30/06/2023;    12. Estafas Informáticas;Ciberdelitos;1023;541
-2023-3;2021;3;01/01/2023;30/09/2023;    12. Estafas Informáticas;Ciberdelitos;1611;584
-2023-4;2023;4;01/01/2023;31/12/2023;    12. Estafas Informáticas;Ciberdelitos;2224;613
-2024-1;2021;1;01/01/2024;31/03/2024;    12. Estafas Informáticas;Ciberdelitos;615;615
-2024-2;2021;2;01/01/2024;30/06/2024;    12. Estafas Informáticas;Ciberdelitos;1157;542
-2019-4;2019;4;01/01/2019;31/12/2019;    13. Otros Ciberdelitos;Ciberdelitos;18;
-2021-4;2021;4;01/01/2021;31/12/2021;    13. Otros Ciberdelitos;Ciberdelitos;47;
-2022-1;2022;1;01/01/2022;31/03/2022;    13. Otros Ciberdelitos;Ciberdelitos;13;13
-2022-2;2022;2;01/01/2022;30/06/2022;    13. Otros Ciberdelitos;Ciberdelitos;28;15
-2022-3;2022;3;01/01/2022;30/09/2022;    13. Otros Ciberdelitos;Ciberdelitos;40;12
-2022-4;2022;4;01/01/2022;31/12/2022;    13. Otros Ciberdelitos;Ciberdelitos;55;15
-2023-1;2023;1;01/01/2023;31/03/2023;    13. Otros Ciberdelitos;Ciberdelitos;10;10
-2023-2;2023;2;01/01/2023;30/06/2023;    13. Otros Ciberdelitos;Ciberdelitos;20;11
-2023-3;2021;3;01/01/2023;30/09/2023;    13. Otros Ciberdelitos;Ciberdelitos;38;13
-2023-4;2023;4;01/01/2023;31/12/2023;    13. Otros Ciberdelitos;Ciberdelitos;51;13
-2024-1;2021;1;01/01/2024;31/03/2024;    13. Otros Ciberdelitos;Ciberdelitos;22;22
-2024-2;2021;2;01/01/2024;30/06/2024;    13. Otros Ciberdelitos;Ciberdelitos;61;39
-2015-1;2015;1;01/01/2015;31/03/2015;    02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;0;0
-2015-2;2015;2;01/01/2015;30/06/2015;    02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;0;0
-2015-3;2015;3;01/01/2015;30/09/2015;    02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;0;0
-2015-4;2015;4;01/01/2015;31/12/2015;    02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;1;1
-2016-1;2016;1;01/01/2016;31/03/2016;    02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;1;1
-2016-2;2016;2;01/01/2016;30/06/2016;    02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;2;1
-2016-3;2016;3;01/01/2016;30/09/2016;    02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;2;0
-2016-4;2016;4;01/01/2016;31/12/2016;    02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;3;1
-2016-1;2016;1;01/01/2016;31/03/2016;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;2;2
-2016-2;2016;2;01/01/2016;30/06/2016;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;1
-2016-3;2016;3;01/01/2016;30/09/2016;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;5;2
-2016-4;2016;4;01/01/2016;31/12/2016;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;2
-2017-1;2017;1;01/01/2017;31/03/2017;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;0;0
-2017-2;2017;2;01/01/2017;30/06/2017;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;5;5
-2017-3;2017;3;01/01/2017;30/09/2017;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;2
-2017-4;2017;4;01/01/2017;31/12/2017;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;9;2
-2018-1;2018;1;01/01/2018;31/03/2018;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;2;2
-2018-2;2018;2;01/01/2018;30/06/2018;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;1
-2018-3;2018;3;01/01/2018;30/09/2018;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;4
-2018-4;2018;4;01/01/2018;31/12/2018;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;8;1
-2019-1;2019;1;01/01/2019;31/03/2019;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;1;1
-2019-2;2019;2;01/01/2019;30/06/2019;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;4;3
-2019-3;2019;3;01/01/2019;30/09/2019;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;3
-2019-4;2019;4;01/01/2019;31/12/2019;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;8;1
-2020-1;2020;1;01/01/2020;31/03/2020;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;1;1
-2020-2;2020;2;01/01/2020;30/06/2020;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;4;4
-2020-3;2020;3;01/01/2020;30/09/2020;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;8;4
-2020-4;2020;4;01/01/2020;31/12/2020;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;9;1
-2021-1;2021;1;01/01/2021;31/03/2021;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;1;1
-2021-2;2021;2;01/01/2021;30/06/2021;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;1;0
-2021-3;2021;3;01/01/2021;30/09/2021;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;2;1
-2021-4;2021;4;01/01/2021;31/12/2021;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;4;2
-2022-1;2022;1;01/01/2022;31/03/2022;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;3
-2022-2;2022;2;01/01/2022;30/06/2022;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;0
-2022-3;2022;3;01/01/2022;30/09/2022;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;4
-2022-4;2022;4;01/01/2022;31/12/2022;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;9;2
-2023-1;2023;1;01/01/2023;31/03/2023;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;2;2
-2023-2;2023;2;01/01/2023;30/06/2023;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;6;4
-2023-3;2021;3;01/01/2023;30/09/2023;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;8;2
-2023-4;2023;4;01/01/2023;31/12/2023;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;10;2
-2024-1;2021;1;01/01/2024;31/03/2024;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;3
-2024-2;2021;2;01/01/2024;30/06/2024;    02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;6;3
-2016-1;2016;1;01/01/2016;31/03/2016;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;1;1
-2016-2;2016;2;01/01/2016;30/06/2016;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;1;0
-2016-3;2016;3;01/01/2016;30/09/2016;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;1;0
-2016-4;2016;4;01/01/2016;31/12/2016;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;1;0
-2017-1;2017;1;01/01/2017;31/03/2017;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;0;0
-2017-2;2017;2;01/01/2017;30/06/2017;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;0;-83
-2017-3;2017;3;01/01/2017;30/09/2017;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;0;-192
-2017-4;2017;4;01/01/2017;31/12/2017;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;0;-298
-2018-1;2018;1;01/01/2018;31/03/2018;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;94;94
-2018-2;2018;2;01/01/2018;30/06/2018;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;189;95
-2018-3;2018;3;01/01/2018;30/09/2018;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;281;92
-2018-4;2018;4;01/01/2018;31/12/2018;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;361;80
-2019-1;2019;1;01/01/2019;31/03/2019;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;74;74
-2019-2;2019;2;01/01/2019;30/06/2019;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;188;115
-2019-3;2019;3;01/01/2019;30/09/2019;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;297;111
-2019-4;2019;4;01/01/2019;31/12/2019;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;107;-183
-2020-1;2020;1;01/01/2020;31/03/2020;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;73;73
-2020-2;2020;2;01/01/2020;30/06/2020;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;153;134
-2020-3;2020;3;01/01/2020;30/09/2020;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;247;209
-2020-4;2020;4;01/01/2020;31/12/2020;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;311;240
-2021-1;2021;1;01/01/2021;31/03/2021;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;20;20
-2021-2;2021;2;01/01/2021;30/06/2021;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;54;34
-2021-3;2021;3;01/01/2021;30/09/2021;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;89;35
-2021-4;2021;4;01/01/2021;31/12/2021;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;112;23
-2022-1;2022;1;01/01/2022;31/03/2022;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;20;20
-2022-2;2022;2;01/01/2022;30/06/2022;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;57;37
-2022-3;2022;3;01/01/2022;30/09/2022;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;90;33
-2022-4;2022;4;01/01/2022;31/12/2022;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;120;30
-2023-1;2023;1;01/01/2023;31/03/2023;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;23;23
-2023-2;2023;2;01/01/2023;30/06/2023;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;61;38
-2023-3;2021;3;01/01/2023;30/09/2023;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;98;37
-2023-4;2023;4;01/01/2023;31/12/2023;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;133;35
-2024-1;2021;1;01/01/2024;31/03/2024;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;33;33
-2024-2;2021;2;01/01/2024;30/06/2024;    03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;68;35
-2015-1;2015;1;01/01/2015;31/03/2015;    03. Robo Con Violencia E Intimidación (Eu);Robos;359;359
-2015-2;2015;2;01/01/2015;30/06/2015;    03. Robo Con Violencia E Intimidación (Eu);Robos;721;362
-2015-3;2015;3;01/01/2015;30/09/2015;    03. Robo Con Violencia E Intimidación (Eu);Robos;1027;306
-2015-4;2015;4;01/01/2015;31/12/2015;    03. Robo Con Violencia E Intimidación (Eu);Robos;1348;321
-2016-1;2016;1;01/01/2016;31/03/2016;    03. Robo Con Violencia E Intimidación (Eu);Robos;293;293
-2016-2;2016;2;01/01/2016;30/06/2016;    03. Robo Con Violencia E Intimidación (Eu);Robos;601;308
-2016-3;2016;3;01/01/2016;30/09/2016;    03. Robo Con Violencia E Intimidación (Eu);Robos;890;289
-2016-4;2016;4;01/01/2016;31/12/2016;    03. Robo Con Violencia E Intimidación (Eu);Robos;1254;364
-2015-1;2015;1;01/01/2015;31/03/2015;    04. Robos Con Fuerza En Domicilios (Eu);Robos;94;94
-2015-2;2015;2;01/01/2015;30/06/2015;    04. Robos Con Fuerza En Domicilios (Eu);Robos;210;116
-2015-3;2015;3;01/01/2015;30/09/2015;    04. Robos Con Fuerza En Domicilios (Eu);Robos;368;158
-2015-4;2015;4;01/01/2015;31/12/2015;    04. Robos Con Fuerza En Domicilios (Eu);Robos;518;150
-2016-1;2016;1;01/01/2016;31/03/2016;    04. Robos Con Fuerza En Domicilios (Eu);Robos;134;134
-2016-2;2016;2;01/01/2016;30/06/2016;    04. Robos Con Fuerza En Domicilios (Eu);Robos;235;101
-2016-3;2016;3;01/01/2016;30/09/2016;    04. Robos Con Fuerza En Domicilios (Eu);Robos;350;115
-2016-4;2016;4;01/01/2016;31/12/2016;    04. Robos Con Fuerza En Domicilios (Eu);Robos;453;103
-2016-1;2016;1;01/01/2016;31/03/2016;    04. Secuestro;Delitos contra la libertad;0;0
-2016-2;2016;2;01/01/2016;30/06/2016;    04. Secuestro;Delitos contra la libertad;0;0
-2016-3;2016;3;01/01/2016;30/09/2016;    04. Secuestro;Delitos contra la libertad;0;0
-2016-4;2016;4;01/01/2016;31/12/2016;    04. Secuestro;Delitos contra la libertad;0;0
-2017-1;2017;1;01/01/2017;31/03/2017;    04. Secuestro;Delitos contra la libertad;0;0
-2017-2;2017;2;01/01/2017;30/06/2017;    04. Secuestro;Delitos contra la libertad;0;0
-2017-3;2017;3;01/01/2017;30/09/2017;    04. Secuestro;Delitos contra la libertad;0;0
-2017-4;2017;4;01/01/2017;31/12/2017;    04. Secuestro;Delitos contra la libertad;0;0
-2018-1;2018;1;01/01/2018;31/03/2018;    04. Secuestro;Delitos contra la libertad;0;0
-2018-2;2018;2;01/01/2018;30/06/2018;    04. Secuestro;Delitos contra la libertad;0;0
-2018-3;2018;3;01/01/2018;30/09/2018;    04. Secuestro;Delitos contra la libertad;0;0
-2018-4;2018;4;01/01/2018;31/12/2018;    04. Secuestro;Delitos contra la libertad;0;0
-2019-1;2019;1;01/01/2019;31/03/2019;    04. Secuestro;Delitos contra la libertad;0;0
-2019-2;2019;2;01/01/2019;30/06/2019;    04. Secuestro;Delitos contra la libertad;0;0
-2019-3;2019;3;01/01/2019;30/09/2019;    04. Secuestro;Delitos contra la libertad;0;0
-2019-4;2019;4;01/01/2019;31/12/2019;    04. Secuestro;Delitos contra la libertad;0;0
-2020-1;2020;1;01/01/2020;31/03/2020;    04. Secuestro;Delitos contra la libertad;0;0
-2020-2;2020;2;01/01/2020;30/06/2020;    04. Secuestro;Delitos contra la libertad;0;0
-2020-3;2020;3;01/01/2020;30/09/2020;    04. Secuestro;Delitos contra la libertad;0;0
-2020-4;2020;4;01/01/2020;31/12/2020;    04. Secuestro;Delitos contra la libertad;0;0
-2021-1;2021;1;01/01/2021;31/03/2021;    04. Secuestro;Delitos contra la libertad;0;0
-2021-2;2021;2;01/01/2021;30/06/2021;    04. Secuestro;Delitos contra la libertad;0;0
-2021-3;2021;3;01/01/2021;30/09/2021;    04. Secuestro;Delitos contra la libertad;0;0
-2021-4;2021;4;01/01/2021;31/12/2021;    04. Secuestro;Delitos contra la libertad;0;0
-2022-1;2022;1;01/01/2022;31/03/2022;    04. Secuestro;Delitos contra la libertad;0;0
-2022-2;2022;2;01/01/2022;30/06/2022;    04. Secuestro;Delitos contra la libertad;0;0
-2022-3;2022;3;01/01/2022;30/09/2022;    04. Secuestro;Delitos contra la libertad;0;0
-2022-4;2022;4;01/01/2022;31/12/2022;    04. Secuestro;Delitos contra la libertad;0;0
-2023-1;2023;1;01/01/2023;31/03/2023;    04. Secuestro;Delitos contra la libertad;0;0
-2023-2;2023;2;01/01/2023;30/06/2023;    04. Secuestro;Delitos contra la libertad;0;0
-2023-3;2021;3;01/01/2023;30/09/2023;    04. Secuestro;Delitos contra la libertad;0;0
-2023-4;2023;4;01/01/2023;31/12/2023;    04. Secuestro;Delitos contra la libertad;1;1
-2024-1;2021;1;01/01/2024;31/03/2024;    04. Secuestro;Delitos contra la libertad;0;0
-2024-2;2021;2;01/01/2024;30/06/2024;    04. Secuestro;Delitos contra la libertad;0;0
-2016-1;2016;1;01/01/2016;31/03/2016;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;14;14
-2016-2;2016;2;01/01/2016;30/06/2016;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;28;14
-2016-3;2016;3;01/01/2016;30/09/2016;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;48;20
-2016-4;2016;4;01/01/2016;31/12/2016;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;70;22
-2017-1;2017;1;01/01/2017;31/03/2017;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;11;11
-2017-2;2017;2;01/01/2017;30/06/2017;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;31;20
-2017-3;2017;3;01/01/2017;30/09/2017;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;49;18
-2017-4;2017;4;01/01/2017;31/12/2017;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;59;10
-2018-1;2018;1;01/01/2018;31/03/2018;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;16;16
-2018-2;2018;2;01/01/2018;30/06/2018;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;31;15
-2018-3;2018;3;01/01/2018;30/09/2018;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;54;23
-2018-4;2018;4;01/01/2018;31/12/2018;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;72;18
-2019-1;2019;1;01/01/2019;31/03/2019;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;20;20
-2019-2;2019;2;01/01/2019;30/06/2019;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;40;20
-2019-3;2019;3;01/01/2019;30/09/2019;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;57;17
-2019-4;2019;4;01/01/2019;31/12/2019;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;84;27
-2020-1;2020;1;01/01/2020;31/03/2020;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;16;16
-2020-2;2020;2;01/01/2020;30/06/2020;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;27;13
-2020-3;2020;3;01/01/2020;30/09/2020;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;44;20
-2020-4;2020;4;01/01/2020;31/12/2020;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;63;22
-2021-1;2021;1;01/01/2021;31/03/2021;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;21;21
-2021-2;2021;2;01/01/2021;30/06/2021;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;48;27
-2021-3;2021;3;01/01/2021;30/09/2021;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;71;23
-2021-4;2021;4;01/01/2021;31/12/2021;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;89;18
-2022-1;2022;1;01/01/2022;31/03/2022;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;20;20
-2022-2;2022;2;01/01/2022;30/06/2022;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;44;24
-2022-3;2022;3;01/01/2022;30/09/2022;    05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;72;28
-2019-4;2019;4;01/01/2019;31/12/2019;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;82;
-2021-4;2021;4;01/01/2021;31/12/2021;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;86;
-2022-1;2022;1;01/01/2022;31/03/2022;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;20;20
-2022-2;2022;2;01/01/2022;30/06/2022;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;43;23
-2022-3;2022;3;01/01/2022;30/09/2022;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;71;28
-2022-4;2022;4;01/01/2022;31/12/2022;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;100;29
-2023-1;2023;1;01/01/2023;31/03/2023;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;25;25
-2023-2;2023;2;01/01/2023;30/06/2023;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;55;30
-2023-3;2021;3;01/01/2023;30/09/2023;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;90;35
-2023-4;2023;4;01/01/2023;31/12/2023;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;109;19
-2024-1;2021;1;01/01/2024;31/03/2024;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;21;21
-2024-2;2021;2;01/01/2024;30/06/2024;    05. Delitos Contra La Libertad Sexual;Delitos sexuales;41;20
-2015-1;2015;1;01/01/2015;31/03/2015;    05. Sustracción Vehículos A Motor (Eu);Robos;59;59
-2015-2;2015;2;01/01/2015;30/06/2015;    05. Sustracción Vehículos A Motor (Eu);Robos;119;60
-2015-3;2015;3;01/01/2015;30/09/2015;    05. Sustracción Vehículos A Motor (Eu);Robos;172;53
-2015-4;2015;4;01/01/2015;31/12/2015;    05. Sustracción Vehículos A Motor (Eu);Robos;244;72
-2016-1;2016;1;01/01/2016;31/03/2016;    05. Sustracción Vehículos A Motor (Eu);Robos;58;58
-2016-2;2016;2;01/01/2016;30/06/2016;    05. Sustracción Vehículos A Motor (Eu);Robos;118;60
-2016-3;2016;3;01/01/2016;30/09/2016;    05. Sustracción Vehículos A Motor (Eu);Robos;176;58
-2016-4;2016;4;01/01/2016;31/12/2016;    05. Sustracción Vehículos A Motor (Eu);Robos;246;70
-2016-1;2016;1;01/01/2016;31/03/2016;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;3;3
-2016-2;2016;2;01/01/2016;30/06/2016;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;8;5
-2016-3;2016;3;01/01/2016;30/09/2016;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;12;4
-2016-4;2016;4;01/01/2016;31/12/2016;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;18;6
-2017-1;2017;1;01/01/2017;31/03/2017;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;1;1
-2017-2;2017;2;01/01/2017;30/06/2017;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;7;6
-2017-3;2017;3;01/01/2017;30/09/2017;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;10;3
-2017-4;2017;4;01/01/2017;31/12/2017;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;11;1
-2018-1;2018;1;01/01/2018;31/03/2018;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;3;3
-2018-2;2018;2;01/01/2018;30/06/2018;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;8;5
-2018-3;2018;3;01/01/2018;30/09/2018;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;13;5
-2018-4;2018;4;01/01/2018;31/12/2018;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;18;5
-2019-1;2019;1;01/01/2019;31/03/2019;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;4;4
-2019-2;2019;2;01/01/2019;30/06/2019;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;8;4
-2019-3;2019;3;01/01/2019;30/09/2019;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;10;2
-2019-4;2019;4;01/01/2019;31/12/2019;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;18;8
-2020-1;2020;1;01/01/2020;31/03/2020;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;3;3
-2020-2;2020;2;01/01/2020;30/06/2020;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;4;2
-2020-3;2020;3;01/01/2020;30/09/2020;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;8;4
-2020-4;2020;4;01/01/2020;31/12/2020;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;11;3
-2021-1;2021;1;01/01/2021;31/03/2021;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;1;1
-2021-2;2021;2;01/01/2021;30/06/2021;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;5;4
-2021-3;2021;3;01/01/2021;30/09/2021;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;11;6
-2021-4;2021;4;01/01/2021;31/12/2021;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;15;4
-2022-1;2022;1;01/01/2022;31/03/2022;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;5;5
-2022-2;2022;2;01/01/2022;30/06/2022;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;10;0
-2022-3;2022;3;01/01/2022;30/09/2022;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;17;0
-2022-4;2022;4;01/01/2022;31/12/2022;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;26;-3
-2023-1;2023;1;01/01/2023;31/03/2023;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;6;6
-2023-2;2023;2;01/01/2023;30/06/2023;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;17;11
-2023-3;2021;3;01/01/2023;30/09/2023;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;31;14
-2023-4;2023;4;01/01/2023;31/12/2023;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;37;6
-2024-1;2021;1;01/01/2024;31/03/2024;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;10;10
-2024-2;2021;2;01/01/2024;30/06/2024;    05.01. Agresión Sexual Con Penetración;Delitos sexuales;17;7
-2016-1;2016;1;01/01/2016;31/03/2016;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;11;11
-2016-2;2016;2;01/01/2016;30/06/2016;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;20;9
-2016-3;2016;3;01/01/2016;30/09/2016;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;36;16
-2016-4;2016;4;01/01/2016;31/12/2016;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;52;16
-2017-1;2017;1;01/01/2017;31/03/2017;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;10;10
-2017-2;2017;2;01/01/2017;30/06/2017;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;24;14
-2017-3;2017;3;01/01/2017;30/09/2017;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;39;15
-2017-4;2017;4;01/01/2017;31/12/2017;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;48;9
-2018-1;2018;1;01/01/2018;31/03/2018;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;13;13
-2018-2;2018;2;01/01/2018;30/06/2018;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;23;10
-2018-3;2018;3;01/01/2018;30/09/2018;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;41;18
-2018-4;2018;4;01/01/2018;31/12/2018;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;54;13
-2019-1;2019;1;01/01/2019;31/03/2019;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;16;16
-2019-2;2019;2;01/01/2019;30/06/2019;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;32;16
-2019-3;2019;3;01/01/2019;30/09/2019;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;47;15
-2019-4;2019;4;01/01/2019;31/12/2019;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;66;19
-2020-1;2020;1;01/01/2020;31/03/2020;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;13;13
-2020-2;2020;2;01/01/2020;30/06/2020;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;23;11
-2020-3;2020;3;01/01/2020;30/09/2020;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;36;16
-2020-4;2020;4;01/01/2020;31/12/2020;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;52;19
-2021-1;2021;1;01/01/2021;31/03/2021;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;20;20
-2021-2;2021;2;01/01/2021;30/06/2021;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;43;23
-2021-3;2021;3;01/01/2021;30/09/2021;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;60;17
-2021-4;2021;4;01/01/2021;31/12/2021;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;74;14
-2022-1;2022;1;01/01/2022;31/03/2022;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;15;15
-2022-2;2022;2;01/01/2022;30/06/2022;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;34;19
-2022-3;2022;3;01/01/2022;30/09/2022;    05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;55;21
-2019-4;2019;4;01/01/2019;31/12/2019;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;64;
-2021-4;2021;4;01/01/2021;31/12/2021;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;71;
-2022-1;2022;1;01/01/2022;31/03/2022;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;10;10
-2022-2;2022;2;01/01/2022;30/06/2022;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;26;16
-2022-3;2022;3;01/01/2022;30/09/2022;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;42;16
-2022-4;2022;4;01/01/2022;31/12/2022;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;74;32
-2023-1;2023;1;01/01/2023;31/03/2023;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;19;19
-2023-2;2023;2;01/01/2023;30/06/2023;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;38;19
-2023-3;2021;3;01/01/2023;30/09/2023;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;59;21
-2023-4;2023;4;01/01/2023;31/12/2023;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;72;13
-2024-1;2021;1;01/01/2024;31/03/2024;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;11;11
-2024-2;2021;2;01/01/2024;30/06/2024;    05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;24;13
-2016-1;2016;1;01/01/2016;31/03/2016;    06. Robos Con Violencia E Intimidación;Robos;293;293
-2016-2;2016;2;01/01/2016;30/06/2016;    06. Robos Con Violencia E Intimidación;Robos;601;308
-2016-3;2016;3;01/01/2016;30/09/2016;    06. Robos Con Violencia E Intimidación;Robos;893;292
-2016-4;2016;4;01/01/2016;31/12/2016;    06. Robos Con Violencia E Intimidación;Robos;1257;364
-2017-1;2017;1;01/01/2017;31/03/2017;    06. Robos Con Violencia E Intimidación;Robos;384;384
-2017-2;2017;2;01/01/2017;30/06/2017;    06. Robos Con Violencia E Intimidación;Robos;707;323
-2017-3;2017;3;01/01/2017;30/09/2017;    06. Robos Con Violencia E Intimidación;Robos;968;261
-2017-4;2017;4;01/01/2017;31/12/2017;    06. Robos Con Violencia E Intimidación;Robos;1263;295
-2018-1;2018;1;01/01/2018;31/03/2018;    06. Robos Con Violencia E Intimidación;Robos;325;325
-2018-2;2018;2;01/01/2018;30/06/2018;    06. Robos Con Violencia E Intimidación;Robos;652;327
-2018-3;2018;3;01/01/2018;30/09/2018;    06. Robos Con Violencia E Intimidación;Robos;919;267
-2018-4;2018;4;01/01/2018;31/12/2018;    06. Robos Con Violencia E Intimidación;Robos;1278;359
-2019-1;2019;1;01/01/2019;31/03/2019;    06. Robos Con Violencia E Intimidación;Robos;342;342
-2019-2;2019;2;01/01/2019;30/06/2019;    06. Robos Con Violencia E Intimidación;Robos;720;378
-2019-3;2019;3;01/01/2019;30/09/2019;    06. Robos Con Violencia E Intimidación;Robos;1095;376
-2019-4;2019;4;01/01/2019;31/12/2019;    06. Robos Con Violencia E Intimidación;Robos;1478;384
-2020-1;2020;1;01/01/2020;31/03/2020;    06. Robos Con Violencia E Intimidación;Robos;360;360
-2020-2;2020;2;01/01/2020;30/06/2020;    06. Robos Con Violencia E Intimidación;Robos;590;291
-2020-3;2020;3;01/01/2020;30/09/2020;    06. Robos Con Violencia E Intimidación;Robos;935;410
-2020-4;2020;4;01/01/2020;31/12/2020;    06. Robos Con Violencia E Intimidación;Robos;1259;389
-2021-1;2021;1;01/01/2021;31/03/2021;    06. Robos Con Violencia E Intimidación;Robos;297;297
-2021-2;2021;2;01/01/2021;30/06/2021;    06. Robos Con Violencia E Intimidación;Robos;564;267
-2021-3;2021;3;01/01/2021;30/09/2021;    06. Robos Con Violencia E Intimidación;Robos;819;255
-2021-4;2021;4;01/01/2021;31/12/2021;    06. Robos Con Violencia E Intimidación;Robos;1124;305
-2022-1;2022;1;01/01/2022;31/03/2022;    06. Robos Con Violencia E Intimidación;Robos;315;315
-2022-2;2022;2;01/01/2022;30/06/2022;    06. Robos Con Violencia E Intimidación;Robos;665;350
-2022-3;2022;3;01/01/2022;30/09/2022;    06. Robos Con Violencia E Intimidación;Robos;1070;405
-2022-4;2022;4;01/01/2022;31/12/2022;    06. Robos Con Violencia E Intimidación;Robos;1462;392
-2023-1;2023;1;01/01/2023;31/03/2023;    06. Robos Con Violencia E Intimidación;Robos;374;374
-2023-2;2023;2;01/01/2023;30/06/2023;    06. Robos Con Violencia E Intimidación;Robos;681;307
-2023-3;2021;3;01/01/2023;30/09/2023;    06. Robos Con Violencia E Intimidación;Robos;998;317
-2023-4;2023;4;01/01/2023;31/12/2023;    06. Robos Con Violencia E Intimidación;Robos;1373;375
-2024-1;2021;1;01/01/2024;31/03/2024;    06. Robos Con Violencia E Intimidación;Robos;405;405
-2024-2;2021;2;01/01/2024;30/06/2024;    06. Robos Con Violencia E Intimidación;Robos;720;315
-2015-1;2015;1;01/01/2015;31/03/2015;    07. Daños;Daños;281;281
-2015-2;2015;2;01/01/2015;30/06/2015;    07. Daños;Daños;596;315
-2015-3;2015;3;01/01/2015;30/09/2015;    07. Daños;Daños;853;257
-2015-4;2015;4;01/01/2015;31/12/2015;    07. Daños;Daños;1161;308
-2016-1;2016;1;01/01/2016;31/03/2016;    07. Daños;Daños;277;277
-2016-2;2016;2;01/01/2016;30/06/2016;    07. Daños;Daños;596;319
-2016-3;2016;3;01/01/2016;30/09/2016;    07. Daños;Daños;887;291
-2016-4;2016;4;01/01/2016;31/12/2016;    07. Daños;Daños;1170;283
-2016-1;2016;1;01/01/2016;31/03/2016;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;162;162
-2016-2;2016;2;01/01/2016;30/06/2016;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;303;141
-2016-3;2016;3;01/01/2016;30/09/2016;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;451;148
-2016-4;2016;4;01/01/2016;31/12/2016;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;583;132
-2017-1;2017;1;01/01/2017;31/03/2017;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;129;129
-2017-2;2017;2;01/01/2017;30/06/2017;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;273;144
-2017-3;2017;3;01/01/2017;30/09/2017;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;426;153
-2017-4;2017;4;01/01/2017;31/12/2017;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;557;131
-2018-1;2018;1;01/01/2018;31/03/2018;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;142;142
-2018-2;2018;2;01/01/2018;30/06/2018;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;294;152
-2018-3;2018;3;01/01/2018;30/09/2018;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;442;148
-2018-4;2018;4;01/01/2018;31/12/2018;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;594;152
-2019-1;2019;1;01/01/2019;31/03/2019;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;142;142
-2019-2;2019;2;01/01/2019;30/06/2019;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;301;-108
-2019-3;2019;3;01/01/2019;30/09/2019;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;470;171
-2019-4;2019;4;01/01/2019;31/12/2019;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;645;177
-2020-1;2020;1;01/01/2020;31/03/2020;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;426;426
-2020-2;2020;2;01/01/2020;30/06/2020;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;190;53
-2020-3;2020;3;01/01/2020;30/09/2020;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;318;63
-2020-4;2020;4;01/01/2020;31/12/2020;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;424;16
-2021-1;2021;1;01/01/2021;31/03/2021;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;100;100
-2021-2;2021;2;01/01/2021;30/06/2021;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;224;124
-2021-3;2021;3;01/01/2021;30/09/2021;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;355;131
-2021-4;2021;4;01/01/2021;31/12/2021;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;556;201
-2022-1;2022;1;01/01/2022;31/03/2022;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;277;277
-2022-2;2022;2;01/01/2022;30/06/2022;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;492;215
-2022-3;2022;3;01/01/2022;30/09/2022;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;671;179
-2022-4;2022;4;01/01/2022;31/12/2022;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;840;169
-2023-1;2023;1;01/01/2023;31/03/2023;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;161;161
-2023-2;2023;2;01/01/2023;30/06/2023;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;319;158
-2023-3;2021;3;01/01/2023;30/09/2023;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;440;121
-2023-4;2023;4;01/01/2023;31/12/2023;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;542;102
-2024-1;2021;1;01/01/2024;31/03/2024;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;179;179
-2024-2;2021;2;01/01/2024;30/06/2024;    07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;352;173
-2016-1;2016;1;01/01/2016;31/03/2016;    07.01. Robos Con Fuerza En Domicilios;Robos;134;134
-2016-2;2016;2;01/01/2016;30/06/2016;    07.01. Robos Con Fuerza En Domicilios;Robos;235;101
-2016-3;2016;3;01/01/2016;30/09/2016;    07.01. Robos Con Fuerza En Domicilios;Robos;350;115
-2016-4;2016;4;01/01/2016;31/12/2016;    07.01. Robos Con Fuerza En Domicilios;Robos;454;104
-2017-1;2017;1;01/01/2017;31/03/2017;    07.01. Robos Con Fuerza En Domicilios;Robos;93;93
-2017-2;2017;2;01/01/2017;30/06/2017;    07.01. Robos Con Fuerza En Domicilios;Robos;198;105
-2017-3;2017;3;01/01/2017;30/09/2017;    07.01. Robos Con Fuerza En Domicilios;Robos;320;122
-2017-4;2017;4;01/01/2017;31/12/2017;    07.01. Robos Con Fuerza En Domicilios;Robos;409;89
-2018-1;2018;1;01/01/2018;31/03/2018;    07.01. Robos Con Fuerza En Domicilios;Robos;99;99
-2018-2;2018;2;01/01/2018;30/06/2018;    07.01. Robos Con Fuerza En Domicilios;Robos;203;104
-2018-3;2018;3;01/01/2018;30/09/2018;    07.01. Robos Con Fuerza En Domicilios;Robos;313;110
-2018-4;2018;4;01/01/2018;31/12/2018;    07.01. Robos Con Fuerza En Domicilios;Robos;408;95
-2019-1;2019;1;01/01/2019;31/03/2019;    07.01. Robos Con Fuerza En Domicilios;Robos;79;79
-2019-2;2019;2;01/01/2019;30/06/2019;    07.01. Robos Con Fuerza En Domicilios;Robos;167;88
-2019-3;2019;3;01/01/2019;30/09/2019;    07.01. Robos Con Fuerza En Domicilios;Robos;274;108
-2019-4;2019;4;01/01/2019;31/12/2019;    07.01. Robos Con Fuerza En Domicilios;Robos;391;118
-2020-1;2020;1;01/01/2020;31/03/2020;    07.01. Robos Con Fuerza En Domicilios;Robos;79;79
-2020-2;2020;2;01/01/2020;30/06/2020;    07.01. Robos Con Fuerza En Domicilios;Robos;118;32
-2020-3;2020;3;01/01/2020;30/09/2020;    07.01. Robos Con Fuerza En Domicilios;Robos;208;56
-2020-4;2020;4;01/01/2020;31/12/2020;    07.01. Robos Con Fuerza En Domicilios;Robos;264;4
-2021-1;2021;1;01/01/2021;31/03/2021;    07.01. Robos Con Fuerza En Domicilios;Robos;60;60
-2021-2;2021;2;01/01/2021;30/06/2021;    07.01. Robos Con Fuerza En Domicilios;Robos;151;91
-2021-3;2021;3;01/01/2021;30/09/2021;    07.01. Robos Con Fuerza En Domicilios;Robos;258;107
-2021-4;2021;4;01/01/2021;31/12/2021;    07.01. Robos Con Fuerza En Domicilios;Robos;378;120
-2022-1;2022;1;01/01/2022;31/03/2022;    07.01. Robos Con Fuerza En Domicilios;Robos;145;145
-2022-2;2022;2;01/01/2022;30/06/2022;    07.01. Robos Con Fuerza En Domicilios;Robos;267;122
-2022-3;2022;3;01/01/2022;30/09/2022;    07.01. Robos Con Fuerza En Domicilios;Robos;376;109
-2022-4;2022;4;01/01/2022;31/12/2022;    07.01. Robos Con Fuerza En Domicilios;Robos;467;91
-2023-1;2023;1;01/01/2023;31/03/2023;    07.01. Robos Con Fuerza En Domicilios;Robos;99;99
-2023-2;2023;2;01/01/2023;30/06/2023;    07.01. Robos Con Fuerza En Domicilios;Robos;202;103
-2023-3;2021;3;01/01/2023;30/09/2023;    07.01. Robos Con Fuerza En Domicilios;Robos;290;88
-2023-4;2023;4;01/01/2023;31/12/2023;    07.01. Robos Con Fuerza En Domicilios;Robos;344;54
-2024-1;2021;1;01/01/2024;31/03/2024;    07.01. Robos Con Fuerza En Domicilios;Robos;112;112
-2024-2;2021;2;01/01/2024;30/06/2024;    07.01. Robos Con Fuerza En Domicilios;Robos;229;117
-2015-1;2015;1;01/01/2015;31/03/2015;    08. Hurtos;Hurtos;940;940
-2015-2;2015;2;01/01/2015;30/06/2015;    08. Hurtos;Hurtos;1837;897
-2015-3;2015;3;01/01/2015;30/09/2015;    08. Hurtos;Hurtos;2673;836
-2015-4;2015;4;01/01/2015;31/12/2015;    08. Hurtos;Hurtos;3508;835
-2016-1;2016;1;01/01/2016;31/03/2016;    08. Hurtos;Hurtos;761;761
-2016-2;2016;2;01/01/2016;30/06/2016;    08. Hurtos;Hurtos;1552;-1
-2016-3;2016;3;01/01/2016;30/09/2016;    08. Hurtos;Hurtos;2307;-3
-2016-4;2016;4;01/01/2016;31/12/2016;    08. Hurtos;Hurtos;3107;-2
-2017-1;2017;1;01/01/2017;31/03/2017;    08. Hurtos;Hurtos;862;862
-2017-2;2017;2;01/01/2017;30/06/2017;    08. Hurtos;Hurtos;1705;843
-2017-3;2017;3;01/01/2017;30/09/2017;    08. Hurtos;Hurtos;2577;872
-2017-4;2017;4;01/01/2017;31/12/2017;    08. Hurtos;Hurtos;3448;871
-2018-1;2018;1;01/01/2018;31/03/2018;    08. Hurtos;Hurtos;913;913
-2018-2;2018;2;01/01/2018;30/06/2018;    08. Hurtos;Hurtos;1894;981
-2018-3;2018;3;01/01/2018;30/09/2018;    08. Hurtos;Hurtos;2742;848
-2018-4;2018;4;01/01/2018;31/12/2018;    08. Hurtos;Hurtos;3674;931
-2019-1;2019;1;01/01/2019;31/03/2019;    08. Hurtos;Hurtos;820;820
-2019-2;2019;2;01/01/2019;30/06/2019;    08. Hurtos;Hurtos;1726;910
-2019-3;2019;3;01/01/2019;30/09/2019;    08. Hurtos;Hurtos;2557;843
-2019-4;2019;4;01/01/2019;31/12/2019;    08. Hurtos;Hurtos;3684;1144
-2020-1;2020;1;01/01/2020;31/03/2020;    08. Hurtos;Hurtos;805;805
-2020-2;2020;2;01/01/2020;30/06/2020;    08. Hurtos;Hurtos;1167;326
-2020-3;2020;3;01/01/2020;30/09/2020;    08. Hurtos;Hurtos;1989;655
-2020-4;2020;4;01/01/2020;31/12/2020;    08. Hurtos;Hurtos;2686;415
-2021-1;2021;1;01/01/2021;31/03/2021;    08. Hurtos;Hurtos;812;812
-2021-2;2021;2;01/01/2021;30/06/2021;    08. Hurtos;Hurtos;1647;835
-2021-3;2021;3;01/01/2021;30/09/2021;    08. Hurtos;Hurtos;2460;813
-2021-4;2021;4;01/01/2021;31/12/2021;    08. Hurtos;Hurtos;3347;887
-2022-1;2022;1;01/01/2022;31/03/2022;    08. Hurtos;Hurtos;899;899
-2022-2;2022;2;01/01/2022;30/06/2022;    08. Hurtos;Hurtos;1888;989
-2022-3;2022;3;01/01/2022;30/09/2022;    08. Hurtos;Hurtos;2890;1002
-2022-4;2022;4;01/01/2022;31/12/2022;    08. Hurtos;Hurtos;3825;935
-2023-1;2023;1;01/01/2023;31/03/2023;    08. Hurtos;Hurtos;927;927
-2023-2;2023;2;01/01/2023;30/06/2023;    08. Hurtos;Hurtos;1955;1028
-2023-3;2021;3;01/01/2023;30/09/2023;    08. Hurtos;Hurtos;2992;1037
-2023-4;2023;4;01/01/2023;31/12/2023;    08. Hurtos;Hurtos;3969;977
-2024-1;2021;1;01/01/2024;31/03/2024;    08. Hurtos;Hurtos;916;916
-2024-2;2021;2;01/01/2024;30/06/2024;    08. Hurtos;Hurtos;1899;983
-2016-1;2016;1;01/01/2016;31/03/2016;    09. Sustracciones De Vehículos;Robos;57;57
-2016-2;2016;2;01/01/2016;30/06/2016;    09. Sustracciones De Vehículos;Robos;118;61
-2016-3;2016;3;01/01/2016;30/09/2016;    09. Sustracciones De Vehículos;Robos;176;58
-2016-4;2016;4;01/01/2016;31/12/2016;    09. Sustracciones De Vehículos;Robos;246;70
-2017-1;2017;1;01/01/2017;31/03/2017;    09. Sustracciones De Vehículos;Robos;68;68
-2017-2;2017;2;01/01/2017;30/06/2017;    09. Sustracciones De Vehículos;Robos;151;83
-2017-3;2017;3;01/01/2017;30/09/2017;    09. Sustracciones De Vehículos;Robos;225;74
-2017-4;2017;4;01/01/2017;31/12/2017;    09. Sustracciones De Vehículos;Robos;288;63
-2018-1;2018;1;01/01/2018;31/03/2018;    09. Sustracciones De Vehículos;Robos;66;66
-2018-2;2018;2;01/01/2018;30/06/2018;    09. Sustracciones De Vehículos;Robos;125;59
-2018-3;2018;3;01/01/2018;30/09/2018;    09. Sustracciones De Vehículos;Robos;192;67
-2018-4;2018;4;01/01/2018;31/12/2018;    09. Sustracciones De Vehículos;Robos;265;74
-2019-1;2019;1;01/01/2019;31/03/2019;    09. Sustracciones De Vehículos;Robos;70;70
-2019-2;2019;2;01/01/2019;30/06/2019;    09. Sustracciones De Vehículos;Robos;159;90
-2019-3;2019;3;01/01/2019;30/09/2019;    09. Sustracciones De Vehículos;Robos;223;72
-2019-4;2019;4;01/01/2019;31/12/2019;    09. Sustracciones De Vehículos;Robos;265;55
-2020-1;2020;1;01/01/2020;31/03/2020;    09. Sustracciones De Vehículos;Robos;35;35
-2020-2;2020;2;01/01/2020;30/06/2020;    09. Sustracciones De Vehículos;Robos;54;19
-2020-3;2020;3;01/01/2020;30/09/2020;    09. Sustracciones De Vehículos;Robos;109;40
-2020-4;2020;4;01/01/2020;31/12/2020;    09. Sustracciones De Vehículos;Robos;142;16
-2021-1;2021;1;01/01/2021;31/03/2021;    09. Sustracciones De Vehículos;Robos;39;39
-2021-2;2021;2;01/01/2021;30/06/2021;    09. Sustracciones De Vehículos;Robos;86;47
-2021-3;2021;3;01/01/2021;30/09/2021;    09. Sustracciones De Vehículos;Robos;134;48
-2021-4;2021;4;01/01/2021;31/12/2021;    09. Sustracciones De Vehículos;Robos;191;57
-2022-1;2022;1;01/01/2022;31/03/2022;    09. Sustracciones De Vehículos;Robos;51;51
-2022-2;2022;2;01/01/2022;30/06/2022;    09. Sustracciones De Vehículos;Robos;102;51
-2022-3;2022;3;01/01/2022;30/09/2022;    09. Sustracciones De Vehículos;Robos;173;71
-2022-4;2022;4;01/01/2022;31/12/2022;    09. Sustracciones De Vehículos;Robos;251;78
-2023-1;2023;1;01/01/2023;31/03/2023;    09. Sustracciones De Vehículos;Robos;56;56
-2023-2;2023;2;01/01/2023;30/06/2023;    09. Sustracciones De Vehículos;Robos;118;61
-2023-3;2021;3;01/01/2023;30/09/2023;    09. Sustracciones De Vehículos;Robos;178;59
-2023-4;2023;4;01/01/2023;31/12/2023;    09. Sustracciones De Vehículos;Robos;233;55
-2024-1;2021;1;01/01/2024;31/03/2024;    09. Sustracciones De Vehículos;Robos;54;54
-2024-2;2021;2;01/01/2024;30/06/2024;    09. Sustracciones De Vehículos;Robos;109;55
-2019-4;2019;4;01/01/2019;31/12/2019;    I. Criminalidad Convencional;    I. Criminalidad Convencional;11194;
-2021-4;2021;4;01/01/2021;31/12/2021;    I. Criminalidad Convencional;    I. Criminalidad Convencional;10309;
-2022-1;2022;1;01/01/2022;31/03/2022;    I. Criminalidad Convencional;    I. Criminalidad Convencional;2920;2920
-2022-2;2022;2;01/01/2022;30/06/2022;    I. Criminalidad Convencional;    I. Criminalidad Convencional;5868;2948
-2022-3;2022;3;01/01/2022;30/09/2022;    I. Criminalidad Convencional;    I. Criminalidad Convencional;8815;2947
-2022-4;2022;4;01/01/2022;31/12/2022;    I. Criminalidad Convencional;    I. Criminalidad Convencional;11725;2910
-2023-1;2023;1;01/01/2023;31/03/2023;    I. Criminalidad Convencional;    I. Criminalidad Convencional;2868;2868
-2023-2;2023;2;01/01/2023;30/06/2023;    I. Criminalidad Convencional;    I. Criminalidad Convencional;5787;2918
-2023-3;2021;3;01/01/2023;30/09/2023;    I. Criminalidad Convencional;    I. Criminalidad Convencional;8804;3019
-2023-4;2023;4;01/01/2023;31/12/2023;    I. Criminalidad Convencional;    I. Criminalidad Convencional;11881;3077
-2024-1;2021;1;01/01/2024;31/03/2024;    I. Criminalidad Convencional;    I. Criminalidad Convencional;3249;3249
-2024-2;2021;2;01/01/2024;30/06/2024;    I. Criminalidad Convencional;    I. Criminalidad Convencional;6394;3145
-2019-4;2019;4;01/01/2019;31/12/2019;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1153;
-2021-4;2021;4;01/01/2021;31/12/2021;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1559;
-2022-1;2022;1;01/01/2022;31/03/2022;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);521;521
-2022-2;2022;2;01/01/2022;30/06/2022;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);955;434
-2022-3;2022;3;01/01/2022;30/09/2022;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1454;499
-2022-4;2022;4;01/01/2022;31/12/2022;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1971;517
-2023-1;2023;1;01/01/2023;31/03/2023;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);490;490
-2023-2;2023;2;01/01/2023;30/06/2023;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1043;552
-2023-3;2021;3;01/01/2023;30/09/2023;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1649;597
-2023-4;2023;4;01/01/2023;31/12/2023;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);2275;626
-2024-1;2021;1;01/01/2024;31/03/2024;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);637;637
-2024-2;2021;2;01/01/2024;30/06/2024;    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);    Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1218;581
-2019-4;2019;4;01/01/2019;31/12/2019;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;12347;
-2021-4;2021;4;01/01/2021;31/12/2021;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;11868;
-2022-1;2022;1;01/01/2022;31/03/2022;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;3441;3441
-2022-2;2022;2;01/01/2022;30/06/2022;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;6823;3382
-2022-3;2022;3;01/01/2022;30/09/2022;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;10269;3446
-2022-4;2022;4;01/01/2022;31/12/2022;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;13696;3427
-2023-1;2023;1;01/01/2023;31/03/2023;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;3358;3358
-2023-2;2023;2;01/01/2023;30/06/2023;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;6830;3470
-2023-3;2021;3;01/01/2023;30/09/2023;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;10453;3616
-2023-4;2023;4;01/01/2023;31/12/2023;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;14156;3703
-2024-1;2021;1;01/01/2024;31/03/2024;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;3886;3886
-2024-2;2021;2;01/01/2024;30/06/2024;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;7612;3726
-2017-4;2017;4;01/01/2017;31/12/2017;    Resto De Infracciones Penales;Otros;5386;
-2018-1;2018;1;01/01/2018;31/03/2018;    Resto De Infracciones Penales;Otros;1453;1453
-2018-2;2018;2;01/01/2018;30/06/2018;    Resto De Infracciones Penales;Otros;2955;1502
-2018-3;2018;3;01/01/2018;30/09/2018;    Resto De Infracciones Penales;Otros;4347;1392
-2018-4;2018;4;01/01/2018;31/12/2018;    Resto De Infracciones Penales;Otros;5951;1604
-2019-1;2019;1;01/01/2019;31/03/2019;    Resto De Infracciones Penales;Otros;1431;1431
-2019-2;2019;2;01/01/2019;30/06/2019;    Resto De Infracciones Penales;Otros;2928;1782
-2019-3;2019;3;01/01/2019;30/09/2019;    Resto De Infracciones Penales;Otros;4514;1624
-2019-4;2019;4;01/01/2019;31/12/2019;    Resto De Infracciones Penales;Otros;6133;1687
-2020-1;2020;1;01/01/2020;31/03/2020;    Resto De Infracciones Penales;Otros;1167;1167
-2020-2;2020;2;01/01/2020;30/06/2020;    Resto De Infracciones Penales;Otros;2591;1293
-2020-3;2020;3;01/01/2020;30/09/2020;    Resto De Infracciones Penales;Otros;4155;1819
-2020-4;2020;4;01/01/2020;31/12/2020;    Resto De Infracciones Penales;Otros;5732;1913
-2021-1;2021;1;01/01/2021;31/03/2021;    Resto De Infracciones Penales;Otros;1558;1558
-2021-2;2021;2;01/01/2021;30/06/2021;    Resto De Infracciones Penales;Otros;3090;1530
-2021-3;2021;3;01/01/2021;30/09/2021;    Resto De Infracciones Penales;Otros;4643;1550
-2021-4;2021;4;01/01/2021;31/12/2021;    Resto De Infracciones Penales;Otros;6377;1730
-2022-1;2022;1;01/01/2022;31/03/2022;    Resto De Infracciones Penales;Otros;1848;1848
-2022-2;2022;2;01/01/2022;30/06/2022;    Resto De Infracciones Penales;Otros;3547;1699
-2022-3;2022;3;01/01/2022;30/09/2022;    Resto De Infracciones Penales;Otros;5247;1700
-2016-1;2016;1;01/01/2016;31/03/2016;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;2618;2618
-2016-2;2016;2;01/01/2016;30/06/2016;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;5363;2745
-2016-3;2016;3;01/01/2016;30/09/2016;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;7970;2607
-2016-4;2016;4;01/01/2016;31/12/2016;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;10690;2720
-2017-1;2017;1;01/01/2017;31/03/2017;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;2869;2869
-2017-2;2017;2;01/01/2017;30/06/2017;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;5760;2887
-2017-3;2017;3;01/01/2017;30/09/2017;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;8501;2737
-2017-4;2017;4;01/01/2017;31/12/2017;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;11442;2938
-2018-1;2018;1;01/01/2018;31/03/2018;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;3026;3026
-2018-2;2018;2;01/01/2018;30/06/2018;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;6164;3136
-2018-3;2018;3;01/01/2018;30/09/2018;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;9021;2853
-2018-4;2018;4;01/01/2018;31/12/2018;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;12265;3241
-2019-1;2019;1;01/01/2019;31/03/2019;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;2909;2909
-2019-2;2019;2;01/01/2019;30/06/2019;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;6091;3206
-2019-3;2019;3;01/01/2019;30/09/2019;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;9257;3229
-2019-4;2019;4;01/01/2019;31/12/2019;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;12499;3350
-2020-1;2020;1;01/01/2020;31/03/2020;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;2893;2893
-2020-2;2020;2;01/01/2020;30/06/2020;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;4797;2146
-2020-3;2020;3;01/01/2020;30/09/2020;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;7833;3229
-2020-4;2020;4;01/01/2020;31/12/2020;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;10666;3025
-2021-1;2021;1;01/01/2021;31/03/2021;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;2866;2866
-2021-2;2021;2;01/01/2021;30/06/2021;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;5751;2883
-2021-3;2021;3;01/01/2021;30/09/2021;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;8623;2869
-2021-4;2021;4;01/01/2021;31/12/2021;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;11868;3241
-2022-1;2022;1;01/01/2022;31/03/2022;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;3442;3442
-2022-2;2022;2;01/01/2022;30/06/2022;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;6823;3381
-2022-3;2022;3;01/01/2022;30/09/2022;    Iii. Total Infracciones Penales;    Iii. Total Infracciones Penales;10261;3438
+2015-1;2015;1;01/01/2015;31/03/2015;01. Delitos Y Faltas (Eu);Delitos generales;2778;2778
+2015-2;2015;2;01/01/2015;30/06/2015;01. Delitos Y Faltas (Eu);Delitos generales;5635;2857
+2015-3;2015;3;01/01/2015;30/09/2015;01. Delitos Y Faltas (Eu);Delitos generales;8247;2612
+2015-4;2015;4;01/01/2015;31/12/2015;01. Delitos Y Faltas (Eu);Delitos generales;10974;2727
+2016-1;2016;1;01/01/2016;31/03/2016;01. Delitos Y Faltas (Eu);Delitos generales;2617;2617
+2016-2;2016;2;01/01/2016;30/06/2016;01. Delitos Y Faltas (Eu);Delitos generales;5362;2745
+2016-3;2016;3;01/01/2016;30/09/2016;01. Delitos Y Faltas (Eu);Delitos generales;7968;2606
+2016-4;2016;4;01/01/2016;31/12/2016;01. Delitos Y Faltas (Eu);Delitos generales;10684;2716
+2016-1;2016;1;01/01/2016;31/03/2016;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
+2016-2;2016;2;01/01/2016;30/06/2016;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;1
+2016-3;2016;3;01/01/2016;30/09/2016;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;0
+2016-4;2016;4;01/01/2016;31/12/2016;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;3;1
+2017-1;2017;1;01/01/2017;31/03/2017;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2017-2;2017;2;01/01/2017;30/06/2017;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;-1
+2017-3;2017;3;01/01/2017;30/09/2017;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2017-4;2017;4;01/01/2017;31/12/2017;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2018-1;2018;1;01/01/2018;31/03/2018;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2018-2;2018;2;01/01/2018;30/06/2018;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
+2018-3;2018;3;01/01/2018;30/09/2018;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
+2018-4;2018;4;01/01/2018;31/12/2018;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
+2019-1;2019;1;01/01/2019;31/03/2019;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;2
+2019-2;2019;2;01/01/2019;30/06/2019;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;0
+2019-3;2019;3;01/01/2019;30/09/2019;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;0
+2019-4;2019;4;01/01/2019;31/12/2019;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;3;1
+2020-1;2020;1;01/01/2020;31/03/2020;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2020-2;2020;2;01/01/2020;30/06/2020;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2020-3;2020;3;01/01/2020;30/09/2020;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2020-4;2020;4;01/01/2020;31/12/2020;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2021-1;2021;1;01/01/2021;31/03/2021;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
+2021-2;2021;2;01/01/2021;30/06/2021;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
+2021-3;2021;3;01/01/2021;30/09/2021;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
+2021-4;2021;4;01/01/2021;31/12/2021;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;0
+2022-1;2022;1;01/01/2022;31/03/2022;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2022-2;2022;2;01/01/2022;30/06/2022;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2022-3;2022;3;01/01/2022;30/09/2022;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2022-4;2022;4;01/01/2022;31/12/2022;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
+2023-1;2023;1;01/01/2023;31/03/2023;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2023-2;2023;2;01/01/2023;30/06/2023;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;2
+2023-3;2021;3;01/01/2023;30/09/2023;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;2;0
+2023-4;2023;4;01/01/2023;31/12/2023;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;3;1
+2024-1;2021;1;01/01/2024;31/03/2024;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;0;0
+2024-2;2021;2;01/01/2024;30/06/2024;01. Homicidios Dolosos Y Asesinatos Consumados;Homicidios y asesinatos;1;1
+2015-1;2015;1;01/01/2015;31/03/2015;10. Tráfico De Drogas;Delitos de drogas;11;11
+2015-2;2015;2;01/01/2015;30/06/2015;10. Tráfico De Drogas;Delitos de drogas;22;11
+2015-3;2015;3;01/01/2015;30/09/2015;10. Tráfico De Drogas;Delitos de drogas;27;5
+2015-4;2015;4;01/01/2015;31/12/2015;10. Tráfico De Drogas;Delitos de drogas;33;6
+2016-1;2016;1;01/01/2016;31/03/2016;10. Tráfico De Drogas;Delitos de drogas;8;8
+2016-2;2016;2;01/01/2016;30/06/2016;10. Tráfico De Drogas;Delitos de drogas;24;-1
+2016-3;2016;3;01/01/2016;30/09/2016;10. Tráfico De Drogas;Delitos de drogas;28;-1
+2016-4;2016;4;01/01/2016;31/12/2016;10. Tráfico De Drogas;Delitos de drogas;35;7
+2017-1;2017;1;01/01/2017;31/03/2017;10. Tráfico De Drogas;Delitos de drogas;8;8
+2017-2;2017;2;01/01/2017;30/06/2017;10. Tráfico De Drogas;Delitos de drogas;20;12
+2017-3;2017;3;01/01/2017;30/09/2017;10. Tráfico De Drogas;Delitos de drogas;30;10
+2017-4;2017;4;01/01/2017;31/12/2017;10. Tráfico De Drogas;Delitos de drogas;41;12
+2018-1;2018;1;01/01/2018;31/03/2018;10. Tráfico De Drogas;Delitos de drogas;17;17
+2018-2;2018;2;01/01/2018;30/06/2018;10. Tráfico De Drogas;Delitos de drogas;24;7
+2018-3;2018;3;01/01/2018;30/09/2018;10. Tráfico De Drogas;Delitos de drogas;39;15
+2018-4;2018;4;01/01/2018;31/12/2018;10. Tráfico De Drogas;Delitos de drogas;61;22
+2019-1;2019;1;01/01/2019;31/03/2019;10. Tráfico De Drogas;Delitos de drogas;7;7
+2019-2;2019;2;01/01/2019;30/06/2019;10. Tráfico De Drogas;Delitos de drogas;23;16
+2019-3;2019;3;01/01/2019;30/09/2019;10. Tráfico De Drogas;Delitos de drogas;35;12
+2019-4;2019;4;01/01/2019;31/12/2019;10. Tráfico De Drogas;Delitos de drogas;51;16
+2020-1;2020;1;01/01/2020;31/03/2020;10. Tráfico De Drogas;Delitos de drogas;10;10
+2020-2;2020;2;01/01/2020;30/06/2020;10. Tráfico De Drogas;Delitos de drogas;21;13
+2020-3;2020;3;01/01/2020;30/09/2020;10. Tráfico De Drogas;Delitos de drogas;28;9
+2020-4;2020;4;01/01/2020;31/12/2020;10. Tráfico De Drogas;Delitos de drogas;40;13
+2021-1;2021;1;01/01/2021;31/03/2021;10. Tráfico De Drogas;Delitos de drogas;17;17
+2021-2;2021;2;01/01/2021;30/06/2021;10. Tráfico De Drogas;Delitos de drogas;36;19
+2021-3;2021;3;01/01/2021;30/09/2021;10. Tráfico De Drogas;Delitos de drogas;49;13
+2021-4;2021;4;01/01/2021;31/12/2021;10. Tráfico De Drogas;Delitos de drogas;67;18
+2022-1;2022;1;01/01/2022;31/03/2022;10. Tráfico De Drogas;Delitos de drogas;10;10
+2022-2;2022;2;01/01/2022;30/06/2022;10. Tráfico De Drogas;Delitos de drogas;26;17
+2022-3;2022;3;01/01/2022;30/09/2022;10. Tráfico De Drogas;Delitos de drogas;42;17
+2022-4;2022;4;01/01/2022;31/12/2022;10. Tráfico De Drogas;Delitos de drogas;50;9
+2023-1;2023;1;01/01/2023;31/03/2023;10. Tráfico De Drogas;Delitos de drogas;20;20
+2023-2;2023;2;01/01/2023;30/06/2023;10. Tráfico De Drogas;Delitos de drogas;32;12
+2023-3;2023;3;01/01/2023;30/09/2023;10. Tráfico De Drogas;Delitos de drogas;47;15
+2023-4;2023;4;01/01/2023;31/12/2023;10. Tráfico De Drogas;Delitos de drogas;75;28
+2024-1;2024;1;01/01/2024;31/03/2024;10. Tráfico De Drogas;Delitos de drogas;24;24
+2024-2;2024;2;01/01/2024;30/06/2024;10. Tráfico De Drogas;Delitos de drogas;47;23
+2019-4;2019;4;01/01/2019;31/12/2019;11. Resto De Criminalidad Convencional;Criminalidad convencional;4871;4824
+2021-4;2021;4;01/01/2021;31/12/2021;11. Resto De Criminalidad Convencional;Criminalidad convencional;4821;
+2022-1;2022;1;01/01/2022;31/03/2022;11. Resto De Criminalidad Convencional;Criminalidad convencional;1325;1325
+2022-2;2022;2;01/01/2022;30/06/2022;11. Resto De Criminalidad Convencional;Criminalidad convencional;2592;1267
+2022-3;2022;3;01/01/2022;30/09/2022;11. Resto De Criminalidad Convencional;Criminalidad convencional;3801;1209
+2022-4;2022;4;01/01/2022;31/12/2022;11. Resto De Criminalidad Convencional;Criminalidad convencional;5067;1266
+2023-1;2023;1;01/01/2023;31/03/2023;11. Resto De Criminalidad Convencional;Criminalidad convencional;1280;1280
+2023-2;2023;2;01/01/2023;30/06/2023;11. Resto De Criminalidad Convencional;Criminalidad convencional;2558;1278
+2023-3;2021;3;01/01/2023;30/09/2023;11. Resto De Criminalidad Convencional;Criminalidad convencional;3951;1396
+2023-4;2023;4;01/01/2023;31/12/2023;11. Resto De Criminalidad Convencional;Criminalidad convencional;5433;1482
+2024-1;2021;1;01/01/2024;31/03/2024;11. Resto De Criminalidad Convencional;Criminalidad convencional;1614;1614
+2024-2;2021;2;01/01/2024;30/06/2024;11. Resto De Criminalidad Convencional;Criminalidad convencional;3151;1537
+2019-4;2019;4;01/01/2019;31/12/2019;12. Estafas Informáticas;Ciberdelitos;1135;
+2021-4;2021;4;01/01/2021;31/12/2021;12. Estafas Informáticas;Ciberdelitos;1512;
+2022-1;2022;1;01/01/2022;31/03/2022;12. Estafas Informáticas;Ciberdelitos;508;508
+2022-2;2022;2;01/01/2022;30/06/2022;12. Estafas Informáticas;Ciberdelitos;927;419
+2022-3;2022;3;01/01/2022;30/09/2022;12. Estafas Informáticas;Ciberdelitos;1414;487
+2022-4;2022;4;01/01/2022;31/12/2022;12. Estafas Informáticas;Ciberdelitos;1916;502
+2023-1;2023;1;01/01/2023;31/03/2023;12. Estafas Informáticas;Ciberdelitos;480;480
+2023-2;2023;2;01/01/2023;30/06/2023;12. Estafas Informáticas;Ciberdelitos;1023;541
+2023-3;2021;3;01/01/2023;30/09/2023;12. Estafas Informáticas;Ciberdelitos;1611;584
+2023-4;2023;4;01/01/2023;31/12/2023;12. Estafas Informáticas;Ciberdelitos;2224;613
+2024-1;2021;1;01/01/2024;31/03/2024;12. Estafas Informáticas;Ciberdelitos;615;615
+2024-2;2021;2;01/01/2024;30/06/2024;12. Estafas Informáticas;Ciberdelitos;1157;542
+2019-4;2019;4;01/01/2019;31/12/2019;13. Otros Ciberdelitos;Ciberdelitos;18;
+2021-4;2021;4;01/01/2021;31/12/2021;13. Otros Ciberdelitos;Ciberdelitos;47;
+2022-1;2022;1;01/01/2022;31/03/2022;13. Otros Ciberdelitos;Ciberdelitos;13;13
+2022-2;2022;2;01/01/2022;30/06/2022;13. Otros Ciberdelitos;Ciberdelitos;28;15
+2022-3;2022;3;01/01/2022;30/09/2022;13. Otros Ciberdelitos;Ciberdelitos;40;12
+2022-4;2022;4;01/01/2022;31/12/2022;13. Otros Ciberdelitos;Ciberdelitos;55;15
+2023-1;2023;1;01/01/2023;31/03/2023;13. Otros Ciberdelitos;Ciberdelitos;10;10
+2023-2;2023;2;01/01/2023;30/06/2023;13. Otros Ciberdelitos;Ciberdelitos;20;11
+2023-3;2021;3;01/01/2023;30/09/2023;13. Otros Ciberdelitos;Ciberdelitos;38;13
+2023-4;2023;4;01/01/2023;31/12/2023;13. Otros Ciberdelitos;Ciberdelitos;51;13
+2024-1;2021;1;01/01/2024;31/03/2024;13. Otros Ciberdelitos;Ciberdelitos;22;22
+2024-2;2021;2;01/01/2024;30/06/2024;13. Otros Ciberdelitos;Ciberdelitos;61;39
+2015-1;2015;1;01/01/2015;31/03/2015;02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;0;0
+2015-2;2015;2;01/01/2015;30/06/2015;02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;0;0
+2015-3;2015;3;01/01/2015;30/09/2015;02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;0;0
+2015-4;2015;4;01/01/2015;31/12/2015;02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;1;1
+2016-1;2016;1;01/01/2016;31/03/2016;02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;1;1
+2016-2;2016;2;01/01/2016;30/06/2016;02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;2;1
+2016-3;2016;3;01/01/2016;30/09/2016;02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;2;0
+2016-4;2016;4;01/01/2016;31/12/2016;02. Homicidios Dolosos Y Asesinatos Consumados (Eu);Homicidios y asesinatos;3;1
+2016-1;2016;1;01/01/2016;31/03/2016;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;2;2
+2016-2;2016;2;01/01/2016;30/06/2016;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;1
+2016-3;2016;3;01/01/2016;30/09/2016;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;5;2
+2016-4;2016;4;01/01/2016;31/12/2016;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;2
+2017-1;2017;1;01/01/2017;31/03/2017;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;0;0
+2017-2;2017;2;01/01/2017;30/06/2017;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;5;5
+2017-3;2017;3;01/01/2017;30/09/2017;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;2
+2017-4;2017;4;01/01/2017;31/12/2017;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;9;2
+2018-1;2018;1;01/01/2018;31/03/2018;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;2;2
+2018-2;2018;2;01/01/2018;30/06/2018;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;1
+2018-3;2018;3;01/01/2018;30/09/2018;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;4
+2018-4;2018;4;01/01/2018;31/12/2018;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;8;1
+2019-1;2019;1;01/01/2019;31/03/2019;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;1;1
+2019-2;2019;2;01/01/2019;30/06/2019;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;4;3
+2019-3;2019;3;01/01/2019;30/09/2019;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;3
+2019-4;2019;4;01/01/2019;31/12/2019;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;8;1
+2020-1;2020;1;01/01/2020;31/03/2020;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;1;1
+2020-2;2020;2;01/01/2020;30/06/2020;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;4;4
+2020-3;2020;3;01/01/2020;30/09/2020;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;8;4
+2020-4;2020;4;01/01/2020;31/12/2020;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;9;1
+2021-1;2021;1;01/01/2021;31/03/2021;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;1;1
+2021-2;2021;2;01/01/2021;30/06/2021;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;1;0
+2021-3;2021;3;01/01/2021;30/09/2021;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;2;1
+2021-4;2021;4;01/01/2021;31/12/2021;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;4;2
+2022-1;2022;1;01/01/2022;31/03/2022;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;3
+2022-2;2022;2;01/01/2022;30/06/2022;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;0
+2022-3;2022;3;01/01/2022;30/09/2022;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;7;4
+2022-4;2022;4;01/01/2022;31/12/2022;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;9;2
+2023-1;2023;1;01/01/2023;31/03/2023;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;2;2
+2023-2;2023;2;01/01/2023;30/06/2023;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;6;4
+2023-3;2021;3;01/01/2023;30/09/2023;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;8;2
+2023-4;2023;4;01/01/2023;31/12/2023;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;10;2
+2024-1;2021;1;01/01/2024;31/03/2024;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;3;3
+2024-2;2021;2;01/01/2024;30/06/2024;02. Homicidios Dolosos Y Asesinatos En Grado Tentativa;Homicidios y asesinatos;6;3
+2016-1;2016;1;01/01/2016;31/03/2016;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;1;1
+2016-2;2016;2;01/01/2016;30/06/2016;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;1;0
+2016-3;2016;3;01/01/2016;30/09/2016;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;1;0
+2016-4;2016;4;01/01/2016;31/12/2016;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;1;0
+2017-1;2017;1;01/01/2017;31/03/2017;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;0;0
+2017-2;2017;2;01/01/2017;30/06/2017;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;0;-83
+2017-3;2017;3;01/01/2017;30/09/2017;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;0;-192
+2017-4;2017;4;01/01/2017;31/12/2017;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;0;-298
+2018-1;2018;1;01/01/2018;31/03/2018;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;94;94
+2018-2;2018;2;01/01/2018;30/06/2018;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;189;95
+2018-3;2018;3;01/01/2018;30/09/2018;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;281;92
+2018-4;2018;4;01/01/2018;31/12/2018;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;361;80
+2019-1;2019;1;01/01/2019;31/03/2019;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;74;74
+2019-2;2019;2;01/01/2019;30/06/2019;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;188;115
+2019-3;2019;3;01/01/2019;30/09/2019;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;297;111
+2019-4;2019;4;01/01/2019;31/12/2019;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;107;-183
+2020-1;2020;1;01/01/2020;31/03/2020;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;73;73
+2020-2;2020;2;01/01/2020;30/06/2020;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;153;134
+2020-3;2020;3;01/01/2020;30/09/2020;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;247;209
+2020-4;2020;4;01/01/2020;31/12/2020;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;311;240
+2021-1;2021;1;01/01/2021;31/03/2021;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;20;20
+2021-2;2021;2;01/01/2021;30/06/2021;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;54;34
+2021-3;2021;3;01/01/2021;30/09/2021;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;89;35
+2021-4;2021;4;01/01/2021;31/12/2021;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;112;23
+2022-1;2022;1;01/01/2022;31/03/2022;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;20;20
+2022-2;2022;2;01/01/2022;30/06/2022;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;57;37
+2022-3;2022;3;01/01/2022;30/09/2022;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;90;33
+2022-4;2022;4;01/01/2022;31/12/2022;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;120;30
+2023-1;2023;1;01/01/2023;31/03/2023;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;23;23
+2023-2;2023;2;01/01/2023;30/06/2023;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;61;38
+2023-3;2021;3;01/01/2023;30/09/2023;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;98;37
+2023-4;2023;4;01/01/2023;31/12/2023;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;133;35
+2024-1;2021;1;01/01/2024;31/03/2024;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;33;33
+2024-2;2021;2;01/01/2024;30/06/2024;03. Delitos Graves Y Menos Graves De Lesiones Y Riña Tumultuaria;Delitos de lesiones;68;35
+2015-1;2015;1;01/01/2015;31/03/2015;03. Robo Con Violencia E Intimidación (Eu);Robos;359;359
+2015-2;2015;2;01/01/2015;30/06/2015;03. Robo Con Violencia E Intimidación (Eu);Robos;721;362
+2015-3;2015;3;01/01/2015;30/09/2015;03. Robo Con Violencia E Intimidación (Eu);Robos;1027;306
+2015-4;2015;4;01/01/2015;31/12/2015;03. Robo Con Violencia E Intimidación (Eu);Robos;1348;321
+2016-1;2016;1;01/01/2016;31/03/2016;03. Robo Con Violencia E Intimidación (Eu);Robos;293;293
+2016-2;2016;2;01/01/2016;30/06/2016;03. Robo Con Violencia E Intimidación (Eu);Robos;601;308
+2016-3;2016;3;01/01/2016;30/09/2016;03. Robo Con Violencia E Intimidación (Eu);Robos;890;289
+2016-4;2016;4;01/01/2016;31/12/2016;03. Robo Con Violencia E Intimidación (Eu);Robos;1254;364
+2015-1;2015;1;01/01/2015;31/03/2015;04. Robos Con Fuerza En Domicilios (Eu);Robos;94;94
+2015-2;2015;2;01/01/2015;30/06/2015;04. Robos Con Fuerza En Domicilios (Eu);Robos;210;116
+2015-3;2015;3;01/01/2015;30/09/2015;04. Robos Con Fuerza En Domicilios (Eu);Robos;368;158
+2015-4;2015;4;01/01/2015;31/12/2015;04. Robos Con Fuerza En Domicilios (Eu);Robos;518;150
+2016-1;2016;1;01/01/2016;31/03/2016;04. Robos Con Fuerza En Domicilios (Eu);Robos;134;134
+2016-2;2016;2;01/01/2016;30/06/2016;04. Robos Con Fuerza En Domicilios (Eu);Robos;235;101
+2016-3;2016;3;01/01/2016;30/09/2016;04. Robos Con Fuerza En Domicilios (Eu);Robos;350;115
+2016-4;2016;4;01/01/2016;31/12/2016;04. Robos Con Fuerza En Domicilios (Eu);Robos;453;103
+2016-1;2016;1;01/01/2016;31/03/2016;04. Secuestro;Delitos contra la libertad;0;0
+2016-2;2016;2;01/01/2016;30/06/2016;04. Secuestro;Delitos contra la libertad;0;0
+2016-3;2016;3;01/01/2016;30/09/2016;04. Secuestro;Delitos contra la libertad;0;0
+2016-4;2016;4;01/01/2016;31/12/2016;04. Secuestro;Delitos contra la libertad;0;0
+2017-1;2017;1;01/01/2017;31/03/2017;04. Secuestro;Delitos contra la libertad;0;0
+2017-2;2017;2;01/01/2017;30/06/2017;04. Secuestro;Delitos contra la libertad;0;0
+2017-3;2017;3;01/01/2017;30/09/2017;04. Secuestro;Delitos contra la libertad;0;0
+2017-4;2017;4;01/01/2017;31/12/2017;04. Secuestro;Delitos contra la libertad;0;0
+2018-1;2018;1;01/01/2018;31/03/2018;04. Secuestro;Delitos contra la libertad;0;0
+2018-2;2018;2;01/01/2018;30/06/2018;04. Secuestro;Delitos contra la libertad;0;0
+2018-3;2018;3;01/01/2018;30/09/2018;04. Secuestro;Delitos contra la libertad;0;0
+2018-4;2018;4;01/01/2018;31/12/2018;04. Secuestro;Delitos contra la libertad;0;0
+2019-1;2019;1;01/01/2019;31/03/2019;04. Secuestro;Delitos contra la libertad;0;0
+2019-2;2019;2;01/01/2019;30/06/2019;04. Secuestro;Delitos contra la libertad;0;0
+2019-3;2019;3;01/01/2019;30/09/2019;04. Secuestro;Delitos contra la libertad;0;0
+2019-4;2019;4;01/01/2019;31/12/2019;04. Secuestro;Delitos contra la libertad;0;0
+2020-1;2020;1;01/01/2020;31/03/2020;04. Secuestro;Delitos contra la libertad;0;0
+2020-2;2020;2;01/01/2020;30/06/2020;04. Secuestro;Delitos contra la libertad;0;0
+2020-3;2020;3;01/01/2020;30/09/2020;04. Secuestro;Delitos contra la libertad;0;0
+2020-4;2020;4;01/01/2020;31/12/2020;04. Secuestro;Delitos contra la libertad;0;0
+2021-1;2021;1;01/01/2021;31/03/2021;04. Secuestro;Delitos contra la libertad;0;0
+2021-2;2021;2;01/01/2021;30/06/2021;04. Secuestro;Delitos contra la libertad;0;0
+2021-3;2021;3;01/01/2021;30/09/2021;04. Secuestro;Delitos contra la libertad;0;0
+2021-4;2021;4;01/01/2021;31/12/2021;04. Secuestro;Delitos contra la libertad;0;0
+2022-1;2022;1;01/01/2022;31/03/2022;04. Secuestro;Delitos contra la libertad;0;0
+2022-2;2022;2;01/01/2022;30/06/2022;04. Secuestro;Delitos contra la libertad;0;0
+2022-3;2022;3;01/01/2022;30/09/2022;04. Secuestro;Delitos contra la libertad;0;0
+2022-4;2022;4;01/01/2022;31/12/2022;04. Secuestro;Delitos contra la libertad;0;0
+2023-1;2023;1;01/01/2023;31/03/2023;04. Secuestro;Delitos contra la libertad;0;0
+2023-2;2023;2;01/01/2023;30/06/2023;04. Secuestro;Delitos contra la libertad;0;0
+2023-3;2021;3;01/01/2023;30/09/2023;04. Secuestro;Delitos contra la libertad;0;0
+2023-4;2023;4;01/01/2023;31/12/2023;04. Secuestro;Delitos contra la libertad;1;1
+2024-1;2021;1;01/01/2024;31/03/2024;04. Secuestro;Delitos contra la libertad;0;0
+2024-2;2021;2;01/01/2024;30/06/2024;04. Secuestro;Delitos contra la libertad;0;0
+2016-1;2016;1;01/01/2016;31/03/2016;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;14;14
+2016-2;2016;2;01/01/2016;30/06/2016;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;28;14
+2016-3;2016;3;01/01/2016;30/09/2016;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;48;20
+2016-4;2016;4;01/01/2016;31/12/2016;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;70;22
+2017-1;2017;1;01/01/2017;31/03/2017;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;11;11
+2017-2;2017;2;01/01/2017;30/06/2017;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;31;20
+2017-3;2017;3;01/01/2017;30/09/2017;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;49;18
+2017-4;2017;4;01/01/2017;31/12/2017;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;59;10
+2018-1;2018;1;01/01/2018;31/03/2018;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;16;16
+2018-2;2018;2;01/01/2018;30/06/2018;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;31;15
+2018-3;2018;3;01/01/2018;30/09/2018;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;54;23
+2018-4;2018;4;01/01/2018;31/12/2018;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;72;18
+2019-1;2019;1;01/01/2019;31/03/2019;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;20;20
+2019-2;2019;2;01/01/2019;30/06/2019;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;40;20
+2019-3;2019;3;01/01/2019;30/09/2019;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;57;17
+2019-4;2019;4;01/01/2019;31/12/2019;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;84;27
+2020-1;2020;1;01/01/2020;31/03/2020;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;16;16
+2020-2;2020;2;01/01/2020;30/06/2020;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;27;13
+2020-3;2020;3;01/01/2020;30/09/2020;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;44;20
+2020-4;2020;4;01/01/2020;31/12/2020;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;63;22
+2021-1;2021;1;01/01/2021;31/03/2021;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;21;21
+2021-2;2021;2;01/01/2021;30/06/2021;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;48;27
+2021-3;2021;3;01/01/2021;30/09/2021;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;71;23
+2021-4;2021;4;01/01/2021;31/12/2021;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;89;18
+2022-1;2022;1;01/01/2022;31/03/2022;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;20;20
+2022-2;2022;2;01/01/2022;30/06/2022;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;44;24
+2022-3;2022;3;01/01/2022;30/09/2022;05. Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;72;28
+2019-4;2019;4;01/01/2019;31/12/2019;05. Delitos Contra La Libertad Sexual;Delitos sexuales;82;
+2021-4;2021;4;01/01/2021;31/12/2021;05. Delitos Contra La Libertad Sexual;Delitos sexuales;86;
+2022-1;2022;1;01/01/2022;31/03/2022;05. Delitos Contra La Libertad Sexual;Delitos sexuales;20;20
+2022-2;2022;2;01/01/2022;30/06/2022;05. Delitos Contra La Libertad Sexual;Delitos sexuales;43;23
+2022-3;2022;3;01/01/2022;30/09/2022;05. Delitos Contra La Libertad Sexual;Delitos sexuales;71;28
+2022-4;2022;4;01/01/2022;31/12/2022;05. Delitos Contra La Libertad Sexual;Delitos sexuales;100;29
+2023-1;2023;1;01/01/2023;31/03/2023;05. Delitos Contra La Libertad Sexual;Delitos sexuales;25;25
+2023-2;2023;2;01/01/2023;30/06/2023;05. Delitos Contra La Libertad Sexual;Delitos sexuales;55;30
+2023-3;2021;3;01/01/2023;30/09/2023;05. Delitos Contra La Libertad Sexual;Delitos sexuales;90;35
+2023-4;2023;4;01/01/2023;31/12/2023;05. Delitos Contra La Libertad Sexual;Delitos sexuales;109;19
+2024-1;2021;1;01/01/2024;31/03/2024;05. Delitos Contra La Libertad Sexual;Delitos sexuales;21;21
+2024-2;2021;2;01/01/2024;30/06/2024;05. Delitos Contra La Libertad Sexual;Delitos sexuales;41;20
+2015-1;2015;1;01/01/2015;31/03/2015;05. Sustracción Vehículos A Motor (Eu);Robos;59;59
+2015-2;2015;2;01/01/2015;30/06/2015;05. Sustracción Vehículos A Motor (Eu);Robos;119;60
+2015-3;2015;3;01/01/2015;30/09/2015;05. Sustracción Vehículos A Motor (Eu);Robos;172;53
+2015-4;2015;4;01/01/2015;31/12/2015;05. Sustracción Vehículos A Motor (Eu);Robos;244;72
+2016-1;2016;1;01/01/2016;31/03/2016;05. Sustracción Vehículos A Motor (Eu);Robos;58;58
+2016-2;2016;2;01/01/2016;30/06/2016;05. Sustracción Vehículos A Motor (Eu);Robos;118;60
+2016-3;2016;3;01/01/2016;30/09/2016;05. Sustracción Vehículos A Motor (Eu);Robos;176;58
+2016-4;2016;4;01/01/2016;31/12/2016;05. Sustracción Vehículos A Motor (Eu);Robos;246;70
+2016-1;2016;1;01/01/2016;31/03/2016;05.01. Agresión Sexual Con Penetración;Delitos sexuales;3;3
+2016-2;2016;2;01/01/2016;30/06/2016;05.01. Agresión Sexual Con Penetración;Delitos sexuales;8;5
+2016-3;2016;3;01/01/2016;30/09/2016;05.01. Agresión Sexual Con Penetración;Delitos sexuales;12;4
+2016-4;2016;4;01/01/2016;31/12/2016;05.01. Agresión Sexual Con Penetración;Delitos sexuales;18;6
+2017-1;2017;1;01/01/2017;31/03/2017;05.01. Agresión Sexual Con Penetración;Delitos sexuales;1;1
+2017-2;2017;2;01/01/2017;30/06/2017;05.01. Agresión Sexual Con Penetración;Delitos sexuales;7;6
+2017-3;2017;3;01/01/2017;30/09/2017;05.01. Agresión Sexual Con Penetración;Delitos sexuales;10;3
+2017-4;2017;4;01/01/2017;31/12/2017;05.01. Agresión Sexual Con Penetración;Delitos sexuales;11;1
+2018-1;2018;1;01/01/2018;31/03/2018;05.01. Agresión Sexual Con Penetración;Delitos sexuales;3;3
+2018-2;2018;2;01/01/2018;30/06/2018;05.01. Agresión Sexual Con Penetración;Delitos sexuales;8;5
+2018-3;2018;3;01/01/2018;30/09/2018;05.01. Agresión Sexual Con Penetración;Delitos sexuales;13;5
+2018-4;2018;4;01/01/2018;31/12/2018;05.01. Agresión Sexual Con Penetración;Delitos sexuales;18;5
+2019-1;2019;1;01/01/2019;31/03/2019;05.01. Agresión Sexual Con Penetración;Delitos sexuales;4;4
+2019-2;2019;2;01/01/2019;30/06/2019;05.01. Agresión Sexual Con Penetración;Delitos sexuales;8;4
+2019-3;2019;3;01/01/2019;30/09/2019;05.01. Agresión Sexual Con Penetración;Delitos sexuales;10;2
+2019-4;2019;4;01/01/2019;31/12/2019;05.01. Agresión Sexual Con Penetración;Delitos sexuales;18;8
+2020-1;2020;1;01/01/2020;31/03/2020;05.01. Agresión Sexual Con Penetración;Delitos sexuales;3;3
+2020-2;2020;2;01/01/2020;30/06/2020;05.01. Agresión Sexual Con Penetración;Delitos sexuales;4;2
+2020-3;2020;3;01/01/2020;30/09/2020;05.01. Agresión Sexual Con Penetración;Delitos sexuales;8;4
+2020-4;2020;4;01/01/2020;31/12/2020;05.01. Agresión Sexual Con Penetración;Delitos sexuales;11;3
+2021-1;2021;1;01/01/2021;31/03/2021;05.01. Agresión Sexual Con Penetración;Delitos sexuales;1;1
+2021-2;2021;2;01/01/2021;30/06/2021;05.01. Agresión Sexual Con Penetración;Delitos sexuales;5;4
+2021-3;2021;3;01/01/2021;30/09/2021;05.01. Agresión Sexual Con Penetración;Delitos sexuales;11;6
+2021-4;2021;4;01/01/2021;31/12/2021;05.01. Agresión Sexual Con Penetración;Delitos sexuales;15;4
+2022-1;2022;1;01/01/2022;31/03/2022;05.01. Agresión Sexual Con Penetración;Delitos sexuales;5;5
+2022-2;2022;2;01/01/2022;30/06/2022;05.01. Agresión Sexual Con Penetración;Delitos sexuales;10;0
+2022-3;2022;3;01/01/2022;30/09/2022;05.01. Agresión Sexual Con Penetración;Delitos sexuales;17;0
+2022-4;2022;4;01/01/2022;31/12/2022;05.01. Agresión Sexual Con Penetración;Delitos sexuales;26;-3
+2023-1;2023;1;01/01/2023;31/03/2023;05.01. Agresión Sexual Con Penetración;Delitos sexuales;6;6
+2023-2;2023;2;01/01/2023;30/06/2023;05.01. Agresión Sexual Con Penetración;Delitos sexuales;17;11
+2023-3;2021;3;01/01/2023;30/09/2023;05.01. Agresión Sexual Con Penetración;Delitos sexuales;31;14
+2023-4;2023;4;01/01/2023;31/12/2023;05.01. Agresión Sexual Con Penetración;Delitos sexuales;37;6
+2024-1;2021;1;01/01/2024;31/03/2024;05.01. Agresión Sexual Con Penetración;Delitos sexuales;10;10
+2024-2;2021;2;01/01/2024;30/06/2024;05.01. Agresión Sexual Con Penetración;Delitos sexuales;17;7
+2016-1;2016;1;01/01/2016;31/03/2016;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;11;11
+2016-2;2016;2;01/01/2016;30/06/2016;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;20;9
+2016-3;2016;3;01/01/2016;30/09/2016;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;36;16
+2016-4;2016;4;01/01/2016;31/12/2016;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;52;16
+2017-1;2017;1;01/01/2017;31/03/2017;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;10;10
+2017-2;2017;2;01/01/2017;30/06/2017;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;24;14
+2017-3;2017;3;01/01/2017;30/09/2017;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;39;15
+2017-4;2017;4;01/01/2017;31/12/2017;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;48;9
+2018-1;2018;1;01/01/2018;31/03/2018;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;13;13
+2018-2;2018;2;01/01/2018;30/06/2018;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;23;10
+2018-3;2018;3;01/01/2018;30/09/2018;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;41;18
+2018-4;2018;4;01/01/2018;31/12/2018;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;54;13
+2019-1;2019;1;01/01/2019;31/03/2019;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;16;16
+2019-2;2019;2;01/01/2019;30/06/2019;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;32;16
+2019-3;2019;3;01/01/2019;30/09/2019;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;47;15
+2019-4;2019;4;01/01/2019;31/12/2019;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;66;19
+2020-1;2020;1;01/01/2020;31/03/2020;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;13;13
+2020-2;2020;2;01/01/2020;30/06/2020;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;23;11
+2020-3;2020;3;01/01/2020;30/09/2020;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;36;16
+2020-4;2020;4;01/01/2020;31/12/2020;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;52;19
+2021-1;2021;1;01/01/2021;31/03/2021;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;20;20
+2021-2;2021;2;01/01/2021;30/06/2021;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;43;23
+2021-3;2021;3;01/01/2021;30/09/2021;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;60;17
+2021-4;2021;4;01/01/2021;31/12/2021;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;74;14
+2022-1;2022;1;01/01/2022;31/03/2022;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;15;15
+2022-2;2022;2;01/01/2022;30/06/2022;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;34;19
+2022-3;2022;3;01/01/2022;30/09/2022;05.02. Resto De Delitos Contra La Libertad E Indemnidad Sexual;Delitos sexuales;55;21
+2019-4;2019;4;01/01/2019;31/12/2019;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;64;
+2021-4;2021;4;01/01/2021;31/12/2021;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;71;
+2022-1;2022;1;01/01/2022;31/03/2022;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;10;10
+2022-2;2022;2;01/01/2022;30/06/2022;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;26;16
+2022-3;2022;3;01/01/2022;30/09/2022;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;42;16
+2022-4;2022;4;01/01/2022;31/12/2022;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;74;32
+2023-1;2023;1;01/01/2023;31/03/2023;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;19;19
+2023-2;2023;2;01/01/2023;30/06/2023;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;38;19
+2023-3;2021;3;01/01/2023;30/09/2023;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;59;21
+2023-4;2023;4;01/01/2023;31/12/2023;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;72;13
+2024-1;2021;1;01/01/2024;31/03/2024;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;11;11
+2024-2;2021;2;01/01/2024;30/06/2024;05.02. Resto De Delitos Contra La Libertad Sexual;Delitos sexuales;24;13
+2016-1;2016;1;01/01/2016;31/03/2016;06. Robos Con Violencia E Intimidación;Robos;293;293
+2016-2;2016;2;01/01/2016;30/06/2016;06. Robos Con Violencia E Intimidación;Robos;601;308
+2016-3;2016;3;01/01/2016;30/09/2016;06. Robos Con Violencia E Intimidación;Robos;893;292
+2016-4;2016;4;01/01/2016;31/12/2016;06. Robos Con Violencia E Intimidación;Robos;1257;364
+2017-1;2017;1;01/01/2017;31/03/2017;06. Robos Con Violencia E Intimidación;Robos;384;384
+2017-2;2017;2;01/01/2017;30/06/2017;06. Robos Con Violencia E Intimidación;Robos;707;323
+2017-3;2017;3;01/01/2017;30/09/2017;06. Robos Con Violencia E Intimidación;Robos;968;261
+2017-4;2017;4;01/01/2017;31/12/2017;06. Robos Con Violencia E Intimidación;Robos;1263;295
+2018-1;2018;1;01/01/2018;31/03/2018;06. Robos Con Violencia E Intimidación;Robos;325;325
+2018-2;2018;2;01/01/2018;30/06/2018;06. Robos Con Violencia E Intimidación;Robos;652;327
+2018-3;2018;3;01/01/2018;30/09/2018;06. Robos Con Violencia E Intimidación;Robos;919;267
+2018-4;2018;4;01/01/2018;31/12/2018;06. Robos Con Violencia E Intimidación;Robos;1278;359
+2019-1;2019;1;01/01/2019;31/03/2019;06. Robos Con Violencia E Intimidación;Robos;342;342
+2019-2;2019;2;01/01/2019;30/06/2019;06. Robos Con Violencia E Intimidación;Robos;720;378
+2019-3;2019;3;01/01/2019;30/09/2019;06. Robos Con Violencia E Intimidación;Robos;1095;376
+2019-4;2019;4;01/01/2019;31/12/2019;06. Robos Con Violencia E Intimidación;Robos;1478;384
+2020-1;2020;1;01/01/2020;31/03/2020;06. Robos Con Violencia E Intimidación;Robos;360;360
+2020-2;2020;2;01/01/2020;30/06/2020;06. Robos Con Violencia E Intimidación;Robos;590;291
+2020-3;2020;3;01/01/2020;30/09/2020;06. Robos Con Violencia E Intimidación;Robos;935;410
+2020-4;2020;4;01/01/2020;31/12/2020;06. Robos Con Violencia E Intimidación;Robos;1259;389
+2021-1;2021;1;01/01/2021;31/03/2021;06. Robos Con Violencia E Intimidación;Robos;297;297
+2021-2;2021;2;01/01/2021;30/06/2021;06. Robos Con Violencia E Intimidación;Robos;564;267
+2021-3;2021;3;01/01/2021;30/09/2021;06. Robos Con Violencia E Intimidación;Robos;819;255
+2021-4;2021;4;01/01/2021;31/12/2021;06. Robos Con Violencia E Intimidación;Robos;1124;305
+2022-1;2022;1;01/01/2022;31/03/2022;06. Robos Con Violencia E Intimidación;Robos;315;315
+2022-2;2022;2;01/01/2022;30/06/2022;06. Robos Con Violencia E Intimidación;Robos;665;350
+2022-3;2022;3;01/01/2022;30/09/2022;06. Robos Con Violencia E Intimidación;Robos;1070;405
+2022-4;2022;4;01/01/2022;31/12/2022;06. Robos Con Violencia E Intimidación;Robos;1462;392
+2023-1;2023;1;01/01/2023;31/03/2023;06. Robos Con Violencia E Intimidación;Robos;374;374
+2023-2;2023;2;01/01/2023;30/06/2023;06. Robos Con Violencia E Intimidación;Robos;681;307
+2023-3;2021;3;01/01/2023;30/09/2023;06. Robos Con Violencia E Intimidación;Robos;998;317
+2023-4;2023;4;01/01/2023;31/12/2023;06. Robos Con Violencia E Intimidación;Robos;1373;375
+2024-1;2021;1;01/01/2024;31/03/2024;06. Robos Con Violencia E Intimidación;Robos;405;405
+2024-2;2021;2;01/01/2024;30/06/2024;06. Robos Con Violencia E Intimidación;Robos;720;315
+2015-1;2015;1;01/01/2015;31/03/2015;07. Daños;Daños;281;281
+2015-2;2015;2;01/01/2015;30/06/2015;07. Daños;Daños;596;315
+2015-3;2015;3;01/01/2015;30/09/2015;07. Daños;Daños;853;257
+2015-4;2015;4;01/01/2015;31/12/2015;07. Daños;Daños;1161;308
+2016-1;2016;1;01/01/2016;31/03/2016;07. Daños;Daños;277;277
+2016-2;2016;2;01/01/2016;30/06/2016;07. Daños;Daños;596;319
+2016-3;2016;3;01/01/2016;30/09/2016;07. Daños;Daños;887;291
+2016-4;2016;4;01/01/2016;31/12/2016;07. Daños;Daños;1170;283
+2016-1;2016;1;01/01/2016;31/03/2016;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;162;162
+2016-2;2016;2;01/01/2016;30/06/2016;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;303;141
+2016-3;2016;3;01/01/2016;30/09/2016;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;451;148
+2016-4;2016;4;01/01/2016;31/12/2016;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;583;132
+2017-1;2017;1;01/01/2017;31/03/2017;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;129;129
+2017-2;2017;2;01/01/2017;30/06/2017;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;273;144
+2017-3;2017;3;01/01/2017;30/09/2017;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;426;153
+2017-4;2017;4;01/01/2017;31/12/2017;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;557;131
+2018-1;2018;1;01/01/2018;31/03/2018;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;142;142
+2018-2;2018;2;01/01/2018;30/06/2018;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;294;152
+2018-3;2018;3;01/01/2018;30/09/2018;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;442;148
+2018-4;2018;4;01/01/2018;31/12/2018;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;594;152
+2019-1;2019;1;01/01/2019;31/03/2019;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;142;142
+2019-2;2019;2;01/01/2019;30/06/2019;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;301;-108
+2019-3;2019;3;01/01/2019;30/09/2019;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;470;171
+2019-4;2019;4;01/01/2019;31/12/2019;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;645;177
+2020-1;2020;1;01/01/2020;31/03/2020;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;426;426
+2020-2;2020;2;01/01/2020;30/06/2020;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;190;53
+2020-3;2020;3;01/01/2020;30/09/2020;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;318;63
+2020-4;2020;4;01/01/2020;31/12/2020;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;424;16
+2021-1;2021;1;01/01/2021;31/03/2021;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;100;100
+2021-2;2021;2;01/01/2021;30/06/2021;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;224;124
+2021-3;2021;3;01/01/2021;30/09/2021;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;355;131
+2021-4;2021;4;01/01/2021;31/12/2021;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;556;201
+2022-1;2022;1;01/01/2022;31/03/2022;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;277;277
+2022-2;2022;2;01/01/2022;30/06/2022;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;492;215
+2022-3;2022;3;01/01/2022;30/09/2022;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;671;179
+2022-4;2022;4;01/01/2022;31/12/2022;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;840;169
+2023-1;2023;1;01/01/2023;31/03/2023;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;161;161
+2023-2;2023;2;01/01/2023;30/06/2023;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;319;158
+2023-3;2021;3;01/01/2023;30/09/2023;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;440;121
+2023-4;2023;4;01/01/2023;31/12/2023;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;542;102
+2024-1;2021;1;01/01/2024;31/03/2024;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;179;179
+2024-2;2021;2;01/01/2024;30/06/2024;07. Robos Con Fuerza En Domicilios, Establecimientos Y Otras Instalaciones;Robos;352;173
+2016-1;2016;1;01/01/2016;31/03/2016;07.01. Robos Con Fuerza En Domicilios;Robos;134;134
+2016-2;2016;2;01/01/2016;30/06/2016;07.01. Robos Con Fuerza En Domicilios;Robos;235;101
+2016-3;2016;3;01/01/2016;30/09/2016;07.01. Robos Con Fuerza En Domicilios;Robos;350;115
+2016-4;2016;4;01/01/2016;31/12/2016;07.01. Robos Con Fuerza En Domicilios;Robos;454;104
+2017-1;2017;1;01/01/2017;31/03/2017;07.01. Robos Con Fuerza En Domicilios;Robos;93;93
+2017-2;2017;2;01/01/2017;30/06/2017;07.01. Robos Con Fuerza En Domicilios;Robos;198;105
+2017-3;2017;3;01/01/2017;30/09/2017;07.01. Robos Con Fuerza En Domicilios;Robos;320;122
+2017-4;2017;4;01/01/2017;31/12/2017;07.01. Robos Con Fuerza En Domicilios;Robos;409;89
+2018-1;2018;1;01/01/2018;31/03/2018;07.01. Robos Con Fuerza En Domicilios;Robos;99;99
+2018-2;2018;2;01/01/2018;30/06/2018;07.01. Robos Con Fuerza En Domicilios;Robos;203;104
+2018-3;2018;3;01/01/2018;30/09/2018;07.01. Robos Con Fuerza En Domicilios;Robos;313;110
+2018-4;2018;4;01/01/2018;31/12/2018;07.01. Robos Con Fuerza En Domicilios;Robos;408;95
+2019-1;2019;1;01/01/2019;31/03/2019;07.01. Robos Con Fuerza En Domicilios;Robos;79;79
+2019-2;2019;2;01/01/2019;30/06/2019;07.01. Robos Con Fuerza En Domicilios;Robos;167;88
+2019-3;2019;3;01/01/2019;30/09/2019;07.01. Robos Con Fuerza En Domicilios;Robos;274;108
+2019-4;2019;4;01/01/2019;31/12/2019;07.01. Robos Con Fuerza En Domicilios;Robos;391;118
+2020-1;2020;1;01/01/2020;31/03/2020;07.01. Robos Con Fuerza En Domicilios;Robos;79;79
+2020-2;2020;2;01/01/2020;30/06/2020;07.01. Robos Con Fuerza En Domicilios;Robos;118;32
+2020-3;2020;3;01/01/2020;30/09/2020;07.01. Robos Con Fuerza En Domicilios;Robos;208;56
+2020-4;2020;4;01/01/2020;31/12/2020;07.01. Robos Con Fuerza En Domicilios;Robos;264;4
+2021-1;2021;1;01/01/2021;31/03/2021;07.01. Robos Con Fuerza En Domicilios;Robos;60;60
+2021-2;2021;2;01/01/2021;30/06/2021;07.01. Robos Con Fuerza En Domicilios;Robos;151;91
+2021-3;2021;3;01/01/2021;30/09/2021;07.01. Robos Con Fuerza En Domicilios;Robos;258;107
+2021-4;2021;4;01/01/2021;31/12/2021;07.01. Robos Con Fuerza En Domicilios;Robos;378;120
+2022-1;2022;1;01/01/2022;31/03/2022;07.01. Robos Con Fuerza En Domicilios;Robos;145;145
+2022-2;2022;2;01/01/2022;30/06/2022;07.01. Robos Con Fuerza En Domicilios;Robos;267;122
+2022-3;2022;3;01/01/2022;30/09/2022;07.01. Robos Con Fuerza En Domicilios;Robos;376;109
+2022-4;2022;4;01/01/2022;31/12/2022;07.01. Robos Con Fuerza En Domicilios;Robos;467;91
+2023-1;2023;1;01/01/2023;31/03/2023;07.01. Robos Con Fuerza En Domicilios;Robos;99;99
+2023-2;2023;2;01/01/2023;30/06/2023;07.01. Robos Con Fuerza En Domicilios;Robos;202;103
+2023-3;2021;3;01/01/2023;30/09/2023;07.01. Robos Con Fuerza En Domicilios;Robos;290;88
+2023-4;2023;4;01/01/2023;31/12/2023;07.01. Robos Con Fuerza En Domicilios;Robos;344;54
+2024-1;2021;1;01/01/2024;31/03/2024;07.01. Robos Con Fuerza En Domicilios;Robos;112;112
+2024-2;2021;2;01/01/2024;30/06/2024;07.01. Robos Con Fuerza En Domicilios;Robos;229;117
+2015-1;2015;1;01/01/2015;31/03/2015;08. Hurtos;Hurtos;940;940
+2015-2;2015;2;01/01/2015;30/06/2015;08. Hurtos;Hurtos;1837;897
+2015-3;2015;3;01/01/2015;30/09/2015;08. Hurtos;Hurtos;2673;836
+2015-4;2015;4;01/01/2015;31/12/2015;08. Hurtos;Hurtos;3508;835
+2016-1;2016;1;01/01/2016;31/03/2016;08. Hurtos;Hurtos;761;761
+2016-2;2016;2;01/01/2016;30/06/2016;08. Hurtos;Hurtos;1552;-1
+2016-3;2016;3;01/01/2016;30/09/2016;08. Hurtos;Hurtos;2307;-3
+2016-4;2016;4;01/01/2016;31/12/2016;08. Hurtos;Hurtos;3107;-2
+2017-1;2017;1;01/01/2017;31/03/2017;08. Hurtos;Hurtos;862;862
+2017-2;2017;2;01/01/2017;30/06/2017;08. Hurtos;Hurtos;1705;843
+2017-3;2017;3;01/01/2017;30/09/2017;08. Hurtos;Hurtos;2577;872
+2017-4;2017;4;01/01/2017;31/12/2017;08. Hurtos;Hurtos;3448;871
+2018-1;2018;1;01/01/2018;31/03/2018;08. Hurtos;Hurtos;913;913
+2018-2;2018;2;01/01/2018;30/06/2018;08. Hurtos;Hurtos;1894;981
+2018-3;2018;3;01/01/2018;30/09/2018;08. Hurtos;Hurtos;2742;848
+2018-4;2018;4;01/01/2018;31/12/2018;08. Hurtos;Hurtos;3674;931
+2019-1;2019;1;01/01/2019;31/03/2019;08. Hurtos;Hurtos;820;820
+2019-2;2019;2;01/01/2019;30/06/2019;08. Hurtos;Hurtos;1726;910
+2019-3;2019;3;01/01/2019;30/09/2019;08. Hurtos;Hurtos;2557;843
+2019-4;2019;4;01/01/2019;31/12/2019;08. Hurtos;Hurtos;3684;1144
+2020-1;2020;1;01/01/2020;31/03/2020;08. Hurtos;Hurtos;805;805
+2020-2;2020;2;01/01/2020;30/06/2020;08. Hurtos;Hurtos;1167;326
+2020-3;2020;3;01/01/2020;30/09/2020;08. Hurtos;Hurtos;1989;655
+2020-4;2020;4;01/01/2020;31/12/2020;08. Hurtos;Hurtos;2686;415
+2021-1;2021;1;01/01/2021;31/03/2021;08. Hurtos;Hurtos;812;812
+2021-2;2021;2;01/01/2021;30/06/2021;08. Hurtos;Hurtos;1647;835
+2021-3;2021;3;01/01/2021;30/09/2021;08. Hurtos;Hurtos;2460;813
+2021-4;2021;4;01/01/2021;31/12/2021;08. Hurtos;Hurtos;3347;887
+2022-1;2022;1;01/01/2022;31/03/2022;08. Hurtos;Hurtos;899;899
+2022-2;2022;2;01/01/2022;30/06/2022;08. Hurtos;Hurtos;1888;989
+2022-3;2022;3;01/01/2022;30/09/2022;08. Hurtos;Hurtos;2890;1002
+2022-4;2022;4;01/01/2022;31/12/2022;08. Hurtos;Hurtos;3825;935
+2023-1;2023;1;01/01/2023;31/03/2023;08. Hurtos;Hurtos;927;927
+2023-2;2023;2;01/01/2023;30/06/2023;08. Hurtos;Hurtos;1955;1028
+2023-3;2021;3;01/01/2023;30/09/2023;08. Hurtos;Hurtos;2992;1037
+2023-4;2023;4;01/01/2023;31/12/2023;08. Hurtos;Hurtos;3969;977
+2024-1;2021;1;01/01/2024;31/03/2024;08. Hurtos;Hurtos;916;916
+2024-2;2021;2;01/01/2024;30/06/2024;08. Hurtos;Hurtos;1899;983
+2016-1;2016;1;01/01/2016;31/03/2016;09. Sustracciones De Vehículos;Robos;57;57
+2016-2;2016;2;01/01/2016;30/06/2016;09. Sustracciones De Vehículos;Robos;118;61
+2016-3;2016;3;01/01/2016;30/09/2016;09. Sustracciones De Vehículos;Robos;176;58
+2016-4;2016;4;01/01/2016;31/12/2016;09. Sustracciones De Vehículos;Robos;246;70
+2017-1;2017;1;01/01/2017;31/03/2017;09. Sustracciones De Vehículos;Robos;68;68
+2017-2;2017;2;01/01/2017;30/06/2017;09. Sustracciones De Vehículos;Robos;151;83
+2017-3;2017;3;01/01/2017;30/09/2017;09. Sustracciones De Vehículos;Robos;225;74
+2017-4;2017;4;01/01/2017;31/12/2017;09. Sustracciones De Vehículos;Robos;288;63
+2018-1;2018;1;01/01/2018;31/03/2018;09. Sustracciones De Vehículos;Robos;66;66
+2018-2;2018;2;01/01/2018;30/06/2018;09. Sustracciones De Vehículos;Robos;125;59
+2018-3;2018;3;01/01/2018;30/09/2018;09. Sustracciones De Vehículos;Robos;192;67
+2018-4;2018;4;01/01/2018;31/12/2018;09. Sustracciones De Vehículos;Robos;265;74
+2019-1;2019;1;01/01/2019;31/03/2019;09. Sustracciones De Vehículos;Robos;70;70
+2019-2;2019;2;01/01/2019;30/06/2019;09. Sustracciones De Vehículos;Robos;159;90
+2019-3;2019;3;01/01/2019;30/09/2019;09. Sustracciones De Vehículos;Robos;223;72
+2019-4;2019;4;01/01/2019;31/12/2019;09. Sustracciones De Vehículos;Robos;265;55
+2020-1;2020;1;01/01/2020;31/03/2020;09. Sustracciones De Vehículos;Robos;35;35
+2020-2;2020;2;01/01/2020;30/06/2020;09. Sustracciones De Vehículos;Robos;54;19
+2020-3;2020;3;01/01/2020;30/09/2020;09. Sustracciones De Vehículos;Robos;109;40
+2020-4;2020;4;01/01/2020;31/12/2020;09. Sustracciones De Vehículos;Robos;142;16
+2021-1;2021;1;01/01/2021;31/03/2021;09. Sustracciones De Vehículos;Robos;39;39
+2021-2;2021;2;01/01/2021;30/06/2021;09. Sustracciones De Vehículos;Robos;86;47
+2021-3;2021;3;01/01/2021;30/09/2021;09. Sustracciones De Vehículos;Robos;134;48
+2021-4;2021;4;01/01/2021;31/12/2021;09. Sustracciones De Vehículos;Robos;191;57
+2022-1;2022;1;01/01/2022;31/03/2022;09. Sustracciones De Vehículos;Robos;51;51
+2022-2;2022;2;01/01/2022;30/06/2022;09. Sustracciones De Vehículos;Robos;102;51
+2022-3;2022;3;01/01/2022;30/09/2022;09. Sustracciones De Vehículos;Robos;173;71
+2022-4;2022;4;01/01/2022;31/12/2022;09. Sustracciones De Vehículos;Robos;251;78
+2023-1;2023;1;01/01/2023;31/03/2023;09. Sustracciones De Vehículos;Robos;56;56
+2023-2;2023;2;01/01/2023;30/06/2023;09. Sustracciones De Vehículos;Robos;118;61
+2023-3;2021;3;01/01/2023;30/09/2023;09. Sustracciones De Vehículos;Robos;178;59
+2023-4;2023;4;01/01/2023;31/12/2023;09. Sustracciones De Vehículos;Robos;233;55
+2024-1;2021;1;01/01/2024;31/03/2024;09. Sustracciones De Vehículos;Robos;54;54
+2024-2;2021;2;01/01/2024;30/06/2024;09. Sustracciones De Vehículos;Robos;109;55
+2019-4;2019;4;01/01/2019;31/12/2019;I. Criminalidad Convencional;I. Criminalidad Convencional;11194;
+2021-4;2021;4;01/01/2021;31/12/2021;I. Criminalidad Convencional;I. Criminalidad Convencional;10309;
+2022-1;2022;1;01/01/2022;31/03/2022;I. Criminalidad Convencional;I. Criminalidad Convencional;2920;2920
+2022-2;2022;2;01/01/2022;30/06/2022;I. Criminalidad Convencional;I. Criminalidad Convencional;5868;2948
+2022-3;2022;3;01/01/2022;30/09/2022;I. Criminalidad Convencional;I. Criminalidad Convencional;8815;2947
+2022-4;2022;4;01/01/2022;31/12/2022;I. Criminalidad Convencional;I. Criminalidad Convencional;11725;2910
+2023-1;2023;1;01/01/2023;31/03/2023;I. Criminalidad Convencional;I. Criminalidad Convencional;2868;2868
+2023-2;2023;2;01/01/2023;30/06/2023;I. Criminalidad Convencional;I. Criminalidad Convencional;5787;2918
+2023-3;2021;3;01/01/2023;30/09/2023;I. Criminalidad Convencional;I. Criminalidad Convencional;8804;3019
+2023-4;2023;4;01/01/2023;31/12/2023;I. Criminalidad Convencional;I. Criminalidad Convencional;11881;3077
+2024-1;2021;1;01/01/2024;31/03/2024;I. Criminalidad Convencional;I. Criminalidad Convencional;3249;3249
+2024-2;2021;2;01/01/2024;30/06/2024;I. Criminalidad Convencional;I. Criminalidad Convencional;6394;3145
+2019-4;2019;4;01/01/2019;31/12/2019;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1153;
+2021-4;2021;4;01/01/2021;31/12/2021;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1559;
+2022-1;2022;1;01/01/2022;31/03/2022;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);521;521
+2022-2;2022;2;01/01/2022;30/06/2022;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);955;434
+2022-3;2022;3;01/01/2022;30/09/2022;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1454;499
+2022-4;2022;4;01/01/2022;31/12/2022;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1971;517
+2023-1;2023;1;01/01/2023;31/03/2023;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);490;490
+2023-2;2023;2;01/01/2023;30/06/2023;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1043;552
+2023-3;2021;3;01/01/2023;30/09/2023;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1649;597
+2023-4;2023;4;01/01/2023;31/12/2023;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);2275;626
+2024-1;2021;1;01/01/2024;31/03/2024;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);637;637
+2024-2;2021;2;01/01/2024;30/06/2024;Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);Ii. Cibercriminalidad (Infracciones Penales Cometidas En/Por Medio Ciber);1218;581
+2019-4;2019;4;01/01/2019;31/12/2019;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;12347;
+2021-4;2021;4;01/01/2021;31/12/2021;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;11868;
+2022-1;2022;1;01/01/2022;31/03/2022;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;3441;3441
+2022-2;2022;2;01/01/2022;30/06/2022;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;6823;3382
+2022-3;2022;3;01/01/2022;30/09/2022;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;10269;3446
+2022-4;2022;4;01/01/2022;31/12/2022;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;13696;3427
+2023-1;2023;1;01/01/2023;31/03/2023;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;3358;3358
+2023-2;2023;2;01/01/2023;30/06/2023;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;6830;3470
+2023-3;2021;3;01/01/2023;30/09/2023;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;10453;3616
+2023-4;2023;4;01/01/2023;31/12/2023;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;14156;3703
+2024-1;2021;1;01/01/2024;31/03/2024;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;3886;3886
+2024-2;2021;2;01/01/2024;30/06/2024;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;7612;3726
+2017-4;2017;4;01/01/2017;31/12/2017;Resto De Infracciones Penales;Otros;5386;
+2018-1;2018;1;01/01/2018;31/03/2018;Resto De Infracciones Penales;Otros;1453;1453
+2018-2;2018;2;01/01/2018;30/06/2018;Resto De Infracciones Penales;Otros;2955;1502
+2018-3;2018;3;01/01/2018;30/09/2018;Resto De Infracciones Penales;Otros;4347;1392
+2018-4;2018;4;01/01/2018;31/12/2018;Resto De Infracciones Penales;Otros;5951;1604
+2019-1;2019;1;01/01/2019;31/03/2019;Resto De Infracciones Penales;Otros;1431;1431
+2019-2;2019;2;01/01/2019;30/06/2019;Resto De Infracciones Penales;Otros;2928;1782
+2019-3;2019;3;01/01/2019;30/09/2019;Resto De Infracciones Penales;Otros;4514;1624
+2019-4;2019;4;01/01/2019;31/12/2019;Resto De Infracciones Penales;Otros;6133;1687
+2020-1;2020;1;01/01/2020;31/03/2020;Resto De Infracciones Penales;Otros;1167;1167
+2020-2;2020;2;01/01/2020;30/06/2020;Resto De Infracciones Penales;Otros;2591;1293
+2020-3;2020;3;01/01/2020;30/09/2020;Resto De Infracciones Penales;Otros;4155;1819
+2020-4;2020;4;01/01/2020;31/12/2020;Resto De Infracciones Penales;Otros;5732;1913
+2021-1;2021;1;01/01/2021;31/03/2021;Resto De Infracciones Penales;Otros;1558;1558
+2021-2;2021;2;01/01/2021;30/06/2021;Resto De Infracciones Penales;Otros;3090;1530
+2021-3;2021;3;01/01/2021;30/09/2021;Resto De Infracciones Penales;Otros;4643;1550
+2021-4;2021;4;01/01/2021;31/12/2021;Resto De Infracciones Penales;Otros;6377;1730
+2022-1;2022;1;01/01/2022;31/03/2022;Resto De Infracciones Penales;Otros;1848;1848
+2022-2;2022;2;01/01/2022;30/06/2022;Resto De Infracciones Penales;Otros;3547;1699
+2022-3;2022;3;01/01/2022;30/09/2022;Resto De Infracciones Penales;Otros;5247;1700
+2016-1;2016;1;01/01/2016;31/03/2016;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;2618;2618
+2016-2;2016;2;01/01/2016;30/06/2016;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;5363;2745
+2016-3;2016;3;01/01/2016;30/09/2016;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;7970;2607
+2016-4;2016;4;01/01/2016;31/12/2016;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;10690;2720
+2017-1;2017;1;01/01/2017;31/03/2017;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;2869;2869
+2017-2;2017;2;01/01/2017;30/06/2017;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;5760;2887
+2017-3;2017;3;01/01/2017;30/09/2017;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;8501;2737
+2017-4;2017;4;01/01/2017;31/12/2017;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;11442;2938
+2018-1;2018;1;01/01/2018;31/03/2018;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;3026;3026
+2018-2;2018;2;01/01/2018;30/06/2018;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;6164;3136
+2018-3;2018;3;01/01/2018;30/09/2018;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;9021;2853
+2018-4;2018;4;01/01/2018;31/12/2018;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;12265;3241
+2019-1;2019;1;01/01/2019;31/03/2019;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;2909;2909
+2019-2;2019;2;01/01/2019;30/06/2019;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;6091;3206
+2019-3;2019;3;01/01/2019;30/09/2019;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;9257;3229
+2019-4;2019;4;01/01/2019;31/12/2019;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;12499;3350
+2020-1;2020;1;01/01/2020;31/03/2020;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;2893;2893
+2020-2;2020;2;01/01/2020;30/06/2020;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;4797;2146
+2020-3;2020;3;01/01/2020;30/09/2020;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;7833;3229
+2020-4;2020;4;01/01/2020;31/12/2020;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;10666;3025
+2021-1;2021;1;01/01/2021;31/03/2021;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;2866;2866
+2021-2;2021;2;01/01/2021;30/06/2021;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;5751;2883
+2021-3;2021;3;01/01/2021;30/09/2021;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;8623;2869
+2021-4;2021;4;01/01/2021;31/12/2021;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;11868;3241
+2022-1;2022;1;01/01/2022;31/03/2022;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;3442;3442
+2022-2;2022;2;01/01/2022;30/06/2022;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;6823;3381
+2022-3;2022;3;01/01/2022;30/09/2022;Iii. Total Infracciones Penales;Iii. Total Infracciones Penales;10261;3438
