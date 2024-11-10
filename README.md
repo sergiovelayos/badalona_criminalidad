@@ -1,6 +1,9 @@
 # Datos de criminalidad por tipología penal en Badalona
 Los medios de comunicación, políticos e instituciones hacen un uso poco riguroso de los datos de criminalidad con frecuencia. No se contextualiza o no se compara con la misma base y casi nunca se enlaza a la fuente para poder comprobar la veracidad. Por todos estos motivos he creado este dataset con datos del [Ministerio del Interior] (https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/balances.html).
 
+![image](https://github.com/user-attachments/assets/03700369-ca91-4e3c-bae0-d953987700f0)
+
+
 Estos datos se publican con periodicidad trimestral en un formato poco amigable para realizar cualquier análisis. Estas son algunas de las advertencias que tendría en cuenta a la hora de analizar estos datos:
 - El origen de datos se inicia en el primer trimestre de 2016.
 - El 10 de noviembre de 2024 había datos hasta el sedungo trimestre de 2024
