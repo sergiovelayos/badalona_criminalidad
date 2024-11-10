@@ -14,6 +14,9 @@ Estos datos se publican con periodicidad trimestral en un formato poco amigable 
 
 He descargado cada trimestre por separado después de filtrar el municipio de Badalona.
 
+![image](https://github.com/user-attachments/assets/0c5ac74a-07b6-474a-9ebe-85ed368ec5ff)
+
+
 Luego he creado un script en Python para unir todos los excels en un solo excel separados en pestañas.
 
 El formato de la tabla de origen contiene una columna con las tipologías penales, otra columna con los valores de un periodo, otra columna con los valores del anterior periodo al primero y la última columna con la variación entre los 2 periodos anteriores.
