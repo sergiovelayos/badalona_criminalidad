@@ -28,5 +28,8 @@ He hecho las siguientes transformación en cada una de las tablas:
 - Normalización de los conceptos de tipología penal. Por ejemplo: "8. Hurtos" a "08. Hurtos" o "8. HURTOS" a "08. Hurtos"
 
 He añadido la métrica del valor absoluto por trimestre. Los valores son siempre acumulados por lo que no se puede ver la evolución por trimestre.
+También he añadido una nuevo columna para simplificar las tipologías penales con la ayuda de Chat GPT.
+
+Idealmente el ministerior debería ofrecer la opción descargar los datos crudos para poder analizarlos sin tanto procesamiento. A lo mejor existe una API para descargarlos de forma cruda pero no la he encontrado.
 
 
