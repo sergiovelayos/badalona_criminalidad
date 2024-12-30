@@ -1,0 +1,3264 @@
+[
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-dic 2019",
+    "Value": 11194,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-dic 2019",
+    "Value": 3,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-dic 2019",
+    "Value": 8,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-dic 2019",
+    "Value": 107,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-dic 2019",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-dic 2019",
+    "Value": 82,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-dic 2019",
+    "Value": 18,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-dic 2019",
+    "Value": 64,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-dic 2019",
+    "Value": 1478,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-dic 2019",
+    "Value": 645,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-dic 2019",
+    "Value": 390,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-dic 2019",
+    "Value": 3684,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-dic 2019",
+    "Value": 265,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-dic 2019",
+    "Value": 51,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-dic 2019",
+    "Value": 4871,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-dic 2019",
+    "Value": 1153,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-dic 2019",
+    "Value": 1135,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-dic 2019",
+    "Value": 18,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-dic 2019",
+    "Value": 12347,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-dic 2021",
+    "Value": 10309,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-dic 2021",
+    "Value": 1,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-dic 2021",
+    "Value": 4,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-dic 2021",
+    "Value": 112,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-dic 2021",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-dic 2021",
+    "Value": 86,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-dic 2021",
+    "Value": 15,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-dic 2021",
+    "Value": 71,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-dic 2021",
+    "Value": 1124,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-dic 2021",
+    "Value": 556,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-dic 2021",
+    "Value": 378,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-dic 2021",
+    "Value": 3347,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-dic 2021",
+    "Value": 191,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-dic 2021",
+    "Value": 67,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-dic 2021",
+    "Value": 4821,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-dic 2021",
+    "Value": 1559,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-dic 2021",
+    "Value": 1512,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-dic 2021",
+    "Value": 47,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-dic 2021",
+    "Value": 11868,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-dic 2022",
+    "Value": 11725,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-dic 2022",
+    "Value": 1,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-dic 2022",
+    "Value": 9,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-dic 2022",
+    "Value": 120,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-dic 2022",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-dic 2022",
+    "Value": 100,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-dic 2022",
+    "Value": 26,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-dic 2022",
+    "Value": 74,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-dic 2022",
+    "Value": 1462,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-dic 2022",
+    "Value": 840,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-dic 2022",
+    "Value": 467,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-dic 2022",
+    "Value": 3825,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-dic 2022",
+    "Value": 251,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-dic 2022",
+    "Value": 50,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-dic 2022",
+    "Value": 5067,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-dic 2022",
+    "Value": 1971,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-dic 2022",
+    "Value": 1916,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-dic 2022",
+    "Value": 55,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-dic 2022",
+    "Value": 13696,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-dic 2023",
+    "Value": 11881,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-dic 2023",
+    "Value": 3,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-dic 2023",
+    "Value": 10,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-dic 2023",
+    "Value": 133,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-dic 2023",
+    "Value": 1,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-dic 2023",
+    "Value": 109,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-dic 2023",
+    "Value": 37,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-dic 2023",
+    "Value": 72,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-dic 2023",
+    "Value": 1373,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-dic 2023",
+    "Value": 542,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-dic 2023",
+    "Value": 344,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-dic 2023",
+    "Value": 3969,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-dic 2023",
+    "Value": 233,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-dic 2023",
+    "Value": 75,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-dic 2023",
+    "Value": 5433,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-dic 2023",
+    "Value": 2275,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-dic 2023",
+    "Value": 2224,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-dic 2023",
+    "Value": 51,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-dic 2023",
+    "Value": 14156,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-jun 2022",
+    "Value": 5868,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-jun 2022",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-jun 2022",
+    "Value": 3,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-jun 2022",
+    "Value": 57,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-jun 2022",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-jun 2022",
+    "Value": 43,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-jun 2022",
+    "Value": 17,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-jun 2022",
+    "Value": 26,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-jun 2022",
+    "Value": 665,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-jun 2022",
+    "Value": 492,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-jun 2022",
+    "Value": 267,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-jun 2022",
+    "Value": 1888,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-jun 2022",
+    "Value": 102,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-jun 2022",
+    "Value": 26,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-jun 2022",
+    "Value": 2592,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-jun 2022",
+    "Value": 955,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-jun 2022",
+    "Value": 927,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-jun 2022",
+    "Value": 28,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-jun 2022",
+    "Value": 6823,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-jun 2023",
+    "Value": 5787,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-jun 2023",
+    "Value": 2,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-jun 2023",
+    "Value": 6,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-jun 2023",
+    "Value": 61,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-jun 2023",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-jun 2023",
+    "Value": 55,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-jun 2023",
+    "Value": 17,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-jun 2023",
+    "Value": 38,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-jun 2023",
+    "Value": 681,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-jun 2023",
+    "Value": 319,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-jun 2023",
+    "Value": 202,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-jun 2023",
+    "Value": 1955,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-jun 2023",
+    "Value": 118,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-jun 2023",
+    "Value": 32,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-jun 2023",
+    "Value": 2558,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-jun 2023",
+    "Value": 1043,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-jun 2023",
+    "Value": 1023,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-jun 2023",
+    "Value": 20,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-jun 2023",
+    "Value": 6830,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-jun 2024",
+    "Value": 6394,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-jun 2024",
+    "Value": 1,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-jun 2024",
+    "Value": 6,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-jun 2024",
+    "Value": 68,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-jun 2024",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-jun 2024",
+    "Value": 41,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-jun 2024",
+    "Value": 17,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-jun 2024",
+    "Value": 24,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-jun 2024",
+    "Value": 720,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-jun 2024",
+    "Value": 352,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-jun 2024",
+    "Value": 229,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-jun 2024",
+    "Value": 1899,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-jun 2024",
+    "Value": 109,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-jun 2024",
+    "Value": 47,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-jun 2024",
+    "Value": 3151,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-jun 2024",
+    "Value": 1218,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-jun 2024",
+    "Value": 1157,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-jun 2024",
+    "Value": 61,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-jun 2024",
+    "Value": 7612,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-mar 2022",
+    "Value": 2920,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-mar 2022",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-mar 2022",
+    "Value": 3,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-mar 2022",
+    "Value": 20,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-mar 2022",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-mar 2022",
+    "Value": 20,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-mar 2022",
+    "Value": 10,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-mar 2022",
+    "Value": 10,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-mar 2022",
+    "Value": 315,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-mar 2022",
+    "Value": 277,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-mar 2022",
+    "Value": 145,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-mar 2022",
+    "Value": 899,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-mar 2022",
+    "Value": 51,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-mar 2022",
+    "Value": 10,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-mar 2022",
+    "Value": 1325,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-mar 2022",
+    "Value": 521,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-mar 2022",
+    "Value": 508,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-mar 2022",
+    "Value": 13,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-mar 2022",
+    "Value": 3441,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-mar 2023",
+    "Value": 2868,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-mar 2023",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-mar 2023",
+    "Value": 2,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-mar 2023",
+    "Value": 23,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-mar 2023",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-mar 2023",
+    "Value": 25,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-mar 2023",
+    "Value": 6,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-mar 2023",
+    "Value": 19,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-mar 2023",
+    "Value": 374,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-mar 2023",
+    "Value": 161,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-mar 2023",
+    "Value": 99,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-mar 2023",
+    "Value": 927,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-mar 2023",
+    "Value": 56,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-mar 2023",
+    "Value": 20,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-mar 2023",
+    "Value": 1280,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-mar 2023",
+    "Value": 490,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-mar 2023",
+    "Value": 480,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-mar 2023",
+    "Value": 10,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-mar 2023",
+    "Value": 3358,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-mar 2024",
+    "Value": 3249,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-mar 2024",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-mar 2024",
+    "Value": 3,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-mar 2024",
+    "Value": 33,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-mar 2024",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-mar 2024",
+    "Value": 21,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-mar 2024",
+    "Value": 10,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-mar 2024",
+    "Value": 11,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-mar 2024",
+    "Value": 405,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-mar 2024",
+    "Value": 179,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-mar 2024",
+    "Value": 112,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-mar 2024",
+    "Value": 916,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-mar 2024",
+    "Value": 54,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-mar 2024",
+    "Value": 24,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-mar 2024",
+    "Value": 1614,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-mar 2024",
+    "Value": 637,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-mar 2024",
+    "Value": 615,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-mar 2024",
+    "Value": 22,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-mar 2024",
+    "Value": 3886,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-sep 2022",
+    "Value": 8815,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-sep 2022",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-sep 2022",
+    "Value": 7,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-sep 2022",
+    "Value": 90,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-sep 2022",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-sep 2022",
+    "Value": 71,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-sep 2022",
+    "Value": 29,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-sep 2022",
+    "Value": 42,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-sep 2022",
+    "Value": 1070,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-sep 2022",
+    "Value": 671,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-sep 2022",
+    "Value": 376,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-sep 2022",
+    "Value": 2890,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-sep 2022",
+    "Value": 173,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-sep 2022",
+    "Value": 42,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-sep 2022",
+    "Value": 3801,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-sep 2022",
+    "Value": 1454,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-sep 2022",
+    "Value": 1414,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-sep 2022",
+    "Value": 40,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-sep 2022",
+    "Value": 10269,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-sep 2023",
+    "Value": 8804,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-sep 2023",
+    "Value": 2,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-sep 2023",
+    "Value": 8,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-sep 2023",
+    "Value": 98,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-sep 2023",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-sep 2023",
+    "Value": 90,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-sep 2023",
+    "Value": 31,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-sep 2023",
+    "Value": 59,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-sep 2023",
+    "Value": 998,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-sep 2023",
+    "Value": 440,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-sep 2023",
+    "Value": 290,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-sep 2023",
+    "Value": 2992,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-sep 2023",
+    "Value": 178,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-sep 2023",
+    "Value": 47,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-sep 2023",
+    "Value": 3951,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-sep 2023",
+    "Value": 1649,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-sep 2023",
+    "Value": 1611,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-sep 2023",
+    "Value": 38,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-sep 2023",
+    "Value": 10453,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "ene-sep 2024",
+    "Value": 9669,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "ene-sep 2024",
+    "Value": 2,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "ene-sep 2024",
+    "Value": 12,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "ene-sep 2024",
+    "Value": 121,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "ene-sep 2024",
+    "Value": 0,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "ene-sep 2024",
+    "Value": 75,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "ene-sep 2024",
+    "Value": 36,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "ene-sep 2024",
+    "Value": 39,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "ene-sep 2024",
+    "Value": 1041,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "ene-sep 2024",
+    "Value": 550,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "ene-sep 2024",
+    "Value": 398,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "ene-sep 2024",
+    "Value": 2852,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "ene-sep 2024",
+    "Value": 177,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "ene-sep 2024",
+    "Value": 66,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "ene-sep 2024",
+    "Value": 4773,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "ene-sep 2024",
+    "Value": 1746,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "ene-sep 2024",
+    "Value": 1664,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "ene-sep 2024",
+    "Value": 82,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "ene-sep 2024",
+    "Value": 11415,
+    "tipo": "aculumado"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2022-1",
+    "Value": 2920,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2022-1",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2022-1",
+    "Value": 3,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2022-1",
+    "Value": 20,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2022-1",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2022-1",
+    "Value": 20,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2022-1",
+    "Value": 10,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2022-1",
+    "Value": 10,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2022-1",
+    "Value": 315,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2022-1",
+    "Value": 277,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2022-1",
+    "Value": 145,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2022-1",
+    "Value": 899,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2022-1",
+    "Value": 51,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2022-1",
+    "Value": 10,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2022-1",
+    "Value": 1325,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2022-1",
+    "Value": 521,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2022-1",
+    "Value": 508,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2022-1",
+    "Value": 13,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2022-1",
+    "Value": 3441,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2022-2",
+    "Value": 2948,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2022-2",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2022-2",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2022-2",
+    "Value": 37,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2022-2",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2022-2",
+    "Value": 23,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2022-2",
+    "Value": 7,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2022-2",
+    "Value": 16,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2022-2",
+    "Value": 350,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2022-2",
+    "Value": 215,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2022-2",
+    "Value": 122,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2022-2",
+    "Value": 989,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2022-2",
+    "Value": 51,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2022-2",
+    "Value": 16,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2022-2",
+    "Value": 1267,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2022-2",
+    "Value": 434,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2022-2",
+    "Value": 419,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2022-2",
+    "Value": 15,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2022-2",
+    "Value": 3382,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2022-3",
+    "Value": 2947,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2022-3",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2022-3",
+    "Value": 4,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2022-3",
+    "Value": 33,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2022-3",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2022-3",
+    "Value": 28,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2022-3",
+    "Value": 12,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2022-3",
+    "Value": 16,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2022-3",
+    "Value": 405,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2022-3",
+    "Value": 179,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2022-3",
+    "Value": 109,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2022-3",
+    "Value": 1002,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2022-3",
+    "Value": 71,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2022-3",
+    "Value": 16,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2022-3",
+    "Value": 1209,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2022-3",
+    "Value": 499,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2022-3",
+    "Value": 487,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2022-3",
+    "Value": 12,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2022-3",
+    "Value": 3446,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2022-4",
+    "Value": 2910,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2022-4",
+    "Value": 1,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2022-4",
+    "Value": 2,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2022-4",
+    "Value": 30,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2022-4",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2022-4",
+    "Value": 29,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2022-4",
+    "Value": -3,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2022-4",
+    "Value": 32,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2022-4",
+    "Value": 392,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2022-4",
+    "Value": 169,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2022-4",
+    "Value": 91,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2022-4",
+    "Value": 935,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2022-4",
+    "Value": 78,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2022-4",
+    "Value": 8,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2022-4",
+    "Value": 1266,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2022-4",
+    "Value": 517,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2022-4",
+    "Value": 502,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2022-4",
+    "Value": 15,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2022-4",
+    "Value": 3427,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2023-1",
+    "Value": 2868,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2023-1",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2023-1",
+    "Value": 2,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2023-1",
+    "Value": 23,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2023-1",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2023-1",
+    "Value": 25,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2023-1",
+    "Value": 6,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2023-1",
+    "Value": 19,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2023-1",
+    "Value": 374,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2023-1",
+    "Value": 161,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2023-1",
+    "Value": 99,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2023-1",
+    "Value": 927,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2023-1",
+    "Value": 56,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2023-1",
+    "Value": 20,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2023-1",
+    "Value": 1280,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2023-1",
+    "Value": 490,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2023-1",
+    "Value": 480,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2023-1",
+    "Value": 10,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2023-1",
+    "Value": 3358,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2023-2",
+    "Value": 2919,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2023-2",
+    "Value": 2,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2023-2",
+    "Value": 4,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2023-2",
+    "Value": 38,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2023-2",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2023-2",
+    "Value": 30,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2023-2",
+    "Value": 11,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2023-2",
+    "Value": 19,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2023-2",
+    "Value": 307,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2023-2",
+    "Value": 158,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2023-2",
+    "Value": 103,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2023-2",
+    "Value": 1028,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2023-2",
+    "Value": 62,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2023-2",
+    "Value": 12,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2023-2",
+    "Value": 1278,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2023-2",
+    "Value": 553,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2023-2",
+    "Value": 543,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2023-2",
+    "Value": 10,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2023-2",
+    "Value": 3472,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2023-3",
+    "Value": 3017,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2023-3",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2023-3",
+    "Value": 2,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2023-3",
+    "Value": 37,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2023-3",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2023-3",
+    "Value": 35,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2023-3",
+    "Value": 14,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2023-3",
+    "Value": 21,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2023-3",
+    "Value": 317,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2023-3",
+    "Value": 121,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2023-3",
+    "Value": 88,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2023-3",
+    "Value": 1037,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2023-3",
+    "Value": 60,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2023-3",
+    "Value": 15,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2023-3",
+    "Value": 1393,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2023-3",
+    "Value": 606,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2023-3",
+    "Value": 588,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2023-3",
+    "Value": 18,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2023-3",
+    "Value": 3623,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2023-4",
+    "Value": 3077,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2023-4",
+    "Value": 1,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2023-4",
+    "Value": 2,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2023-4",
+    "Value": 35,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2023-4",
+    "Value": 1,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2023-4",
+    "Value": 19,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2023-4",
+    "Value": 6,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2023-4",
+    "Value": 13,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2023-4",
+    "Value": 375,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2023-4",
+    "Value": 102,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2023-4",
+    "Value": 54,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2023-4",
+    "Value": 977,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2023-4",
+    "Value": 55,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2023-4",
+    "Value": 28,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2023-4",
+    "Value": 1482,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2023-4",
+    "Value": 626,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2023-4",
+    "Value": 613,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2023-4",
+    "Value": 13,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2023-4",
+    "Value": 3703,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2024-1",
+    "Value": 3249,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2024-1",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2024-1",
+    "Value": 3,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2024-1",
+    "Value": 33,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2024-1",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2024-1",
+    "Value": 21,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2024-1",
+    "Value": 10,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2024-1",
+    "Value": 11,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2024-1",
+    "Value": 405,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2024-1",
+    "Value": 179,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2024-1",
+    "Value": 112,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2024-1",
+    "Value": 916,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2024-1",
+    "Value": 54,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2024-1",
+    "Value": 24,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2024-1",
+    "Value": 1614,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2024-1",
+    "Value": 637,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2024-1",
+    "Value": 615,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2024-1",
+    "Value": 22,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2024-1",
+    "Value": 3886,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2024-2",
+    "Value": 3145,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2024-2",
+    "Value": 1,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2024-2",
+    "Value": 3,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2024-2",
+    "Value": 35,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2024-2",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2024-2",
+    "Value": 20,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2024-2",
+    "Value": 7,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2024-2",
+    "Value": 13,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2024-2",
+    "Value": 315,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2024-2",
+    "Value": 173,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2024-2",
+    "Value": 117,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2024-2",
+    "Value": 983,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2024-2",
+    "Value": 55,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2024-2",
+    "Value": 23,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2024-2",
+    "Value": 1537,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2024-2",
+    "Value": 581,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2024-2",
+    "Value": 542,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2024-2",
+    "Value": 39,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2024-2",
+    "Value": 3726,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 1,
+    "TIPOLOGIA_PENAL": "CRIMINALIDAD CONVENCIONAL",
+    "Periodos": "2024-3",
+    "Value": 3275,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 2,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos consumados",
+    "Periodos": "2024-3",
+    "Value": 1,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 3,
+    "TIPOLOGIA_PENAL": "Homicidios dolosos y asesinatos en grado tentativa",
+    "Periodos": "2024-3",
+    "Value": 6,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 4,
+    "TIPOLOGIA_PENAL": "Delitos graves y menos graves de lesiones y riña tumultuaria",
+    "Periodos": "2024-3",
+    "Value": 53,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 5,
+    "TIPOLOGIA_PENAL": "Secuestro",
+    "Periodos": "2024-3",
+    "Value": 0,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 6,
+    "TIPOLOGIA_PENAL": "Delitos contra la libertad sexual",
+    "Periodos": "2024-3",
+    "Value": 34,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 7,
+    "TIPOLOGIA_PENAL": "Agresión sexual con penetración",
+    "Periodos": "2024-3",
+    "Value": 19,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 8,
+    "TIPOLOGIA_PENAL": "Resto de delitos contra la libertad sexual",
+    "Periodos": "2024-3",
+    "Value": 15,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 9,
+    "TIPOLOGIA_PENAL": "Robos con violencia e intimidación",
+    "Periodos": "2024-3",
+    "Value": 321,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 10,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios# establecimientos y otras instalaciones",
+    "Periodos": "2024-3",
+    "Value": 198,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 11,
+    "TIPOLOGIA_PENAL": "Robos con fuerza en domicilios",
+    "Periodos": "2024-3",
+    "Value": 169,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 12,
+    "TIPOLOGIA_PENAL": "Hurtos",
+    "Periodos": "2024-3",
+    "Value": 953,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 13,
+    "TIPOLOGIA_PENAL": "Sustracciones de vehículos",
+    "Periodos": "2024-3",
+    "Value": 68,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 14,
+    "TIPOLOGIA_PENAL": "Tráfico de drogas",
+    "Periodos": "2024-3",
+    "Value": 19,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 15,
+    "TIPOLOGIA_PENAL": "Resto de criminalidad convencional",
+    "Periodos": "2024-3",
+    "Value": 1622,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 16,
+    "TIPOLOGIA_PENAL": "CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)",
+    "Periodos": "2024-3",
+    "Value": 528,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 17,
+    "TIPOLOGIA_PENAL": "Estafas informáticas",
+    "Periodos": "2024-3",
+    "Value": 507,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 18,
+    "TIPOLOGIA_PENAL": "Otros ciberdelitos",
+    "Periodos": "2024-3",
+    "Value": 21,
+    "tipo": "trimestre"
+  },
+  {
+    "Index": 19,
+    "TIPOLOGIA_PENAL": "TOTAL INFRACCIONES PENALES",
+    "Periodos": "2024-3",
+    "Value": 3803,
+    "tipo": "trimestrealbum"
+  },
+  {
+    "Index": "The White Stripes",
+    "TIPOLOGIA_PENAL": 1999,
+    "Periodos": "-",
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "De Stijl",
+    "TIPOLOGIA_PENAL": 2000,
+    "Periodos": "-",
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "White Blood Cells",
+    "TIPOLOGIA_PENAL": 2001,
+    "Periodos": 61,
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "Elephant",
+    "TIPOLOGIA_PENAL": 2003,
+    "Periodos": 6,
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "Get Behind Me Satan",
+    "TIPOLOGIA_PENAL": 2005,
+    "Periodos": 3,
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "Icky Thump",
+    "TIPOLOGIA_PENAL": 2007,
+    "Periodos": 2,
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "Under Great White Northern Lights",
+    "TIPOLOGIA_PENAL": 2010,
+    "Periodos": 11,
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "Live in Mississippi",
+    "TIPOLOGIA_PENAL": 2011,
+    "Periodos": "-",
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "Live at the Gold Dollar",
+    "TIPOLOGIA_PENAL": 2012,
+    "Periodos": "-",
+    "Value": "",
+    "tipo": ""
+  },
+  {
+    "Index": "Nine Miles from the White City",
+    "TIPOLOGIA_PENAL": 2013,
+    "Periodos": "-",
+    "Value": "",
+    "tipo": ""
+  }
+]
