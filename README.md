@@ -33,5 +33,5 @@ También he añadido una nuevo columna para simplificar las tipologías penales 
 
 Idealmente el ministerior debería ofrecer la opción descargar los datos crudos para poder analizarlos sin tanto procesamiento. A lo mejor existe una API para descargarlos de forma cruda pero no la he encontrado.
 
-Salto de línea
+Añado nuevas tablas con errores de cálculo corregido y otros formatos.
 
