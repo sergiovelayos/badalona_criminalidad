@@ -1,142 +1,208 @@
 import pandas as pd
-from io import StringIO
-import openpyxl
 import os
 import seaborn as sns
 import matplotlib.pyplot as plt
+from io import StringIO
 
-# Configurar pandas para mostrar todas las columnas al imprimir un DataFrame
-pd.set_option('display.max_columns', None)
+pd.set_option("display.max_columns", None)
 
-# Ruta al archivo CSV
-filename = r"./data/españa_semestre_1_2_24_25.csv"
-filepob = r"./data/poblacion_municipios_bcn_24_limpiado.csv"
+# -----------------------
+# Lector de CSV mixto (filas UTF-8 y Latin-1 mezcladas)
+# -----------------------
+def leer_csv_mixto(ruta, sep=";", skiprows=0, **kwargs):
+    """
+    Lee un CSV donde algunas filas están en UTF-8 y otras en Latin-1.
+    Devuelve un DataFrame de pandas.
+    """
+    filas = []
+    with open(ruta, "rb") as f:
+        for raw_line in f:
+            try:
+                line = raw_line.decode("utf-8")
+            except UnicodeDecodeError:
+                line = raw_line.decode("latin-1")
+            filas.append(line)
+    contenido = "".join(filas)
+    return pd.read_csv(StringIO(contenido), sep=sep, skiprows=skiprows, **kwargs)
 
-with open(filename, encoding='latin-1') as f:
-    data = f.read()
+# -----------------------
+# Rutas
+# -----------------------
+filename = r"./data/crim_merged.csv"               # separador ';', salta 1 fila
+filepob  = r"./data/pobmun24_limpio.csv"     # separador desconocido (auto)
 
-# crea un DataFrame desde el texto leído, usando ';' como separador y saltando la primera línea
-data = pd.read_csv(StringIO(data), sep=';', skiprows=1)
+# -----------------------
+# Lectura y limpieza del fichero principal
+# -----------------------
+data = leer_csv_mixto(filename, sep=";", skiprows=1)
 
-# nombre de las columnas
-data.columns = [
-    "geografía",
-    "tipología",
-    "periodo",
-    "valor"
-]
-# convierte la columna valor a numérica, cambiando las comas por puntos y forzando los errores a NaN
-data['valor'] = pd.to_numeric(
-    data['valor'].str.replace('.', '', regex=False).str.replace(',', '.', regex=False),
-    errors='coerce'
+# Renombrar columnas
+data.columns = ["geografía", "tipología", "periodo", "valor"]
+
+# valor → numérico (quita miles '.' y usa ',' como decimal)
+data["valor"] = pd.to_numeric(
+    data["valor"].astype(str).str.replace(".", "", regex=False).str.replace(",", ".", regex=False),
+    errors="coerce"
 )
 
-# crear columna que selecciona los valores de la columna geografía que contienen 5 números y que puede empezar por 0
-data['cp'] = data['geografía'].str.extract(r'(\b\d{5}\b)')
-# aquellas observaciones que tienen 5 números en geografía, crear otra columna con el resto del texto que se llame población
-data['población'] = data['geografía'].str.replace(r'^\d{5}\s*', '', regex=True).str.strip()
+# Extraer código de 5 dígitos que encabeza el municipio (código INE municipal)
+data["cp"] = data["geografía"].str.extract(r"(\b\d{5}\b)")
 
-# crea una columna que se llame provincia que contenga todos los registros de geografía que empiecen por Provincia
-data['provincia'] = data['geografía'].where(data['geografía'].str.startswith('Provincia'))
+# Nombre de municipio sin el código delante
+data["población"] = data["geografía"].str.replace(r"^\d{5}\s*", "", regex=True).str.strip()
 
-# Filtrar por todos aquellos que el campo cp tiene los 2 primers dígitos 08 (provincia de Barcelona)
-bcn = data[data['cp'].str.startswith('08', na=False)]
-# print(bcn['periodo'].unique())
+# Provincia (si el texto empieza por 'Provincia')
+data["provincia"] = data["geografía"].where(data["geografía"].str.startswith("Provincia"))
 
-# Normalizar la columna 'periodo' para evitar problemas de espacios o mayúsculas/minúsculas
-bcn.loc[:, 'periodo'] = bcn['periodo'].str.strip().str.lower()
+# Filtrar provincia de Barcelona (códigos que empiezan por 08)
+bcn = data[data["cp"].str.startswith("08", na=False)].copy()
 
-# group by población y tipología en periodo enero-junio 2025 y sumar los valores
+# Normalizar 'periodo'
+bcn["periodo"] = bcn["periodo"].str.strip().str.lower()
+
+# Agrupar
 bcn_grouped = (
-    bcn[bcn['periodo'] == 'enero-junio 2025']
-    .groupby(['población', 'tipología','cp'])['valor']
+    bcn.groupby(["periodo", "población", "tipología", "cp"])["valor"]
     .sum()
     .reset_index()
-    .sort_values(['población', 'tipología'], ascending=[True, False])
+    .sort_values(["población", "tipología"], ascending=[True, False])
 )
-# print(bcn_grouped.info())
 
+# -----------------------
+# Lectura del fichero de población
+#   - autodetectar separador (sep=None + engine="python")
+#   - arreglar 'cod_mun' para que sea string de 5 dígitos con ceros
+#   - si no hay 'cod_mun', lo extrae de 'Municipios' (p.ej. '08001 Abrera')
+# -----------------------
+poblacion = leer_csv_mixto(filepob, sep=None, engine="python")  # sniff del separador
 
-# Leer el archivo CSV de población
-poblacion = pd.read_csv(filepob, dtype={'cod_mun': 'object'})
-# print(poblacion.info())
-# unir dataframe población usando cod_mun con data usando la columna cp
-bcn_grouped = bcn_grouped.merge(poblacion, left_on='cp', right_on='cod_mun', how='left')
-# eliminar la columna cod_mun
-bcn_grouped = bcn_grouped.drop(columns=['cod_mun','Sexo','Periodo','Municipios'])
+# Normaliza nombres de columna a minúsculas sin espacios exteriores
+poblacion.columns = [c.strip().lower() for c in poblacion.columns]
 
-bcn_grouped = bcn_grouped.rename(columns={'población': 'municipio', 'Total': 'población'})
+# Armoniza nombres esperados
+# (permitimos 'municipios' o 'municipio', y 'total' para población total)
+if "municipios" not in poblacion.columns and "municipio" in poblacion.columns:
+    poblacion = poblacion.rename(columns={"municipio": "municipios"})
 
-bcn_grouped['valor_ratio'] = ((bcn_grouped['valor'] / bcn_grouped['población']) * 100).round(2)
+# Si existe 'cod_mun', lo normalizamos; si no, lo generamos desde 'municipios'
+if "cod_mun" in poblacion.columns:
+    # Paso 1: forzar a string
+    poblacion["cod_mun"] = poblacion["cod_mun"].astype(str)
 
-# print(bcn_grouped.head())
+    # Paso 2: eliminar '.0' heredado de float y extraer dígitos
+    poblacion["cod_mun"] = (
+        poblacion["cod_mun"]
+        .str.replace(r"\.0$", "", regex=True)     # '8001.0' -> '8001'
+        .str.extract(r"(\d+)", expand=False)      # deja solo dígitos
+        .fillna("")                               # por seguridad
+        .str.zfill(5)                             # '8001' -> '08001'
+    )
+else:
+    # Intento crear 'cod_mun' desde 'municipios' (si viene '08001 Abrera')
+    if "municipios" in poblacion.columns:
+        poblacion["cod_mun"] = (
+            poblacion["municipios"].astype(str).str.extract(r"^\s*(\d{5})", expand=False)
+        )
+    else:
+        raise ValueError(
+            "No se encontró 'cod_mun' ni 'Municipios' en el fichero de población. "
+            "No se puede construir la clave de cruce."
+        )
 
-# # Filtrar por tipología 'Tráfico de drogas' y ordenar descendente por 'valor'
-# trafico_drogas = bcn_grouped[bcn_grouped['tipología'] == '10. Tráfico de drogas']
-# # print(trafico_drogas)
+# Asegura 'total' como numérico (población total)
+if "pob24" in poblacion.columns:
+    poblacion["pob24"] = pd.to_numeric(poblacion["pob24"], errors="coerce")
+else:
+    raise ValueError("La columna 'pob24' no existe en el fichero de población.")
 
-# # Eliminar posibles NaN en 'valor' y 'población'
-# trafico_drogas = trafico_drogas.dropna(subset=['valor', 'población'])
+# -----------------------
+# Normalizar claves de cruce a 5 dígitos
+# -----------------------
+bcn_grouped["cp"] = (
+    bcn_grouped["cp"]
+    .astype(str)
+    .str.extract(r"(\d+)", expand=False)
+    .fillna("")
+    .str.zfill(5)
+)
 
-# Ordenar y seleccionar top 10
-top10 = bcn_grouped.sort_values('valor', ascending=False)[['municipio', 'tipología', 'valor', 'población', 'valor_ratio']]
+poblacion["cod_mun"] = (
+    poblacion["cod_mun"]
+    .astype(str)
+    .str.extract(r"(\d+)", expand=False)
+    .fillna("")
+    .str.zfill(5)
+)
 
-top10.to_csv('./data/top_criminalidad_bcn_enero_junio_2025.csv', index=False, encoding='utf-8')
+# -----------------------
+# Merge
+# -----------------------
+bcn_grouped = bcn_grouped.merge(
+    poblacion[["cod_mun", "pob24"]],  # solo lo necesario
+    left_on="cp",
+    right_on="cod_mun",
+    how="left"
+)
 
+# Limpiar columnas y renombrar
+if "cod_mun" in bcn_grouped.columns:
+    bcn_grouped = bcn_grouped.drop(columns=["cod_mun"])
+bcn_grouped = bcn_grouped.rename(columns={"población": "municipio", "pob24": "población"})
+
+# -----------------------
+# Diagnóstico de cruce
+# -----------------------
+en_poblacion = set(poblacion["cod_mun"].dropna())
+en_bcn = set(bcn_grouped["cp"].dropna())
+
+matched = len(en_bcn.intersection(en_poblacion))
+missing = sorted(list(en_bcn.difference(en_poblacion)))[:20]
+
+print(f"CP únicos en bcn_grouped: {len(en_bcn)}")
+print(f"Códigos únicos en población: {len(en_poblacion)}")
+print(f"Coincidencias (intersección): {matched}")
+if missing:
+    print(f"Códigos sin cruce (muestra): {missing}")
+
+# -----------------------
+# Métrica: ratio por cada 100 habitantes
+# -----------------------
+bcn_grouped["valor_ratio"] = ((bcn_grouped["valor"] / bcn_grouped["población"]) * 100).round(2)
+
+# -----------------------
+# Exportar resultados (UTF-8 limpio)
+# -----------------------
+os.makedirs("./data", exist_ok=True)
+bcn_grouped.to_csv("./data/criminalidad_join_1.csv", index=False, encoding="utf-8")
+print("Archivo exportado en ./data/criminalidad_join_1.csv (UTF-8)")
+
+# -----------------------
+# Gráfica opcional
+# -----------------------
 def plot_heatmap_by_tipologia(tipologia, df=bcn_grouped, top_n=20):
-    # Filtrar por tipología
-    filtered = df[df['tipología'] == tipologia].dropna(subset=['valor_ratio'])
-    # Seleccionar top N por valor_ratio
-    top = filtered.sort_values('valor_ratio', ascending=False).head(top_n)
+    filtered = df[df["tipología"] == tipologia].dropna(subset=["valor_ratio"])
+    top = filtered.sort_values("valor_ratio", ascending=False).head(top_n)
     if top.empty:
         print(f"No hay datos para la tipología '{tipologia}'.")
         return
-    # Crear directorio si no existe
-    os.makedirs('./charts', exist_ok=True)
-    # Crear mapa de calor
+    os.makedirs("./charts", exist_ok=True)
     plt.figure(figsize=(10, 8))
-    heatmap_data = top.pivot_table(index='municipio', values='valor_ratio', aggfunc='first')
-    sns.heatmap(heatmap_data, annot=True, cmap='YlOrRd', fmt='.2f', linewidths=.5, cbar_kws={'label': 'Ratio (%)'})
+    heatmap_data = top.pivot_table(index="municipio", values="valor_ratio", aggfunc="first")
+    sns.heatmap(
+        heatmap_data,
+        annot=True,
+        cmap="YlOrRd",
+        fmt=".2f",
+        linewidths=.5,
+        cbar_kws={"label": "Ratio (%)"},
+    )
     plt.title(f"Top {top_n} municipios por '{tipologia}' (valor_ratio)")
-    plt.xlabel('Tipología')
-    plt.ylabel('Municipio')
+    plt.xlabel("Tipología")
+    plt.ylabel("Municipio")
     plt.tight_layout()
     filename = f'./charts/heatmap_{tipologia.replace(".", "").replace(" ", "_").lower()}.png'
     plt.savefig(filename)
     plt.close()
     print(f"Mapa de calor guardado en {filename}")
-
-# Ejemplo de uso:
-# plot_heatmap_by_tipologia('10. Tráfico de drogas')
-
-
-
-# if not top10.empty:
-#     # Crear directorio si no existe
-#     os.makedirs('./charts', exist_ok=True)
-#     # Crear gráfica de barras
-#     plt.figure(figsize=(10, 6))
-#     bars = plt.bar(top10['población'], top10['valor'], color='skyblue')
-#     plt.xlabel('Población')
-#     plt.ylabel('Valor')
-#     plt.title('Top 10 poblaciones por Tráfico de drogas (enero-junio 2025)')
-#     plt.xticks(rotation=45, ha='right')
-#     plt.tight_layout()
-
-#     # Añadir el valor encima de cada barra
-#     for bar in bars:
-#         height = bar.get_height()
-#         plt.text(
-#             bar.get_x() + bar.get_width() / 2,
-#             height,
-#             f'{int(height)}',
-#             ha='center',
-#             va='bottom'
-#         )
-
-#     # Guardar la figura en el directorio /charts
-#     plt.savefig('./charts/top10_trafico_drogas.png')
-#     plt.close()
-#     print("Gráfica guardada en ./charts/top10_trafico_drogas.png")
-# else:
-#     print("No hay datos para 'Tráfico de drogas' en el periodo seleccionado.")
+# Ejemplo de uso
+# plot_heatmap_by_tipologia("Hurtos")
