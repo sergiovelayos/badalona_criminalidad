@@ -54,15 +54,15 @@ data["población"] = data["geografía"].str.replace(r"^\d{5}\s*", "", regex=True
 # Provincia (si el texto empieza por 'Provincia')
 data["provincia"] = data["geografía"].where(data["geografía"].str.startswith("Provincia"))
 
-# Filtrar provincia de Barcelona (códigos que empiezan por 08)
-bcn = data[data["cp"].str.startswith("08", na=False)].copy()
+# # Filtrar provincia de Barcelona (códigos que empiezan por 08) -- ADAPTAR
+# bcn = data[data["cp"].str.startswith("08", na=False)].copy()
 
 # Normalizar 'periodo'
-bcn["periodo"] = bcn["periodo"].str.strip().str.lower()
+data["periodo"] = data["periodo"].str.strip().str.lower()
 
 # Agrupar
-bcn_grouped = (
-    bcn.groupby(["periodo", "población", "tipología", "cp"])["valor"]
+data_grouped = (
+    data.groupby(["periodo", "población", "tipología", "cp"])["valor"]
     .sum()
     .reset_index()
     .sort_values(["población", "tipología"], ascending=[True, False])
@@ -118,8 +118,8 @@ else:
 # -----------------------
 # Normalizar claves de cruce a 5 dígitos
 # -----------------------
-bcn_grouped["cp"] = (
-    bcn_grouped["cp"]
+data_grouped["cp"] = (
+    data_grouped["cp"]
     .astype(str)
     .str.extract(r"(\d+)", expand=False)
     .fillna("")
@@ -137,7 +137,7 @@ poblacion["cod_mun"] = (
 # -----------------------
 # Merge
 # -----------------------
-bcn_grouped = bcn_grouped.merge(
+data_grouped = data_grouped.merge(
     poblacion[["cod_mun", "pob24"]],  # solo lo necesario
     left_on="cp",
     right_on="cod_mun",
@@ -145,41 +145,42 @@ bcn_grouped = bcn_grouped.merge(
 )
 
 # Limpiar columnas y renombrar
-if "cod_mun" in bcn_grouped.columns:
-    bcn_grouped = bcn_grouped.drop(columns=["cod_mun"])
-bcn_grouped = bcn_grouped.rename(columns={"población": "municipio", "pob24": "población"})
+if "cod_mun" in data_grouped.columns:
+    data_grouped = data_grouped.drop(columns=["cod_mun"])
+data_grouped = data_grouped.rename(columns={"población": "municipio", "pob24": "población"})
 
-# -----------------------
-# Diagnóstico de cruce
-# -----------------------
-en_poblacion = set(poblacion["cod_mun"].dropna())
-en_bcn = set(bcn_grouped["cp"].dropna())
+# # -----------------------
+# # Diagnóstico de cruce
+# # -----------------------
+# en_poblacion = set(poblacion["cod_mun"].dropna())
+# en_bcn = set(data_grouped["cp"].dropna())
 
-matched = len(en_bcn.intersection(en_poblacion))
-missing = sorted(list(en_bcn.difference(en_poblacion)))[:20]
+# matched = len(en_bcn.intersection(en_poblacion))
+# missing = sorted(list(en_bcn.difference(en_poblacion)))[:20]
 
-print(f"CP únicos en bcn_grouped: {len(en_bcn)}")
-print(f"Códigos únicos en población: {len(en_poblacion)}")
-print(f"Coincidencias (intersección): {matched}")
-if missing:
-    print(f"Códigos sin cruce (muestra): {missing}")
+# print(f"CP únicos en data_grouped: {len(en_bcn)}")
+# print(f"Códigos únicos en población: {len(en_poblacion)}")
+# print(f"Coincidencias (intersección): {matched}")
+# if missing:
+#     print(f"Códigos sin cruce (muestra): {missing}")
 
 # -----------------------
 # Métrica: ratio por cada 100 habitantes
 # -----------------------
-bcn_grouped["valor_ratio"] = ((bcn_grouped["valor"] / bcn_grouped["población"]) * 100).round(2)
+data_grouped["valor_ratio"] = ((data_grouped["valor"] / data_grouped["población"]) * 100).round(2)
 
-# -----------------------
-# Exportar resultados (UTF-8 limpio)
-# -----------------------
-os.makedirs("./data", exist_ok=True)
-bcn_grouped.to_csv("./data/criminalidad_join_1.csv", index=False, encoding="utf-8")
-print("Archivo exportado en ./data/criminalidad_join_1.csv (UTF-8)")
+
+# # -----------------------
+# # Exportar resultados (UTF-8 limpio)
+# # -----------------------
+# os.makedirs("./data", exist_ok=True)
+# data_grouped.to_csv("./data/criminalidad_join_1.csv", index=False, encoding="utf-8")
+# print("Archivo exportado en ./data/criminalidad_join_1.csv (UTF-8)")
 
 # -----------------------
 # Gráfica opcional
 # -----------------------
-def plot_heatmap_by_tipologia(tipologia, df=bcn_grouped, top_n=20):
+def plot_heatmap_by_tipologia(tipologia, df=data_grouped, top_n=20):
     filtered = df[df["tipología"] == tipologia].dropna(subset=["valor_ratio"])
     top = filtered.sort_values("valor_ratio", ascending=False).head(top_n)
     if top.empty:
@@ -206,3 +207,59 @@ def plot_heatmap_by_tipologia(tipologia, df=bcn_grouped, top_n=20):
     print(f"Mapa de calor guardado en {filename}")
 # Ejemplo de uso
 # plot_heatmap_by_tipologia("Hurtos")
+
+# -----------------------
+# Calcular delitos por trimestre
+# -----------------------
+
+# # Filtrar con copia para evitar warnings
+# badalona_df = data_grouped[
+#     (data_grouped["municipio"].str.lower() == "badalona")
+#     & (data_grouped["tipología"] == "III. TOTAL INFRACCIONES PENALES")
+# ].copy()
+
+# Mapear periodos
+map_periodos = {
+    "enero-marzo": "Q1",
+    "enero-junio": "Q2",
+    "enero-septiembre": "Q3",
+    "enero-diciembre": "Q4",
+    "enero--diciembre": "Q4"
+}
+
+def parse_periodo(p):
+    for k, v in map_periodos.items():
+        if p.startswith(k):
+            año = p.split()[-1]
+            return int(año), v
+    return None, None
+
+df = data_grouped.copy()
+df[["año", "trimestre"]] = df["periodo"].apply(lambda x: pd.Series(parse_periodo(x)))
+
+# --- 2. Pivotear acumulados por municipio, tipología y año
+tabla = (
+    df.pivot_table(
+        index=["municipio", "tipología", "población", "año"],
+        columns="trimestre",
+        values="valor",
+        aggfunc="sum"   # por si hay duplicados
+    )
+)
+
+# --- 3. Calcular trimestres reales (desacumulados)
+tabla_desacum = pd.DataFrame(index=tabla.index)
+tabla_desacum["Q1"] = tabla["Q1"]
+tabla_desacum["Q2"] = tabla["Q2"] - tabla["Q1"]
+tabla_desacum["Q3"] = tabla["Q3"] - tabla["Q2"]
+tabla_desacum["Q4"] = tabla["Q4"] - tabla["Q3"]
+
+# --- 4. Pasar de tabla pivotada a formato largo (plano)
+result = tabla_desacum.reset_index().melt(
+    id_vars=["municipio", "tipología", "población", "año"],
+    value_vars=["Q1", "Q2", "Q3", "Q4"],
+    var_name="trimestre",
+    value_name="valor"
+).dropna(subset=["valor"])  # quitar trimestres vacíos
+
+result.to_csv("./data/crims_desagg.csv", index=False, encoding="utf-8")
