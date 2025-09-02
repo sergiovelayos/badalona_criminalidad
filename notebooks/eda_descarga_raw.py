@@ -169,13 +169,20 @@ data_grouped = data_grouped.rename(columns={"población": "municipio", "pob24": 
 # -----------------------
 data_grouped["valor_ratio"] = ((data_grouped["valor"] / data_grouped["población"]) * 100).round(2)
 
+# Eliminar filas que empiecen con 'variación'
+data_grouped = data_grouped[~data_grouped['periodo'].str.contains('^variación', regex=True)]
+
+
 
 # # -----------------------
 # # Exportar resultados (UTF-8 limpio)
 # # -----------------------
 # os.makedirs("./data", exist_ok=True)
 # data_grouped.to_csv("./data/criminalidad_join_1.csv", index=False, encoding="utf-8")
-# print("Archivo exportado en ./data/criminalidad_join_1.csv (UTF-8)")
+# print(data_grouped[(data_grouped["municipio"].str.lower() == "badalona") & 
+# (data_grouped["tipología"] == "III. TOTAL INFRACCIONES PENALES") 
+# # (data_grouped["periodo"].str.endswith("2024")) 
+# ].sort_values("periodo"))
 
 # -----------------------
 # Gráfica opcional
@@ -240,7 +247,7 @@ df[["año", "trimestre"]] = df["periodo"].apply(lambda x: pd.Series(parse_period
 # --- 2. Pivotear acumulados por municipio, tipología y año
 tabla = (
     df.pivot_table(
-        index=["municipio", "tipología", "población", "año"],
+        index=["cp","municipio", "tipología", "población", "año"],
         columns="trimestre",
         values="valor",
         aggfunc="sum"   # por si hay duplicados
@@ -250,16 +257,25 @@ tabla = (
 # --- 3. Calcular trimestres reales (desacumulados)
 tabla_desacum = pd.DataFrame(index=tabla.index)
 tabla_desacum["Q1"] = tabla["Q1"]
-tabla_desacum["Q2"] = tabla["Q2"] - tabla["Q1"]
-tabla_desacum["Q3"] = tabla["Q3"] - tabla["Q2"]
-tabla_desacum["Q4"] = tabla["Q4"] - tabla["Q3"]
+tabla_desacum["Q2"] = (tabla["Q2"] - tabla["Q1"]).round(0)
+tabla_desacum["Q3"] = ( tabla["Q3"] - tabla["Q2"] ).round(0)
+tabla_desacum["Q4"] = ( tabla["Q4"] - tabla["Q3"] ).round(0)
 
 # --- 4. Pasar de tabla pivotada a formato largo (plano)
 result = tabla_desacum.reset_index().melt(
-    id_vars=["municipio", "tipología", "población", "año"],
+    id_vars=["cp","municipio", "tipología", "población", "año"],
     value_vars=["Q1", "Q2", "Q3", "Q4"],
     var_name="trimestre",
     value_name="valor"
 ).dropna(subset=["valor"])  # quitar trimestres vacíos
 
-result.to_csv("./data/crims_desagg.csv", index=False, encoding="utf-8")
+# result.to_csv("./data/crims_desagg_review.csv", index=False, encoding="utf-8")
+
+# print(result[(result["municipio"].str.lower() == "badalona")&(result["tipología"]=="III. TOTAL INFRACCIONES PENALES")].sort_values(["año","trimestre"]))
+
+# suma de los delitos en badalona en 2024
+print("Total delitos en Badalona en 2024:", result[(result["municipio"].str.lower() == "badalona") & (result["año"] == 2024)
+& (result["trimestre"] == "Q4")])
+
+# mañan seguir con 6. Robos con violencia e intimidación	8100 Badalona Q1 2024 en result cuando el valor original es 405
+# qué falla en el cálculo porque otros sí están bien
