@@ -35,3 +35,16 @@ Idealmente el ministerior debería ofrecer la opción descargar los datos crudos
 
 Añado nuevas tablas con errores de cálculo corregido y otros formatos.
 
+## Actualización septiembre 2025
+Estoy rehaciendo el proceso de los datos. Estos son los principales pasos:
+- En primer lugar descargo los datos completos sin tratar (/data/descargas_portal_ministerio) desde 2016
+    - He creado un script que puede automatizar esta descarga en *descargar_ficheros_ministerio.py*
+- Luego uno estos datos, quedándome en caso de duplicados, con el último dato en *load_csv_portal_ministerio-py*
+    - El resultado es /data/delitos_raw_merged.csv
+- El dato se reporta acumulado anual y lo quiero desagregar por trimestre en */notebooks/desagg_ytd.py*
+    - En este mismo script estoy intentando normalizar tipologías para poder comparar durante todo el periodo.
+        - Ejemplo de las distintas tipologías de **Homicidios**
+            - "2.-HOMICIDIOS DOLOSOS Y ASESINATOS CONSUMADOS (EU)": "Homicidios dolosos y asesinatos consumados",
+            - "1.-Homicidios dolosos y asesinatos consumados": "Homicidios dolosos y asesinatos consumados",
+            - "1. Homicidios dolosos y asesinatos consumados": "Homicidios dolosos y asesinatos consumados",
+        - Estas 3 tipologías de homicidios las unifico en "Homicidios dolosos y asesinatos consumados". Y así con todas las tipologías
