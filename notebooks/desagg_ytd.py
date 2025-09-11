@@ -10,13 +10,13 @@ df = pd.read_csv(csv_file, sep=';', usecols=[0,1,2,3])
 
 df.columns = ["geo", "tipo", "periodo", "valor"]
 
-# Filtramos solo Badalona
-df = df[df["geo"].str.contains("Badalona")]
+# # Filtramos solo Badalona
+# df = df[df["geo"].str.contains("Badalona")]
 
-# Limpiar geo. Eliminar '-Municipio de ' o '- Municipio de'
-df["geo"] = df["geo"].str.replace(r"-\s*Municipio de\s*", "", regex=True).str.strip()
+# # Limpiar geo. Eliminar '-Municipio de ' o '- Municipio de'
+# df["geo"] = df["geo"].str.replace(r"-\s*Municipio de\s*", "", regex=True).str.strip()
 
-df["geo"] = df["geo"].replace("Badalona", "08015 Badalona").str.strip()
+# df["geo"] = df["geo"].replace("Badalona", "08015 Badalona").str.strip()
 
 
 # print(df["geo"].value_counts())
@@ -85,40 +85,10 @@ result = tabla_desacum.reset_index().melt(
     value_name="valor"
 ).dropna(subset=["valor"])  # quitar trimestres vacíos
 
-# result.to_csv("./data/bdn_desagg_ytd.csv", index=False, encoding="utf-8")
+result.to_csv("./data/esp_desagg_ytd.csv", index=False, encoding="utf-8")
 
 # print("Info:\n",result.info(), "Head:\n", result.head(10))
 
 # print(result[result["tipo"].str.contains("robo", case=False)])
 
-print(result["tipo"].value_counts().sort_values(ascending=False))
-
-normalizar_tipo = {
-    # Homicidios
-    "2.-HOMICIDIOS DOLOSOS Y ASESINATOS CONSUMADOS (EU)": "Homicidios dolosos y asesinatos consumados",
-    "1.-Homicidios dolosos y asesinatos consumados": "Homicidios dolosos y asesinatos consumados",
-    "1. Homicidios dolosos y asesinatos consumados": "Homicidios dolosos y asesinatos consumados",
-
-    # Robos con violencia
-    "3.-ROBO CON VIOLENCIA E INTIMIDACIÓN (EU)": "Robos con violencia e intimidación",
-    "6.-Robos con violencia e intimidación": "Robos con violencia e intimidación",
-    "6. Robos con violencia e intimidación": "Robos con violencia e intimidación",
-
-    # Robos con fuerza en domicilios
-    "4.-ROBOS CON FUERZA EN DOMICILIOS (EU)": "Robos con fuerza en domicilios",
-    "7.1.-Robos con fuerza en domicilios": "Robos con fuerza en domicilios",
-    "7.1.-Robos con fuerza en domicilios": "Robos con fuerza en domicilios",  # aparece en dos variantes iguales
-    "7.1. Robos con fuerza en domicilios": "Robos con fuerza en domicilios",
-
-    # Sustracciones de vehículos
-    "5.-SUSTRACCIÓN VEHÍCULOS A MOTOR (EU)": "Sustracciones de vehículos",
-    "9.-Sustracciones de vehículos": "Sustracciones de vehículos",
-    "9. Sustracciones de vehículos": "Sustracciones de vehículos",
-
-    # Tráfico de drogas
-    "6.-TRÁFICO DE DROGAS (EU)": "Tráfico de drogas",
-    "10.-Tráfico de drogas": "Tráfico de drogas",
-    "10. Tráfico de drogas": "Tráfico de drogas",
-}
-
-tabla["tipo_normalizado"] = tabla["tipo"].replace(normalizar_tipo)
+# print(result["tipo"].value_counts().sort_values(ascending=False))

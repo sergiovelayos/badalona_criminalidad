@@ -41,10 +41,29 @@ Estoy rehaciendo el proceso de los datos. Estos son los principales pasos:
     - He creado un script que puede automatizar esta descarga en *descargar_ficheros_ministerio.py*
 - Luego uno estos datos, quedándome en caso de duplicados, con el último dato en *load_csv_portal_ministerio-py*
     - El resultado es /data/delitos_raw_merged.csv
-- El dato se reporta acumulado anual y lo quiero desagregar por trimestre en */notebooks/desagg_ytd.py*
-    - En este mismo script estoy intentando normalizar tipologías para poder comparar durante todo el periodo.
-        - Ejemplo de las distintas tipologías de **Homicidios**
-            - "2.-HOMICIDIOS DOLOSOS Y ASESINATOS CONSUMADOS (EU)": "Homicidios dolosos y asesinatos consumados",
-            - "1.-Homicidios dolosos y asesinatos consumados": "Homicidios dolosos y asesinatos consumados",
-            - "1. Homicidios dolosos y asesinatos consumados": "Homicidios dolosos y asesinatos consumados",
-        - Estas 3 tipologías de homicidios las unifico en "Homicidios dolosos y asesinatos consumados". Y así con todas las tipologías
+- El dato se reporta acumulado anual y lo quiero desagregar por trimestre en */notebooks/desagg_ytd.py*. Fichero resultado: */data/esp_desagg_ytd.csv*
+- En */notebooks/normalizar_tipologias.py* estoy intentando normalizar tipologías para poder comparar durante todo el periodo. Fichero resultado: */data/esp_desagg_ytd_normalizado.csv*
+    - Ejemplo de las distintas tipologías de **Homicidios**
+        - "2.-HOMICIDIOS DOLOSOS Y ASESINATOS CONSUMADOS (EU)": "Homicidios dolosos y asesinatos consumados",
+        - "1.-Homicidios dolosos y asesinatos consumados": "Homicidios dolosos y asesinatos consumados",
+        - "1. Homicidios dolosos y asesinatos consumados": "Homicidios dolosos y asesinatos consumados",
+    - Estas 3 tipologías de homicidios las unifico en "Homicidios dolosos y asesinatos consumados". Y así con todas las tipologías
+
+- Para poder comparar entre distintias ciudades o regiones quiero usar una tasa por 1000 habitantes de los distintos delitos (Tasa de criminalidad = total de infracciones penales conocidas *(1.000) / total de la población). Para ello necesito datos de población.
+    - Descargo datos del padrón municipal agregado por provincia en el INE 
+        - Ejemplo de [fichero descargado](https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/2854.csv?nocab=1)
+        - Los ficheros están en */data/pobmun*
+        - Uno los ficheros en */data/pobmun24.csv*
+        - Limpio el fichero en */notebooks/pob_naciona24.py* y el resultado es el fichero */data/pobmun24_limpio.csv*
+    - Desde 2024, el campo geografía de los delitos incluye el código postal. Ejemplo:+
+        - 04003 Adra;I. CRIMINALIDAD CONVENCIONAL;enero-marzo 2024;225
+        - Como en los datos del 24, están los datos actualizados del 23, hay que modificar los nombres del campo geografía antes del 23.
+        - Borro todos los registros del año 23 cuyo campo de geografía no incluye el código postal
+        - Normalizo los valores de geografía en */notebooks/normalizar_geo.py*
+            - El resultado lo guardo en */data/esp_geo_normalized.csv*
+    - Uno las tablas de población y delitos con los campos geografía y tipología normalizados:
+        - En */notebooks/join_delitos_pob.py* y como resultados el */data/delitos_con_poblacion.csv*
+    - Ahora calculo la Tasa de criminalidad en *notebooks/tasa_criminalidad.py* y el resultado está en *datos_criminalidad_webapp.csv*
+- Creo una webapp con streamlit en *app_delitos.py*
+    - No se visualizan bien los datos, parece que hay datos duplicados porque se ve como la línea recorre varias veces el mismo punto con distintos valores.
+        
