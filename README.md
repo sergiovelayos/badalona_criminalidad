@@ -1,44 +1,30 @@
 # Datos de criminalidad por tipología penal en Badalona
-Los medios de comunicación, políticos e instituciones hacen un uso poco riguroso de los datos de criminalidad con frecuencia. No se contextualiza o no se compara con la misma base y casi nunca se enlaza a la fuente para poder comprobar la veracidad. Por todos estos motivos he creado este dataset con datos del [Ministerio del Interior](https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/balances.html).
+Los medios de comunicación, políticos e instituciones hacen un uso poco riguroso de los datos españoles de criminalidad. No se contextualiza o no se compara con la misma base y casi nunca se enlaza a la fuente para poder comprobar la veracidad de los datos. Por todos estos motivos he creado [delitos-app](https://delitos.streamlit.app/) basado en los datos del [Ministerio del Interior](https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/balances.html) que he tratado para que sean comparables facilmente.
 
-![image](https://github.com/user-attachments/assets/03700369-ca91-4e3c-bae0-d953987700f0)
+## Funcionalidades
+- Elige un municipio de más de 20.000 habitantes y un tipo de delito.
+- Visualiza la evolución de la selección desde el 2015 (no disponible para todos los delitos).
+- Un gráfico de líneas que muestra la tasa de criminalidad por 1000 habitantes (total de infracciones penales conocidas *(1.000) / total de la población).
+- Elige una segunda ciudad para poder comparar con el mismo ratio.
 
-
+## Sobre los datos del criminalidad
 Estos datos se publican con periodicidad trimestral en un formato poco amigable para realizar cualquier análisis. Estas son algunas de las advertencias que tendría en cuenta a la hora de analizar estos datos:
 - El origen de datos se inicia en el primer trimestre de 2016.
-- El 10 de noviembre de 2024 había datos hasta el sedungo trimestre de 2024
-- Los conceptos cambian por lo que no podemos comparar un mismo concepto durante todo el periodo comprendido
-- Hay categorías que agregan sub categorías pero la suma de las subcategorías no coincide con las categorías. Por ejemplo: en el tercer trimestre
-- Los datos para un mismo periodo pueden cambiar.
+- Las tipologías de delitos cambian por lo que no podemos comparar un mismo concepto durante todo el periodo.
+- Los datos para un mismo periodo pueden cambiar al año siguiente por lo que es necesario elegir el dato más actualizado
 
-¿Cómo obtener los datos desde el portal del ministerio?
+## ¿Cómo obtener los datos desde el portal del ministerio?
 
-He descargado cada trimestre por separado después de filtrar el municipio de Badalona.
+He descargado cada trimestre por municipio desde 2016 [aquí](https://github.com/sergiovelayos/badalona_criminalidad/tree/main/data/descargas_portal_ministerio).
 
-![image](https://github.com/user-attachments/assets/0c5ac74a-07b6-474a-9ebe-85ed368ec5ff)
+Cada fichero contiene el periodo anterior y la variación.
 
+El dato se reporta trimestre acumulado anual, lo desagrego por ver la evolución trimestre a trimestre.
 
-Luego he creado un script en Python para unir todos los excels en un solo excel separados en pestañas.
+## Explicación de la creación de la App
 
-El formato de la tabla de origen contiene una columna con las tipologías penales, otra columna con los valores de un periodo, otra columna con los valores del anterior periodo al primero y la última columna con la variación entre los 2 periodos anteriores.
-
-He hecho las siguientes transformación en cada una de las tablas:
-- Transformar el texto fecha a un campo fecha con varios atributos: pasar de "enero-septiembre 2022" a un campo con fecha inicio y fin del periodo, año, trimestre y año+trimestre
-- Unpivot de estas cabeceras usando Power Query
-- Concatenación de todas la tablas
-- Normalización de los conceptos de tipología penal. Por ejemplo: "8. Hurtos" a "08. Hurtos" o "8. HURTOS" a "08. Hurtos"
-
-He añadido la métrica del valor absoluto por trimestre. Los valores son siempre acumulados por lo que no se puede ver la evolución por trimestre.
-También he añadido una nuevo columna para simplificar las tipologías penales con la ayuda de Chat GPT.
-
-Idealmente el ministerior debería ofrecer la opción descargar los datos crudos para poder analizarlos sin tanto procesamiento. A lo mejor existe una API para descargarlos de forma cruda pero no la he encontrado.
-
-Añado nuevas tablas con errores de cálculo corregido y otros formatos.
-
-## Actualización septiembre 2025
-Estoy rehaciendo el proceso de los datos. Estos son los principales pasos:
-- En primer lugar descargo los datos completos sin tratar (/data/descargas_portal_ministerio) desde 2016
-    - He creado un script que puede automatizar esta descarga en *descargar_ficheros_ministerio.py*
+En primer lugar descargo los datos completos sin tratar (/data/descargas_portal_ministerio) desde 2016
+- He creado un script que puede automatizar esta descarga en *descargar_ficheros_ministerio.py*
 - Luego uno estos datos, quedándome en caso de duplicados, con el último dato en *load_csv_portal_ministerio.py*
     - El resultado es /data/delitos_raw_merged.csv
 - El dato se reporta acumulado anual y lo quiero desagregar por trimestre en */notebooks/desagg_ytd.py*. Fichero resultado: */data/esp_desagg_ytd.csv*
@@ -79,7 +65,10 @@ Estoy rehaciendo el proceso de los datos. Estos son los principales pasos:
                 -Municipio de Badalona;8. Hurtos;Variación % 2022/2019;3,8
                 -Municipio de Badalona;8. Hurtos;Variación % 2022/2021;14,3
         - Corrijo el error y ahora no se ven los picos de T422
-        
+
+## Próximas funcionalidades
+- Elegir entre datos absolutos y ratio por 1000 habitantes.
+- Añadir datos provinciales, autonómicos y nacionales para poder comparar el dato del municipio.
 
 
 

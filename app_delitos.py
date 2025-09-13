@@ -7,6 +7,9 @@ import io
 # --- CONFIGURACIÓN INICIAL DE LA PÁGINA ---
 st.set_page_config(page_title="Criminalidad por Municipio", layout="wide")
 st.title("📊 Evolución de Delitos por Municipio y Año")
+st.markdown("""
+Compara facilmente los datos de [Balances trimestrales de criminalidad del Ministerio de Interior](https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/balances) entre municipios de más de 20.000 habitantes desde 20215 hasta junio de 2025. [Más info](https://github.com/sergiovelayos/badalona_criminalidad)
+""")
 
 # Diccionario para mapear los nombres de delitos a una versión más legible
 mapeo_delitos = {
