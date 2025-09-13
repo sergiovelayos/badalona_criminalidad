@@ -39,7 +39,7 @@ Añado nuevas tablas con errores de cálculo corregido y otros formatos.
 Estoy rehaciendo el proceso de los datos. Estos son los principales pasos:
 - En primer lugar descargo los datos completos sin tratar (/data/descargas_portal_ministerio) desde 2016
     - He creado un script que puede automatizar esta descarga en *descargar_ficheros_ministerio.py*
-- Luego uno estos datos, quedándome en caso de duplicados, con el último dato en *load_csv_portal_ministerio-py*
+- Luego uno estos datos, quedándome en caso de duplicados, con el último dato en *load_csv_portal_ministerio.py*
     - El resultado es /data/delitos_raw_merged.csv
 - El dato se reporta acumulado anual y lo quiero desagregar por trimestre en */notebooks/desagg_ytd.py*. Fichero resultado: */data/esp_desagg_ytd.csv*
 - En */notebooks/normalizar_tipologias.py* estoy intentando normalizar tipologías para poder comparar durante todo el periodo. Fichero resultado: */data/esp_desagg_ytd_normalizado.csv*
@@ -55,7 +55,7 @@ Estoy rehaciendo el proceso de los datos. Estos son los principales pasos:
         - Los ficheros están en */data/pobmun*
         - Uno los ficheros en */data/pobmun24.csv*
         - Limpio el fichero en */notebooks/pob_naciona24.py* y el resultado es el fichero */data/pobmun24_limpio.csv*
-    - Desde 2024, el campo geografía de los delitos incluye el código postal. Ejemplo:+
+    - Desde 2024, el campo geografía de los delitos incluye el código postal. Ejemplo:
         - 04003 Adra;I. CRIMINALIDAD CONVENCIONAL;enero-marzo 2024;225
         - Como en los datos del 24, están los datos actualizados del 23, hay que modificar los nombres del campo geografía antes del 23.
         - Borro todos los registros del año 23 cuyo campo de geografía no incluye el código postal
@@ -65,5 +65,22 @@ Estoy rehaciendo el proceso de los datos. Estos son los principales pasos:
         - En */notebooks/join_delitos_pob.py* y como resultados el */data/delitos_con_poblacion.csv*
     - Ahora calculo la Tasa de criminalidad en *notebooks/tasa_criminalidad.py* y el resultado está en *datos_criminalidad_webapp.csv*
 - Creo una webapp con streamlit en *app_delitos.py*
-    - No se visualizan bien los datos, parece que hay datos duplicados porque se ve como la línea recorre varias veces el mismo punto con distintos valores.
+- Ahora que puedo visualizar los datos y cambiar la población y la tipología pueda hacer comprobaciones de calidad del dato:
+    - Hay un pico de delitos para todos los municipios en el cuarto trimestre de 2022(T422):
+        - Se debe a que en los datos del cuarto trimestre de 2022, se incluyeron 3 periodos en lugar de 2 y esto no lo he tenido en cuenta en el tratamiento de datos.
+            - Normalmente un registro es así:
+                08015 Badalona;8. Hurtos;enero-junio 2024;1.899
+                08015 Badalona;8. Hurtos;enero-junio 2025;2.093
+                08015 Badalona;8. Hurtos;Variación % 2025/2024;10,2
+            - Pero en T422:
+                -Municipio de Badalona;8. Hurtos;Enero-diciembre 2019;3.684
+                -Municipio de Badalona;8. Hurtos;Enero-diciembre 2021;3.347
+                -Municipio de Badalona;8. Hurtos;Enero-diciembre 2022;3.825
+                -Municipio de Badalona;8. Hurtos;Variación % 2022/2019;3,8
+                -Municipio de Badalona;8. Hurtos;Variación % 2022/2021;14,3
+        - Corrijo el error y ahora no se ven los picos de T422
+        
+
+
+
         

@@ -6,6 +6,10 @@ csv_file = r"./data/esp_desagg_ytd.csv"
 
 df = pd.read_csv(csv_file)
 
+# filtro = df["geo"].str.contains("Badalona") & df["año"].isin([2022]) & df["trimestre"].isin(["T4"]) & df["tipo"].str.contains("Hurtos")
+# # imprimir el dataframe filtrado
+# print(df[filtro])
+
 
 TIPOLOGIA_NORMALIZAR = {
     # Criminalidad convencional
@@ -72,6 +76,9 @@ df["tipo_normalizado"] = df["tipo"].apply(normalizar_tipologia)
 
 # drop columna tipo original
 df = df.drop(columns=["tipo"])
+# filtro = df["geo"].str.contains("Badalona") & df["año"].isin([2022]) & df["trimestre"].isin(["T4"]) & df["tipo_normalizado"].str.contains("Hurtos")
+# # imprimir el dataframe filtrado
+# print(df[filtro])
 
-# df.to_csv("./data/esp_desagg_ytd_normalizado.csv", index=False, encoding="utf-8")
+df.to_csv("./data/esp_desagg_ytd_normalizado.csv", index=False, encoding="utf-8")
 
