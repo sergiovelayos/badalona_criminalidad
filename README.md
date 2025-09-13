@@ -6,6 +6,7 @@ Los medios de comunicación, políticos e instituciones hacen un uso poco riguro
 - Visualiza la evolución de la selección desde el 2015 (no disponible para todos los delitos).
 - Un gráfico de líneas que muestra la tasa de criminalidad por 1000 habitantes (total de infracciones penales conocidas *(1.000) / total de la población).
 - Elige una segunda ciudad para poder comparar con el mismo ratio.
+- Debajo del gráfico de líneas puedes ver el detalle de los datos que se visualizan y puedes descargarlos.
 
 ## Sobre los datos del criminalidad
 Estos datos se publican con periodicidad trimestral en un formato poco amigable para realizar cualquier análisis. Estas son algunas de las advertencias que tendría en cuenta a la hora de analizar estos datos:
