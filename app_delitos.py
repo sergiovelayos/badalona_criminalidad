@@ -2,218 +2,185 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import io
 
-# Configuración inicial
+# --- CONFIGURACIÓN INICIAL DE LA PÁGINA ---
 st.set_page_config(page_title="Criminalidad por Municipio", layout="wide")
 st.title("📊 Evolución de Delitos por Municipio y Año")
 
-# Cargar datos
+# Diccionario para mapear los nombres de delitos a una versión más legible
+mapeo_delitos = {
+    '1. Homicidios dolosos y asesinatos consumados': 'Homicidios y Asesinatos',
+    '2. Homicidios dolosos y asesinatos en grado tentativa': 'Homicidios en Tentativa',
+    '3. Delitos graves y menos graves de lesiones y riña tumultuaria': 'Lesiones y Riñas',
+    '4. Secuestro': 'Secuestros',
+    '5. Delitos contra la libertad sexual': 'Delitos Sexuales',
+    '5.1.-Agresión sexual con penetración': 'Agresiones Sexuales con Penetración',
+    '5.2.-Resto de delitos contra la libertad sexual': 'Otros Delitos Sexuales',
+    '6. Robos con violencia e intimidación': 'Robos con Violencia',
+    '7. Robos con fuerza en domicilios, establecimientos y otras instalaciones': 'Robos con Fuerza',
+    '7.1.-Robos con fuerza en domicilios': 'Robos en Domicilios',
+    '8. Hurtos': 'Hurtos',
+    '9. Sustracciones de vehículos': 'Sustracción de Vehículos',
+    '10. Tráfico de drogas': 'Tráfico de Drogas',
+    '11. Resto de criminalidad convencional': 'Otros Delitos Convencionales',
+    '12.-Estafas informáticas': 'Estafas Informáticas',
+    '13.-Otros ciberdelitos': 'Otros Ciberdelitos',
+    'I. CRIMINALIDAD CONVENCIONAL': 'Total Criminalidad Convencional',
+    'II. CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)': 'Total Cibercriminalidad',
+    'III. TOTAL INFRACCIONES PENALES': 'TOTAL de Delitos'
+}
+
+# --- CARGA DE DATOS ---
 @st.cache_data
 def cargar_datos():
+    """
+    Carga los datos directamente desde el archivo CSV y aplica el mapeo.
+    """
     try:
         df = pd.read_csv('data/datos_criminalidad_webapp.csv')
-        return df
-    except Exception as e:
-        st.error(f"❌ Error al cargar datos: {str(e)}")
-        return None
+    except FileNotFoundError:
+        st.error("Error: Archivo 'data/datos_criminalidad_webapp.csv' no encontrado.")
+        st.stop()
+    
+    # Asegurar tipos de datos correctos
+    df['año'] = df['año'].astype(int)
+    df['trimestre'] = df['trimestre'].astype(str)
+    if 'municipio_nombre' in df.columns and 'municipio' not in df.columns:
+        df.rename(columns={'municipio_nombre': 'municipio'}, inplace=True)
+    
+    # Aplicar el mapeo a la columna de tipologías
+    df['tipo_normalizado'] = df['tipo_normalizado'].map(mapeo_delitos)
+    
+    # Calcular la tasa de criminalidad
+    df['tasa_criminalidad_x1000'] = (df['valor'] / df['poblacion']) * 1000
 
-df = cargar_datos()
-if df is None:
-    st.stop()
-
-# st.success("✅ Datos cargados correctamente")
-
-# Función para ordenar periodos cronológicamente
-def crear_periodo_ordenado(df):
-    """Crea una columna de periodo y la ordena cronológicamente"""
-    df = df.copy()
-    
-    # Crear período como string
-    df["periodo"] = df["año"].astype(str) + "-" + df["trimestre"]
-    
-    # Crear columna auxiliar para ordenamiento correcto
-    df["trimestre_num"] = df["trimestre"].str.replace("T", "").astype(int)
-    
-    # Ordenar por año y trimestre
-    df = df.sort_values(["año", "trimestre_num"])
-    
-    # Eliminar columna auxiliar
-    df = df.drop("trimestre_num", axis=1)
-    
     return df
 
-# Selección de municipio y delito
+# --- FUNCIÓN DE PREPROCESAMIENTO ---
+def crear_periodo_ordenado(df):
+    """Crea una columna 'periodo' y ordena el DataFrame cronológicamente."""
+    df = df.copy()
+    df['periodo'] = df['año'].astype(str) + '-' + df['trimestre']
+    df['trimestre_num'] = df['trimestre'].str.replace('T', '', regex=False).astype(int)
+    df = df.sort_values(['año', 'trimestre_num', 'municipio'])
+    df = df.drop(columns=['trimestre_num'])
+    return df
+
+# --- LÓGICA PRINCIPAL DE LA APP ---
+df_cargado = cargar_datos()
+if df_cargado is None:
+    st.stop()
+
+df_base = crear_periodo_ordenado(df_cargado)
+
+# --- FILTROS DE SELECCIÓN ---
 col1, col2 = st.columns(2)
 
 with col1:
-    municipio = st.selectbox(
+    municipios_unicos = sorted(df_base["municipio"].unique().tolist())
+    municipio_seleccionado = st.selectbox(
         "📍 Selecciona un municipio",
-        options=["Todos"] + sorted(df["municipio"].unique().tolist())
+        options=municipios_unicos
     )
 
 with col2:
-    delito = st.selectbox(
+    opciones_delito = list(mapeo_delitos.values())
+    delito_seleccionado = st.selectbox(
         "⚖️ Selecciona un tipo de delito",
-        options=["Todos"] + sorted(df["tipo_normalizado"].unique().tolist())
+        options=opciones_delito
     )
 
-# Filtrar datos
-df_filtrado = df.copy()
-if municipio != "Todos":
-    df_filtrado = df_filtrado[df_filtrado["municipio"] == municipio]
-if delito != "Todos":
-    df_filtrado = df_filtrado[df_filtrado["tipo_normalizado"] == delito]
+# --- LÓGICA DE FILTRADO ---
+# Se filtra el DataFrame principal basado en la selección del usuario.
+df_principal = df_base[
+    (df_base["municipio"] == municipio_seleccionado) &
+    (df_base["tipo_normalizado"] == delito_seleccionado)
+].copy()
 
-# Aplicar ordenamiento cronológico
-df_filtrado = crear_periodo_ordenado(df_filtrado)
 
-# Verificar que hay datos
-if len(df_filtrado) == 0:
-    st.warning("⚠️ No hay datos para la selección actual")
+if df_principal.empty:
+    st.warning("⚠️ No hay datos disponibles para la selección actual.")
     st.stop()
 
-# Crear gráfico mejorado
-# st.subheader(f"Evolución de casos: {delito if delito != 'Todos' else 'Todos los delitos'}")
+# --- CAMBIO NUEVO: SELECCIÓN DEL SEGUNDO MUNICIPIO ---
+st.subheader("Comparar con otro municipio")
+municipios_comparables = [m for m in municipios_unicos if m != municipio_seleccionado]
+municipio_comparado = st.selectbox(
+    "Selecciona un segundo municipio para comparar (opcional)",
+    options=["Ninguno"] + municipios_comparables
+)
 
+# --- CÁLCULO Y FILTRADO DE DATOS DEL SEGUNDO MUNICIPIO ---
+df_comparado = pd.DataFrame()
+if municipio_comparado != "Ninguno":
+    df_comparado = df_base[
+        (df_base["municipio"] == municipio_comparado) &
+        (df_base["tipo_normalizado"] == delito_seleccionado)
+    ].copy()
+
+# --- GRÁFICO PRINCIPAL ---
+st.subheader(f"Comparativa de Tasa de Criminalidad: {delito_seleccionado}")
 fig, ax1 = plt.subplots(figsize=(14, 6))
 
-# Si hay múltiples municipios, graficar cada uno con diferente color
-if municipio == "Todos" and len(df_filtrado["municipio"].unique()) > 1:
-    # Limitar a máximo 10 municipios para legibilidad
-    municipios_unicos = df_filtrado["municipio"].unique()[:10]
-    if len(df_filtrado["municipio"].unique()) > 10:
-        st.warning(f"⚠️ Mostrando solo los primeros 10 municipios de {len(df_filtrado['municipio'].unique())} disponibles")
-    
-    colors = plt.cm.tab10(np.linspace(0, 1, len(municipios_unicos)))
-    
-    for i, municipio_grupo in enumerate(municipios_unicos):
-        datos_grupo = df_filtrado[df_filtrado["municipio"] == municipio_grupo]
-        datos_grupo = datos_grupo.sort_values(["año", "trimestre"])
-        
-        ax1.plot(
-            range(len(datos_grupo)),  # Usar índices numéricos para el eje X
-            datos_grupo["valor"], 
-            marker="o", 
-            label=municipio_grupo,
-            color=colors[i],
-            linewidth=2,
-            markersize=4
-        )
-    
-    # Configurar etiquetas del eje X
-    if len(datos_grupo) > 0:
-        ax1.set_xticks(range(len(datos_grupo)))
-        ax1.set_xticklabels(datos_grupo["periodo"].tolist(), rotation=45)
-    
-    ax1.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
-    
-else:
-    # Un solo municipio o municipio específico
-    # Agrupar por periodo si hay múltiples registros por periodo
-    if municipio != "Todos":
-        datos_agrupados = df_filtrado.groupby(["año", "trimestre", "periodo"])["valor"].sum().reset_index()
-        datos_agrupados = datos_agrupados.sort_values(["año", "trimestre"])
-    else:
-        datos_agrupados = df_filtrado.groupby(["año", "trimestre", "periodo"])["valor"].sum().reset_index()
-        datos_agrupados = datos_agrupados.sort_values(["año", "trimestre"])
-    
+# Trazar la línea principal
+ax1.plot(
+    df_principal["periodo"],
+    df_principal["tasa_criminalidad_x1000"],
+    marker="o",
+    color="#d62728",
+    linewidth=2.5,
+    label=municipio_seleccionado
+)
+
+# Trazar la línea del segundo municipio si está seleccionado
+if not df_comparado.empty:
     ax1.plot(
-        range(len(datos_agrupados)),  # Usar índices numéricos
-        datos_agrupados["valor"], 
-        marker="o", 
-        color="red", 
-        linewidth=3,
-        markersize=6,
-        markerfacecolor="white",
-        markeredgecolor="red",
-        markeredgewidth=2
+        df_comparado["periodo"],
+        df_comparado["tasa_criminalidad_x1000"],
+        marker="o",
+        color="#1f77b4",
+        linewidth=2.5,
+        linestyle="--",  # Esto crea la línea discontinua
+        label=municipio_comparado
     )
     
-    # Configurar etiquetas del eje X
-    ax1.set_xticks(range(len(datos_agrupados)))
-    ax1.set_xticklabels(datos_agrupados["periodo"].tolist(), rotation=45)
-
-# Configuración del gráfico
-ax1.set_title(f"{delito} por trimestre - {municipio}", fontsize=16, fontweight='bold')
-ax1.set_xlabel("Periodo", fontsize=12)
-ax1.set_ylabel("Número de casos", fontsize=12)
-ax1.grid(True, alpha=0.3)
-
-# Ajustar layout
+ax1.set_title(f"Tasa de Criminalidad de {delito_seleccionado} (por 1000 hab.)", fontsize=16, fontweight='bold', pad=20)
+ax1.set_xlabel("Periodo")
+ax1.set_ylabel("Tasa por 1000 habitantes")
+ax1.grid(True, linestyle='--', alpha=0.6)
+ax1.legend(title="Municipios")
+plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
 st.pyplot(fig)
 
-# Estadísticas adicionales
+# --- MÉTRICAS Y TABLAS (Modificadas para mostrar solo el municipio principal) ---
+st.divider()
+st.subheader("Detalles del municipio seleccionado")
 col1, col2, col3 = st.columns(3)
 
-with col1:
-    total_casos = df_filtrado["valor"].sum()
-    st.metric("Total de casos", f"{total_casos:,}")
+total_casos_principal = df_principal["valor"].sum()
+col1.metric("Total de casos", f"{total_casos_principal:,.0f}")
 
-with col2:
-    promedio_casos = df_filtrado["valor"].mean()
-    st.metric("Promedio por periodo", f"{promedio_casos:.1f}")
+promedio_tasa_principal = df_principal["tasa_criminalidad_x1000"].mean()
+col2.metric("Promedio de Tasa/1000 hab.", f"{promedio_tasa_principal:.2f}")
 
-with col3:
-    periodos_unicos = df_filtrado["periodo"].nunique()
-    st.metric("Periodos analizados", periodos_unicos)
+periodos_unicos = df_principal["periodo"].nunique()
+col3.metric("Nº de periodos", periodos_unicos)
 
-# Mostrar datos en tabla (mejorada)
-with st.expander("📋 Ver datos detallados"):
-    # Mostrar datos ordenados correctamente
-    tabla_display = df_filtrado[["municipio", "año", "trimestre", "periodo", "tipo_normalizado", "valor", "tasa_criminalidad_x1000"]].reset_index(drop=True,).copy()
+with st.expander("📋 Ver datos detallados del municipio seleccionado"):
+    st.dataframe(df_principal[["municipio", "periodo", "valor", "poblacion", "tasa_criminalidad_x1000", "tipo_normalizado"]], use_container_width=True)
+
+if not df_comparado.empty:
+    st.divider()
+    st.subheader(f"Detalles de {municipio_comparado}")
+    total_casos_comparado = df_comparado["valor"].sum()
+    promedio_tasa_comparado = df_comparado["tasa_criminalidad_x1000"].mean()
     
-    # Ordenar la tabla
-    tabla_display = tabla_display.sort_values(["municipio", "año", "trimestre"])
-    
-    st.dataframe(
-        tabla_display,
-        use_container_width=True,
-        column_config={
-            "valor": st.column_config.NumberColumn("Casos", format="%d"),
-            "tasa_criminalidad_x1000": st.column_config.NumberColumn("Tasa x1000", format="%.3f"),
-        }
-    )
+    col1c, col2c, col3c = st.columns(3)
+    col1c.metric("Total de casos", f"{total_casos_comparado:,.0f}")
+    col2c.metric("Promedio de Tasa/1000 hab.", f"{promedio_tasa_comparado:.2f}")
+    col3c.metric("Nº de periodos", df_comparado["periodo"].nunique())
 
-# Análisis adicional si es un municipio específico
-if municipio != "Todos" and delito != "Todos":
-    st.subheader("📊 Análisis adicional")
-    
-    # Mostrar tasa de criminalidad si está disponible
-    if "tasa_criminalidad_x1000" in df_filtrado.columns:
-        fig2, ax2 = plt.subplots(figsize=(12, 6))
-        
-        datos_tasa = df_filtrado.groupby(["año", "trimestre", "periodo"])["tasa_criminalidad_x1000"].mean().reset_index()
-        datos_tasa = datos_tasa.sort_values(["año", "trimestre"])
-        
-        ax2.plot(
-            range(len(datos_tasa)),
-            datos_tasa["tasa_criminalidad_x1000"],
-            marker="s",
-            color="blue",
-            linewidth=2,
-            markersize=5,
-            label="Tasa por 1000 habitantes"
-        )
-        
-        ax2.set_xticks(range(len(datos_tasa)))
-        ax2.set_xticklabels(datos_tasa["periodo"].tolist(), rotation=45)
-        ax2.set_title(f"Tasa de criminalidad por 1000 habitantes - {municipio}", fontsize=14)
-        ax2.set_xlabel("Periodo")
-        ax2.set_ylabel("Tasa por 1000 habitantes")
-        ax2.grid(True, alpha=0.3)
-        ax2.legend()
-        
-        plt.tight_layout()
-        st.pyplot(fig2)
-
-# Información sobre los datos
-with st.expander("ℹ️ Información sobre los datos"):
-    st.write(f"""
-    **Resumen del dataset:**
-    - Total de registros: {len(df):,}
-    - Municipios únicos: {df['municipio'].nunique():,}
-    - Tipos de delito únicos: {df['tipo_normalizado'].nunique()}
-    - Rango de años: {df['año'].min()} - {df['año'].max()}
-    - Registros filtrados: {len(df_filtrado):,}
-    """)
+    with st.expander(f"📋 Ver datos detallados de {municipio_comparado}"):
+        st.dataframe(df_comparado[["municipio", "periodo", "valor", "poblacion", "tasa_criminalidad_x1000", "tipo_normalizado"]], use_container_width=True)
