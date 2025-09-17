@@ -124,8 +124,29 @@ with col2:
     opciones_delito = list(mapeo_delitos.values())
     delito_seleccionado = st.selectbox("⚖️ Selecciona un tipo de delito", options=opciones_delito)
 
-# Reemplaza la sección del gráfico de tasa de criminalidad (aproximadamente línea 120-140)
+st.subheader("Comparar con otro municipio")
+municipios_comparables = [m for m in municipios_unicos if m != municipio_seleccionado]
+municipio_comparado = st.selectbox("Selecciona un segundo municipio (opcional)", options=["Ninguno"] + municipios_comparables)
 
+# AQUÍ SE DEFINEN LAS VARIABLES - ESTA PARTE FALTABA EN TU CÓDIGO
+municipios_a_buscar = [municipio_seleccionado]
+if municipio_comparado != "Ninguno":
+    municipios_a_buscar.append(municipio_comparado)
+
+df_total = get_crime_data(municipios_a_buscar, delito_seleccionado)
+
+if df_total.empty:
+    st.warning("⚠️ No hay datos disponibles para la selección actual.")
+    st.stop()
+
+df_principal = df_total[df_total["municipio"] == municipio_seleccionado]
+df_comparado = pd.DataFrame()
+if municipio_comparado != "Ninguno":
+    df_comparado = df_total[df_total["municipio"] == municipio_comparado]
+
+# AHORA SÍ PODEMOS USAR df_principal Y df_comparado EN LOS GRÁFICOS
+
+# --- GRÁFICO DE TASA DE CRIMINALIDAD (LÍNEAS) ---
 st.subheader(f"Comparativa de Tasa de Criminalidad: {delito_seleccionado}")
 fig, ax1 = plt.subplots(figsize=(14, 6))
 
@@ -154,9 +175,7 @@ else:
 plt.tight_layout()
 st.pyplot(fig)
 
-# Reemplaza la sección del gráfico de volumen de delitos (aproximadamente línea 150-190)
-
-# --- GRÁFICO DE VOLUMEN DE DELITOS (Corregido para diferentes períodos) ---
+# --- GRÁFICO DE VOLUMEN DE DELITOS (BARRAS) ---
 st.subheader(f"Comparativa de volumen de delitos: {delito_seleccionado}")
 fig, ax1 = plt.subplots(figsize=(14, 6))
 
@@ -215,11 +234,7 @@ ax1.legend(title="Municipios")
 plt.tight_layout()
 st.pyplot(fig)
 
-
-
-
-
-
+# --- SECCIÓN DE DETALLES ---
 st.divider()
 st.subheader(f"Detalles de {municipio_seleccionado}")
 col1, col2, col3 = st.columns(3)
