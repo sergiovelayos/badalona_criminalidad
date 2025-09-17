@@ -48,6 +48,7 @@ def get_municipios():
 def get_crime_data(municipios: list, tipo_delito_normalizado: str):
     """
     Función optimizada que busca SOLO los datos para los municipios y delito seleccionados.
+    Adaptada para la nueva estructura de base de datos optimizada.
     """
     if not municipios or not tipo_delito_normalizado:
         return pd.DataFrame()
@@ -56,30 +57,29 @@ def get_crime_data(municipios: list, tipo_delito_normalizado: str):
     if not tipo_delito_original:
         return pd.DataFrame()
 
-    # --- CONSULTA SQL CORREGIDA Y OPTIMIZADA ---
-    # Esta consulta une cada delito con el registro de población más reciente disponible
-    # para su año, evitando duplicados y asegurando el cálculo correcto de la tasa.
+    # --- CONSULTA SQL OPTIMIZADA para la nueva estructura ---
+    # Como ya no hay duplicados en la DB, la consulta es más simple y eficiente
     query = """
     SELECT
-        c.año,
-        c.trimestre,
-        c.municipio,
-        c.tipo_normalizado,
-        c.valor,
+        d.año,
+        d.trimestre,
+        d.municipio,
+        d.tipo_normalizado,
+        d.valor,
         (
             SELECT p.POB
             FROM poblacion p
-            WHERE p.cod_mun = c.codigo_postal
-              AND p.AÑO <= c.año
+            WHERE p.cod_mun = d.codigo_postal
+              AND p.AÑO <= d.año
             ORDER BY p.AÑO DESC
             LIMIT 1
         ) AS poblacion
-    FROM delitos c
+    FROM delitos d
     WHERE
-        c.municipio IN ({placeholders})
-        AND c.tipo_normalizado = ?
+        d.municipio IN ({placeholders})
+        AND d.tipo_normalizado = ?
     ORDER BY
-        c.año, c.trimestre;
+        d.año, d.trimestre;
     """.format(placeholders=','.join('?' for _ in municipios))
 
     params = municipios + [tipo_delito_original]
@@ -91,51 +91,28 @@ def get_crime_data(municipios: list, tipo_delito_normalizado: str):
     if df.empty:
         return pd.DataFrame()
 
-    # --- Procesamiento de datos (ahora sobre un DataFrame muy pequeño) ---
+    # --- PROCESAMIENTO SIMPLIFICADO (ya no hay duplicados que manejar) ---
+    # Mapear nombres de delitos
     df["tipo_normalizado"] = df["tipo_normalizado"].map(mapeo_delitos).fillna(df["tipo_normalizado"])
+    
+    # Convertir tipos de datos
     df["año"] = df["año"].astype(int)
     df["trimestre"] = df["trimestre"].astype(str)
     df["valor"] = pd.to_numeric(df["valor"], errors="coerce").fillna(0)
     df["poblacion"] = pd.to_numeric(df["poblacion"], errors="coerce").fillna(0)
 
-    # --- MANEJO DE DUPLICADOS: Mantener todos los registros únicos y promediar solo los duplicados ---
-    # Identificar grupos de duplicados
-    grupos_duplicados = df.groupby(['año', 'trimestre', 'municipio', 'tipo_normalizado'])
-    
-    # Lista para almacenar los registros procesados
-    registros_procesados = []
-    
-    for nombre_grupo, grupo in grupos_duplicados:
-        if len(grupo) > 1:
-            # Hay duplicados: calcular promedio
-            registro_promediado = {
-                'año': grupo['año'].iloc[0],
-                'trimestre': grupo['trimestre'].iloc[0], 
-                'municipio': grupo['municipio'].iloc[0],
-                'tipo_normalizado': grupo['tipo_normalizado'].iloc[0],
-                'valor': grupo['valor'].mean(),  # Promedio de duplicados
-                'poblacion': grupo['poblacion'].iloc[0]
-            }
-            registros_procesados.append(registro_promediado)
-        else:
-            # No hay duplicados: mantener el registro original
-            registros_procesados.append(grupo.iloc[0].to_dict())
-    
-    # Crear DataFrame con los registros procesados
-    df_sin_duplicados = pd.DataFrame(registros_procesados)
-
-    # Calcular tasa
-    df_sin_duplicados["tasa_criminalidad_x1000"] = df_sin_duplicados.apply(
+    # Calcular tasa de criminalidad
+    df["tasa_criminalidad_x1000"] = df.apply(
         lambda row: (row["valor"] / row["poblacion"] * 1000) if row["poblacion"] > 0 else 0,
         axis=1
     )
 
-    # Crear periodo ordenado
-    df_sin_duplicados["periodo"] = df_sin_duplicados["año"].astype(str) + "-" + df_sin_duplicados["trimestre"]
-    df_sin_duplicados["trimestre_num"] = df_sin_duplicados["trimestre"].str.replace("T", "", regex=False).astype(int)
-    df_sin_duplicados = df_sin_duplicados.sort_values(["año", "trimestre_num", "municipio"])
+    # Crear periodo ordenado para visualización
+    df["periodo"] = df["año"].astype(str) + "-" + df["trimestre"]
+    df["trimestre_num"] = df["trimestre"].str.replace("T", "", regex=False).astype(int)
+    df = df.sort_values(["año", "trimestre_num", "municipio"])
 
-    return df_sin_duplicados.drop(columns=["trimestre_num"])
+    return df.drop(columns=["trimestre_num"])
 
 # --- INTERFAZ DE STREAMLIT (Sin cambios desde aquí) ---
 
