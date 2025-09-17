@@ -114,7 +114,7 @@ def get_crime_data(municipios: list, tipo_delito_normalizado: str):
 
     return df.drop(columns=["trimestre_num"])
 
-# --- INTERFAZ DE STREAMLIT (Sin cambios desde aquí) ---
+# --- INTERFAZ DE STREAMLIT  ---
 
 col1, col2 = st.columns(2)
 with col1:
@@ -124,65 +124,93 @@ with col2:
     opciones_delito = list(mapeo_delitos.values())
     delito_seleccionado = st.selectbox("⚖️ Selecciona un tipo de delito", options=opciones_delito)
 
-st.subheader("Comparar con otro municipio")
-municipios_comparables = [m for m in municipios_unicos if m != municipio_seleccionado]
-municipio_comparado = st.selectbox("Selecciona un segundo municipio (opcional)", options=["Ninguno"] + municipios_comparables)
-
-municipios_a_buscar = [municipio_seleccionado]
-if municipio_comparado != "Ninguno":
-    municipios_a_buscar.append(municipio_comparado)
-
-df_total = get_crime_data(municipios_a_buscar, delito_seleccionado)
-
-if df_total.empty:
-    st.warning("⚠️ No hay datos disponibles para la selección actual.")
-    st.stop()
-
-df_principal = df_total[df_total["municipio"] == municipio_seleccionado]
-df_comparado = pd.DataFrame()
-if municipio_comparado != "Ninguno":
-    df_comparado = df_total[df_total["municipio"] == municipio_comparado]
+# Reemplaza la sección del gráfico de tasa de criminalidad (aproximadamente línea 120-140)
 
 st.subheader(f"Comparativa de Tasa de Criminalidad: {delito_seleccionado}")
 fig, ax1 = plt.subplots(figsize=(14, 6))
+
+# Gráfico del municipio principal
 ax1.plot(df_principal["periodo"], df_principal["tasa_criminalidad_x1000"],
          marker="o", color="#d62728", linewidth=2.5, label=municipio_seleccionado)
+
+# Solo añadir el segundo municipio si existe y tiene datos
 if not df_comparado.empty:
     ax1.plot(df_comparado["periodo"], df_comparado["tasa_criminalidad_x1000"],
              marker="o", color="#1f77b4", linewidth=2.5, linestyle="--", label=municipio_comparado)
+
+# Configuración del gráfico
 ax1.set_title(f"Tasa de Criminalidad de {delito_seleccionado} (por 1000 hab.)", fontsize=16, fontweight="bold", pad=20)
 ax1.set_xlabel("Periodo")
 ax1.set_ylabel("Tasa por 1000 habitantes")
 ax1.grid(True, linestyle="--", alpha=0.6)
 ax1.legend(title="Municipios")
-plt.xticks(rotation=45, ha="right")
+
+# Rotar etiquetas X solo si hay muchos períodos
+if len(df_principal["periodo"]) > 10:
+    plt.xticks(rotation=45, ha="right")
+else:
+    plt.xticks(rotation=30, ha="right")
+
 plt.tight_layout()
 st.pyplot(fig)
 
-# --- GRÁFICO DE VOLUMEN DE DELITOS (Ahora con barras) ---
+# Reemplaza la sección del gráfico de volumen de delitos (aproximadamente línea 150-190)
+
+# --- GRÁFICO DE VOLUMEN DE DELITOS (Corregido para diferentes períodos) ---
 st.subheader(f"Comparativa de volumen de delitos: {delito_seleccionado}")
 fig, ax1 = plt.subplots(figsize=(14, 6))
 
-bar_width = 0.35 # Ancho de cada barra
-x_indices = range(len(df_principal["periodo"])) # Posiciones en el eje X
-
-# Barras para el municipio principal
-ax1.bar([i - bar_width/2 for i in x_indices], df_principal["valor"],
-        width=bar_width, color="#d62728", label=municipio_seleccionado, align='center')
-
-# Barras para el municipio comparado (si existe)
 if not df_comparado.empty:
-    ax1.bar([i + bar_width/2 for i in x_indices], df_comparado["valor"],
+    # CREAR DATASET COMBINADO para alinear períodos
+    # Obtener todos los períodos únicos de ambos municipios
+    todos_los_periodos = sorted(list(set(df_principal["periodo"].tolist() + df_comparado["periodo"].tolist())))
+    
+    # Crear DataFrames completos con todos los períodos (rellenar con 0 si falta)
+    df_principal_completo = pd.DataFrame({'periodo': todos_los_periodos})
+    df_principal_completo = df_principal_completo.merge(
+        df_principal[['periodo', 'valor']], 
+        on='periodo', 
+        how='left'
+    ).fillna(0)
+    
+    df_comparado_completo = pd.DataFrame({'periodo': todos_los_periodos})
+    df_comparado_completo = df_comparado_completo.merge(
+        df_comparado[['periodo', 'valor']], 
+        on='periodo', 
+        how='left'
+    ).fillna(0)
+    
+    # Configurar barras
+    bar_width = 0.35
+    x_indices = range(len(todos_los_periodos))
+    
+    # Barras para ambos municipios
+    ax1.bar([i - bar_width/2 for i in x_indices], df_principal_completo["valor"],
+            width=bar_width, color="#d62728", label=municipio_seleccionado, align='center')
+    
+    ax1.bar([i + bar_width/2 for i in x_indices], df_comparado_completo["valor"],
             width=bar_width, color="#1f77b4", label=municipio_comparado, align='center')
+    
+    # Configuración del gráfico
+    ax1.set_xticks(x_indices)
+    ax1.set_xticklabels(todos_los_periodos, rotation=45, ha="right")
 
-# Configuración del gráfico
+else:
+    # Solo un municipio - gráfico simple
+    bar_width = 0.35
+    x_indices = range(len(df_principal["periodo"]))
+    
+    ax1.bar(x_indices, df_principal["valor"],
+            width=bar_width, color="#d62728", label=municipio_seleccionado)
+    
+    ax1.set_xticks(x_indices)
+    ax1.set_xticklabels(df_principal["periodo"], rotation=45, ha="right")
+
+# Configuración común del gráfico
 ax1.set_title(f"Volumen de delitos de {delito_seleccionado}", fontsize=16, fontweight="bold", pad=20)
 ax1.set_xlabel("Periodo")
 ax1.set_ylabel("Volumen delitos")
-ax1.set_xticks(x_indices) # Establecer las posiciones de los ticks
-ax1.set_xticklabels(df_principal["periodo"], rotation=45, ha="right") # Etiquetas de los ticks
-
-ax1.grid(True, linestyle="--", alpha=0.6, axis='y') # Rejilla solo en el eje Y para barras
+ax1.grid(True, linestyle="--", alpha=0.6, axis='y')
 ax1.legend(title="Municipios")
 plt.tight_layout()
 st.pyplot(fig)
