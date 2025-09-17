@@ -67,10 +67,18 @@ En primer lugar descargo los datos completos sin tratar (/data/descargas_portal_
                 -Municipio de Badalona;8. Hurtos;Variación % 2022/2021;14,3
         - Corrijo el error y ahora no se ven los picos de T422
 
-## Próximas funcionalidades
-- Elegir entre datos absolutos y ratio por 1000 habitantes.
-- Añadir datos provinciales, autonómicos y nacionales para poder comparar el dato del municipio.
+## Mejoras desde el lanzamiento
+- Añadir población para cada año. En la primera versión usaba la población de 2024 para todo el periodo pero no es correcto, si el dato de criminalidad de un municipio es de 2020, hay que calcular la ratio con la población de ese año. Como la población sale con el año vencido, en el año actual, 2025, usaré la última población de 2024.
+- Reemplazar los CSVs por base de datos con SQLite
+- Cambiar el orden de las tipologías colocando primero el TOTAL DELITOS y formateando los delitos dentro de Subtotales para que sea más legible
 
+## Próximas funcionalidades
+- ~~Elegir entre datos absolutos y ratio por 1000 habitantes.~~
+- Añadir datos provinciales, autonómicos y nacionales para poder comparar el dato del municipio.
+- Añadir otras dimensiones que puedan dar más contexto a los delitos: nacionalidad, renta per cápita...
+- Añadir visualización mapa de calor
+- Añadir datos nivel provincia y Comunidad Autónoma (CCAA)
+- Aádir más ciudades/provincias/CCAA para comparar
 
 
         
