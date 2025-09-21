@@ -1,0 +1,92 @@
+Valor Original,Nombre Oficial,Comunidad Autónoma,Provincia,Descripción del Valor Original
+- Isla de Eivissa',Eivissa,Illes Balears,Balears (Illes),Isla
+- Isla  de Eivissa,Eivissa,Illes Balears,Balears (Illes),Isla
+- Isla de Formentera',Formentera,Illes Balears,Balears (Illes),Isla
+- Isla de Fuerteventura',Fuerteventura,Canarias,Las Palmas,Isla
+- Isla de Gomera (La)',La Gomera,Canarias,Santa Cruz de Tenerife,Isla
+- Isla de Gran Canaria',Gran Canaria,Canarias,Las Palmas,Isla
+- Isla de Hierro (El)',El Hierro,Canarias,Santa Cruz de Tenerife,Isla
+- Isla de Lanzarote',Lanzarote,Canarias,Las Palmas,Isla
+- Isla de Mallorca',Mallorca,Illes Balears,Balears (Illes),Isla
+- Isla de Menorca',Menorca,Illes Balears,Balears (Illes),Isla
+- Isla de Palma (La)',La Palma,Canarias,Santa Cruz de Tenerife,Isla
+- Isla de Tenerife',Tenerife,Canarias,Santa Cruz de Tenerife,Isla
+ANDALUCÍA',Andalucía,Andalucía,No aplica,Comunidad Autónoma
+ARAGÓN',Aragón,Aragón,No aplica,Comunidad Autónoma
+ASTURIAS (PRINCIPADO DE)',Principado de Asturias,Principado de Asturias,Asturias,Comunidad Autónoma
+BALEARS (ILLES)',Illes Balears,Illes Balears,Balears (Illes),Comunidad Autónoma
+CANARIAS',Canarias,Canarias,No aplica,Comunidad Autónoma
+CANTABRIA',Cantabria,Cantabria,Cantabria,Comunidad Autónoma
+CASTILLA - LA MANCHA',Castilla-La Mancha,Castilla-La Mancha,No aplica,Comunidad Autónoma
+CASTILLA Y LEON',Castilla y León,Castilla y León,No aplica,Comunidad Autónoma
+CASTILLA Y LEÓN',Castilla y León,Castilla y León,No aplica,Comunidad Autónoma
+CATALUÑA',Cataluña,Cataluña,No aplica,Comunidad Autónoma
+CIUDAD AUTÓNOMA DE CEUTA',Ciudad Autónoma de Ceuta,Ciudad Autónoma de Ceuta,Ciudad Autónoma de Ceuta,Ciudad Autónoma
+CIUDAD AUTÓNOMA DE MELILLA',Ciudad Autónoma de Melilla,Ciudad Autónoma de Melilla,Ciudad Autónoma de Melilla,Ciudad Autónoma
+COMUNITAT VALENCIANA',Comunitat Valenciana,Comunitat Valenciana,No aplica,Comunidad Autónoma
+EN EL EXTRANJERO',FUERA DE ESPAÑA,FUERA DE ESPAÑA,No aplica,Extranjero
+EXTRANJERA',FUERA DE ESPAÑA,FUERA DE ESPAÑA,No aplica,Extranjero
+EXTREMADURA',Extremadura,Extremadura,No aplica,Comunidad Autónoma
+FUERA DE ESPAÑA',FUERA DE ESPAÑA,FUERA DE ESPAÑA,No aplica,Extranjero
+GALICIA',Galicia,Galicia,No aplica,Comunidad Autónoma
+Isla de Eivissa',Eivissa,Illes Balears,Balears (Illes),Isla
+Isla de Formentera',Formentera,Illes Balears,Balears (Illes),Isla
+Isla de Fuerteventura',Fuerteventura,Canarias,Las Palmas,Isla
+Isla de Gomera (La)',La Gomera,Canarias,Santa Cruz de Tenerife,Isla
+Isla de Gran Canaria',Gran Canaria,Canarias,Las Palmas,Isla
+Isla de Hierro (El)',El Hierro,Canarias,Santa Cruz de Tenerife,Isla
+Isla de Lanzarote',Lanzarote,Canarias,Las Palmas,Isla
+Isla de Mallorca',Mallorca,Illes Balears,Balears (Illes),Isla
+Isla de Menorca',Menorca,Illes Balears,Balears (Illes),Isla
+Isla de Palma (La)',La Palma,Canarias,Santa Cruz de Tenerife,Isla
+Isla de Tenerife',Tenerife,Canarias,Santa Cruz de Tenerife,Isla
+MADRID (COMUNIDAD DE)',Comunidad de Madrid,Comunidad de Madrid,Madrid,Comunidad Autónoma
+MURCIA (REGION DE)',Región de Murcia,Región de Murcia,Murcia,Comunidad Autónoma
+MURCIA (REGIÓN DE)',Región de Murcia,Región de Murcia,Murcia,Comunidad Autónoma
+NACIONAL',España,Territorio Nacional,No aplica,Nacional
+NAVARRA (COMUNIDAD FORAL DE)',Comunidad Foral de Navarra,Comunidad Foral de Navarra,Navarra,Comunidad Foral
+PAÍS VASCO',País Vasco,País Vasco,No aplica,Comunidad Autónoma
+Provincia de ALBACETE',Albacete,Castilla-La Mancha,Albacete,Provincia
+Provincia de ALICANTE/ALACANT',Alicante/Alacant,Comunitat Valenciana,Alicante/Alacant,Provincia
+Provincia de ALMERÍA',Almería,Andalucía,Almería,Provincia
+Provincia de ARABA/ÁLAVA',Araba/Álava,País Vasco,Araba/Álava,Provincia
+Provincia de BADAJOZ',Badajoz,Extremadura,Badajoz,Provincia
+Provincia de BARCELONA',Barcelona,Cataluña,Barcelona,Provincia
+Provincia de BIZKAIA',Bizkaia,País Vasco,Bizkaia,Provincia
+Provincia de BURGOS',Burgos,Castilla y León,Burgos,Provincia
+Provincia de CASTELLÓN/CASTELLÓ',Castellón/Castelló,Comunitat Valenciana,Castellón/Castelló,Provincia
+Provincia de CIUDAD REAL',Ciudad Real,Castilla-La Mancha,Ciudad Real,Provincia
+Provincia de CORUÑA (A)',A Coruña,Galicia,A Coruña,Provincia
+Provincia de CUENCA',Cuenca,Castilla-La Mancha,Cuenca,Provincia
+Provincia de CÁCERES',Cáceres,Extremadura,Cáceres,Provincia
+Provincia de CÁDIZ',Cádiz,Andalucía,Cádiz,Provincia
+Provincia de CÓRDOBA',Córdoba,Andalucía,Córdoba,Provincia
+Provincia de GIPUZKOA',Gipuzkoa,País Vasco,Gipuzkoa,Provincia
+Provincia de GIRONA',Girona,Cataluña,Girona,Provincia
+Provincia de GRANADA',Granada,Andalucía,Granada,Provincia
+Provincia de GUADALAJARA',Guadalajara,Castilla-La Mancha,Guadalajara,Provincia
+Provincia de HUELVA',Huelva,Andalucía,Huelva,Provincia
+Provincia de HUESCA',Huesca,Aragón,Huesca,Provincia
+Provincia de JAÉN',Jaén,Andalucía,Jaén,Provincia
+Provincia de LEÓN',León,Castilla y León,León,Provincia
+Provincia de LLEIDA',Lleida,Cataluña,Lleida,Provincia
+Provincia de LUGO',Lugo,Galicia,Lugo,Provincia
+Provincia de MÁLAGA',Málaga,Andalucía,Málaga,Provincia
+Provincia de OURENSE',Ourense,Galicia,Ourense,Provincia
+Provincia de PALENCIA',Palencia,Castilla y León,Palencia,Provincia
+Provincia de PALMAS (LAS)',Las Palmas,Canarias,Las Palmas,Provincia
+Provincia de PONTEVEDRA',Pontevedra,Galicia,Pontevedra,Provincia
+Provincia de SALAMANCA',Salamanca,Castilla y León,Salamanca,Provincia
+Provincia de SANTA CRUZ DE TENERIFE',Santa Cruz de Tenerife,Canarias,Santa Cruz de Tenerife,Provincia
+Provincia de SEGOVIA',Segovia,Castilla y León,Segovia,Provincia
+Provincia de SEVILLA',Sevilla,Andalucía,Sevilla,Provincia
+Provincia de SORIA',Soria,Castilla y León,Soria,Provincia
+Provincia de TARRAGONA',Tarragona,Cataluña,Tarragona,Provincia
+Provincia de TERUEL',Teruel,Aragón,Teruel,Provincia
+Provincia de TOLEDO',Toledo,Castilla-La Mancha,Toledo,Provincia
+Provincia de VALENCIA/VALÈNCIA',Valencia/València,Comunitat Valenciana,Valencia/València,Provincia
+Provincia de VALLADOLID',Valladolid,Castilla y León,Valladolid,Provincia
+Provincia de ZAMORA',Zamora,Castilla y León,Zamora,Provincia
+Provincia de ZARAGOZA',Zaragoza,Aragón,Zaragoza,Provincia
+Provincia de ÁVILA',Ávila,Castilla y León,Ávila,Provincia
+RIOJA (LA)',La Rioja,La Rioja,La Rioja,Comunidad Autónoma

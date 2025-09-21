@@ -253,3 +253,10 @@ if not df_comparado.empty:
     col3c.metric("Nº de periodos", df_comparado["periodo"].nunique())
     with st.expander(f"📋 Ver datos detallados de {municipio_comparado}"):
         st.dataframe(df_comparado[["municipio","periodo","valor","poblacion","tasa_criminalidad_x1000","tipo_normalizado"]], use_container_width=True)
+
+
+# --- ANÁLISIS ADICIONAL DE T4 2022 (PARA DESARROLLADORES) ---
+# Esta sección es para desarrolladores que quieran entender cómo se ha limpiado el dato de T4 2022
+# Se puede eliminar o comentar en producción
+st.divider()
+st.subheader("🔍 Análisis adicional")

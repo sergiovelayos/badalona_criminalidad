@@ -2,8 +2,6 @@ import pandas as pd
 
 pd.set_option("display.max_columns", None)
 
-# La ruta a tu archivo CSV
-# csv_file = r"./data/delitos_raw_merged.csv"
 csv_file = r"./data/delitos_raw_merged_t422.csv" # fix t422
 
 # Leemos el archivo directamente desde su ruta.Seleccionar columnas en el read_csv
