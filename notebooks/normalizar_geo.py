@@ -94,30 +94,30 @@ delitos = delitos.drop('geo_limpia', axis=1)
 # # Verificaciones
 # # -----------------------
 
-# print(f"\nRegistros finales: {len(delitos)}")
-# print(f"¿Se mantuvieron todos los registros?: {len(delitos) == len(delitos_original)}")
+print(f"\nRegistros finales: {len(delitos)}")
+print(f"¿Se mantuvieron todos los registros?: {len(delitos) == len(delitos_original)}")
 
-# # Verificar Badalona específicamente
-# filter_badalona = delitos["geo"].str.contains("Badalona", na=False)
-# print(f"\nRegistros de Badalona: {filter_badalona.sum()}")
-# print(f"Años con datos de Badalona: {sorted(delitos.loc[filter_badalona,'año'].unique())}")
+# Verificar Badalona específicamente
+filter_badalona = delitos["geo"].str.contains("Badalona", na=False)
+print(f"\nRegistros de Badalona: {filter_badalona.sum()}")
+print(f"Años con datos de Badalona: {sorted(delitos.loc[filter_badalona,'año'].unique())}")
 
-# # Mostrar algunos ejemplos de valores de Badalona
-# print("\nEjemplos de registros de Badalona:")
-# badalona_examples = delitos.loc[filter_badalona, ['año', 'geo']].drop_duplicates().sort_values('año')
-# for _, row in badalona_examples.head(10).iterrows():
-#     print(f"  {row['año']}: '{row['geo']}'")
+# Mostrar algunos ejemplos de valores de Badalona
+print("\nEjemplos de registros de Badalona:")
+badalona_examples = delitos.loc[filter_badalona, ['año', 'geo']].drop_duplicates().sort_values('año')
+for _, row in badalona_examples.head(10).iterrows():
+    print(f"  {row['año']}: '{row['geo']}'")
 
-# # Estadísticas generales del mapeo
-# valores_con_cp = delitos["geo"].str.match(r"^\d{5}", na=False).sum()
-# valores_sin_cp = len(delitos) - valores_con_cp
+# Estadísticas generales del mapeo
+valores_con_cp = delitos["geo"].str.match(r"^\d{5}", na=False).sum()
+valores_sin_cp = len(delitos) - valores_con_cp
 
-# print(f"\nEstadísticas del mapeo:")
-# print(f"Registros con código postal: {valores_con_cp}")
-# print(f"Registros sin código postal: {valores_sin_cp}")
+print(f"\nEstadísticas del mapeo:")
+print(f"Registros con código postal: {valores_con_cp}")
+print(f"Registros sin código postal: {valores_sin_cp}")
 
-# # Verificar que no se perdieron años
-# print(f"\nAños en datos finales: {sorted(delitos['año'].unique())}")
+# Verificar que no se perdieron años
+print(f"\nAños en datos finales: {sorted(delitos['año'].unique())}")
 
 # Opcional: guardar para verificación
 delitos.to_csv("./data/esp_geo_normalized.csv", index=False, encoding="utf-8")
