@@ -9,7 +9,7 @@ print(f"--- Inspeccionando el contenido de '{DB_PATH}' ---")
 try:
     conn = sqlite3.connect(DB_PATH)
     # Leemos solo las 10 primeras filas para una revisión rápida
-    df_inspector = pd.read_sql_query(f"SELECT * FROM {TABLE_NAME} WHERE GEO LIKE '%Badalona' and tipo like '%Hurto%'", conn)
+    df_inspector = pd.read_sql_query(f"SELECT * FROM {TABLE_NAME} WHERE GEO LIKE '%CATALU'", conn)
     conn.close()
 
     print(f"✅ Se han leído las primeras filas de la tabla '{TABLE_NAME}':")

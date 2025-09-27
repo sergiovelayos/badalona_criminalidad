@@ -126,6 +126,9 @@ df_combinaciones = df_total_last[["geo", "periodo", "fichero"]].drop_duplicates(
 # Ordenar para más claridad
 df_combinaciones = df_combinaciones.sort_values(["geo", "fichero","periodo" ])
 
+# print(df_total_last["geo"].unique())
+
+
 # Mostrar las primeras filas
 # print(df_combinaciones.head(20))
 
@@ -141,9 +144,9 @@ dic_mun = pd.read_csv("data/diccionarios/municipios.csv", sep=";", dtype={"cp_pk
 dic_pro = pd.read_csv("data/diccionarios/provincias.csv", sep=";", dtype={"cp_pk_tab_pro":str})
 dic_ccaa = pd.read_csv("data/diccionarios/ccaa.csv", sep=";", dtype={"cp_pk_tab_ccaa":str})
 
-pob_mun = pd.read_csv("data/pobmun/pob_municipios.csv", sep=";", dtype={"CP":str})
-pob_pro = pd.read_csv("data/pobmun/pob_provincias.csv", sep=";", dtype={"CODPRO":str})
-pob_ccaa = pd.read_csv("data/pobmun/pob_ccaa.csv", sep=";", dtype={"CODCCAA":str})
+pob_mun = pd.read_csv("data/pob_municipios.csv", sep=";", dtype={"CP":str})
+pob_pro = pd.read_csv("data/pob_provincias.csv", sep=";", dtype={"CODPRO":str})
+pob_ccaa = pd.read_csv("data/pob_ccaa.csv", sep=";", dtype={"CODCCAA":str})
 
 # # --- Información de 'df_total_last' ---
 # print("\n--- 1. Extracto del data frame base 'df_total_last' ---")
@@ -169,13 +172,14 @@ df_cruzado_1 = pd.merge(
     how='inner'
 )
 
+
 # Cruce 2: con pob_ccaa
 if not df_cruzado_1.empty:
     df_cruzado_1[['trimestre', 'año']] = df_cruzado_1['periodo'].str.split(' ', expand=True)
     df_cruzado_1['año'] = df_cruzado_1['año'].astype(int)
     df_cruzado_1['pob_año'] = df_cruzado_1['año'].clip(upper=2024)
 
-    df_cruzado_1['cccaa_pk_tab_ccaa'] = df_cruzado_1['cccaa_pk_tab_ccaa'].astype(str)
+    df_cruzado_1['cccaa_pk_tab_ccaa'] = df_cruzado_1['cccaa_pk_tab_ccaa'].astype(str).str.zfill(2)
     pob_ccaa['CODCCAA'] = pob_ccaa['CODCCAA'].astype(str)
 
     df_cruzado_2 = pd.merge(
@@ -187,12 +191,16 @@ if not df_cruzado_1.empty:
 else:
     df_cruzado_2 = pd.DataFrame()
 
+
+
 df_cruzado_2 = df_cruzado_2.drop(columns=["geo","fichero","geo_ccaa_unique","cccaa_pk_tab_ccaa","trimestre","año","pob_año","CODCCAA","AÑO"])
 nuevo_order = ["periodo", "CCAA", "tipo", "valor", "POB"]
 df_cruzado_2 = df_cruzado_2[nuevo_order]
 df_cruzado_2["CCAA"] = "CCAA:" + df_cruzado_2["CCAA"].astype(str)
 df_cruzado_2 = df_cruzado_2.rename(columns={"CCAA":"geo"})
 df_ccaa = df_cruzado_2.copy()
+
+#print(df_cruzado_2["geo"].unique()) # Cat está
 
 #print(df_cruzado_2["periodo"].unique())
 # filter = df_ccaa["periodo"].str.contains("T4 2023")
@@ -224,6 +232,8 @@ if not df_cruzado_1.empty:
     )
 else:
     df_cruzado_2 = pd.DataFrame()
+
+
 
 df_cruzado_2 = df_cruzado_2.drop(columns=["geo","fichero","geo_pro_unique","cpro_pk_tab_pro","trimestre","año","pob_año","CPRO","AÑO"])
 nuevo_order = ["periodo", "PROVINCIA", "tipo", "valor", "POB"]
@@ -308,13 +318,16 @@ df_nac_2 = df_nac_2.drop(columns=["trimestre","año","pob_año","AÑO"])
 nuevo_order = ["periodo", "geo", "tipo", "valor", "POB"]
 df_nac_2 = df_nac_2[nuevo_order]
 
+
 df_ccaa_pro_mun = pd.concat([df_ccaa, df_pro, df_mun,df_nac_2], ignore_index=True)
+#print(df_ccaa_pro_mun["geo"].unique()) # Cat ok
+
 # print(f"\nShapes Dataframes: df_ccaa_pro_mun {df_ccaa_pro_mun.shape}")
 # print(df_ccaa_pro_mun.head(10))
 # print(f"\nRegistros de geo del dataframe resultante:{df_ccaa_pro_mun['geo'].nunique()}")
 # print(df_ccaa_pro_mun["geo"].unique()[100:120])
-filter = df_ccaa_pro_mun["geo"].str.contains("NACIONAL")
-#print(df_ccaa_pro_mun[filter].head(10))
+# filter = df_ccaa_pro_mun["geo"].str.contains("CCAA:CATALUÑA")
+# print(df_ccaa_pro_mun[filter].head(10))
 
 
 
@@ -381,11 +394,11 @@ def normalizar_tipologia(valor: str) -> str:
 
 df_ccaa_pro_mun["tipo"] = df_ccaa_pro_mun["tipo"].apply(normalizar_tipologia)
 
-filtro = (
-    df_ccaa_pro_mun["geo"].str.contains("Badalona") &
-    (df_ccaa_pro_mun["periodo"] == "T2 2025") &
-    df_ccaa_pro_mun["tipo"].str.contains("Hurtos")
-)
+# filtro = (
+#     df_ccaa_pro_mun["geo"].str.contains("Cataluña") &
+#     (df_ccaa_pro_mun["periodo"] == "T2 2025") &
+#     df_ccaa_pro_mun["tipo"].str.contains("Hurtos")
+# )
 
 # print("\nPrimer filter:",df_ccaa_pro_mun[filtro])
 
@@ -437,10 +450,14 @@ df_ccaa_pro_mun['valor'] = df_ccaa_pro_mun['valor_desacumulado']
 # Limpiar columnas temporales
 df_ccaa_pro_mun.drop(columns=['trim_num', 'valor_original', 'valor_desacumulado'], inplace=True)
 
-print(df_ccaa_pro_mun["tipo"].unique())
 
+# filtro = (
+#     df_ccaa_pro_mun["geo"].str.contains("Cataluña") &
+#     (df_ccaa_pro_mun["periodo"] == "T2 2025") &
+#     df_ccaa_pro_mun["tipo"].str.contains("Hurtos")
+# )
 
-
+# print("\nPrimer filter:",df_ccaa_pro_mun[filtro])
 
 
 
@@ -450,7 +467,7 @@ print(df_ccaa_pro_mun["tipo"].unique())
 
 
 # Guardar resultado intermedio
-# df_ccaa_pro_mun.to_csv("data/delitos_borrar.csv", index=False, encoding='utf-8')
+#df_ccaa_pro_mun.to_csv("data/delitos_borrar.csv", index=False, encoding='utf-8')
 
 # Guardar en SQLite
 db_path = "data/delitos.db" 
@@ -480,7 +497,7 @@ try:
     # Guardar los cambios (commit) y cerrar la conexión
     conn.commit()
     conn.close()
-    #print("💾 Cambios guardados y conexión cerrada.")
+    print("💾 Cambios guardados y conexión cerrada.")
 
 except sqlite3.Error as e:
     print(f"❌ Error de SQLite: {e}")

@@ -79,11 +79,9 @@ En primer lugar descargo los datos completos sin tratar (/data/descargas_portal_
 
 ## Próximas funcionalidades
 - ~~Elegir entre datos absolutos y ratio por 1000 habitantes.~~
-- Añadir datos provinciales, autonómicos y nacionales para poder comparar el dato del municipio.
+- ~~Añadir datos provinciales, autonómicos y nacionales para poder comparar el dato del municipio.~~
 - Añadir otras dimensiones que puedan dar más contexto a los delitos: nacionalidad, renta per cápita...
 - Añadir visualización mapa de calor
-- Añadir datos nivel provincia y Comunidad Autónoma (CCAA)
-- Aádir más ciudades/provincias/CCAA para comparar
 
 ## Refactorización
 Rehago el código para optimizar el proceso de tratamiento de datos para que los próximos trimestres se cargue automáticamente.

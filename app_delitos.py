@@ -4,7 +4,7 @@ import sqlite3
 import altair as alt
 
 # --- Configuración de la página ---
-st.set_page_config(page_title="Análisis de Criminalidad", layout="wide")
+st.set_page_config(page_title="⚖️ Comparador Criminalidad España", layout="wide")
 
 # --- Título ---
 st.title("⚖️ Comparador de Criminalidad en España")
@@ -13,6 +13,8 @@ Compara fácilmente los datos de [Balances trimestrales de criminalidad del Mini
 Los datos reportados por el ministerio son acumulados trimestralmente evitando que pueda analizarse la evolución trimestral. Para mejorar esta circunstancia, he tratado los datos desagregando por trimestre. Además, he cruzado con el censo de cada ubicación y año para calcular la tasa por cada 1,000 habitantes con lo que es posible comparar ubicaciones con disintos censos.
 Creado por [Sergio Velayos Fernández](https://www.linkedin.com/in/sergiovelayos/)
 """)
+
+
 
 # --- Carga de datos desde SQLite (con caché para mayor velocidad) ---
 @st.cache_data
@@ -138,6 +140,21 @@ if not df.empty:
         st.warning("No se encontraron datos para la selección actual.")
 else:
     st.error("No se pudieron cargar los datos. Asegúrate de que el archivo 'data/delitos.db' existe y contiene la tabla 'delitos'.")
+
+
+# Botón para vaciar la caché y forzar el refresco
+if st.button("🔄 Vaciar Caché y Refrescar Datos"):
+    # 1. Vacía la caché de datos (si usas @st.cache_data)
+    st.cache_data.clear()
+
+    # 2. Opcional: Vacía la caché de recursos (si usas @st.cache_resource)
+    # st.cache_resource.clear()
+
+    # 3. Muestra un mensaje temporal de éxito
+    st.success("Caché vaciada. Recargando aplicación...")
+
+    # 4. Fuerza una nueva ejecución de la aplicación (rerun)
+    st.rerun()
 
 # --- LICENCIA Y PIE DE PÁGINA ---
 st.markdown("---")
