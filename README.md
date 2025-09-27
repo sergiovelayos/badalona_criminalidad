@@ -12,7 +12,8 @@ Los medios de comunicación, políticos e instituciones hacen un uso poco riguro
 Estos datos se publican con periodicidad trimestral en un formato poco amigable para realizar cualquier análisis. Estas son algunas de las advertencias que tendría en cuenta a la hora de analizar estos datos:
 - El origen de datos se inicia en el primer trimestre de 2016.
 - Las tipologías de delitos cambian por lo que no podemos comparar un mismo concepto durante todo el periodo.
-- Los datos para un mismo periodo pueden cambiar al año siguiente por lo que es necesario elegir el dato más actualizado
+- Los datos para un mismo periodo pueden cambiar al año siguiente por lo que es necesario elegir el dato más actualizado.
+- Solo el T4 2022 contiene 2 periodos anterioes (2021 y 2019) por lo que requiere un tratamiento especial.
 
 ## ¿Cómo obtener los datos desde el portal del ministerio?
 
@@ -83,6 +84,11 @@ En primer lugar descargo los datos completos sin tratar (/data/descargas_portal_
 - Añadir visualización mapa de calor
 - Añadir datos nivel provincia y Comunidad Autónoma (CCAA)
 - Aádir más ciudades/provincias/CCAA para comparar
+
+## Refactorización
+Rehago el código para optimizar el proceso de tratamiento de datos para que los próximos trimestres se cargue automáticamente.
+El principal problema es el campo geografía y su cruce con la población.
+La población la tenemos por municipio y los nombres de los municipios no coinciden en algunos casos. 
 
 
         
