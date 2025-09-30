@@ -75,5 +75,8 @@
 # zipp==3.23.0
 streamlit
 pandas
-matplotlib
 numpy
+geopandas
+folium
+streamlit-folium
+branca
