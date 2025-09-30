@@ -192,6 +192,8 @@ else:
     df_cruzado_2 = pd.DataFrame()
 
 
+# df_cruzado_2.to_csv("data/cruce_ccaa.csv", index=False, encoding='utf-8')
+
 
 df_cruzado_2 = df_cruzado_2.drop(columns=["geo","fichero","geo_ccaa_unique","cccaa_pk_tab_ccaa","trimestre","año","pob_año","CODCCAA","AÑO"])
 nuevo_order = ["periodo", "CCAA", "tipo", "valor", "POB"]

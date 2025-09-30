@@ -82,6 +82,7 @@ En primer lugar descargo los datos completos sin tratar (/data/descargas_portal_
 - ~~Añadir datos provinciales, autonómicos y nacionales para poder comparar el dato del municipio.~~
 - Añadir otras dimensiones que puedan dar más contexto a los delitos: nacionalidad, renta per cápita...
 - Añadir visualización mapa de calor
+- Calcular la variación de criminalidad y poder variar los periodos con un slicer
 
 ## Refactorización
 Rehago el código para optimizar el proceso de tratamiento de datos para que los próximos trimestres se cargue automáticamente.
