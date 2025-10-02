@@ -81,4 +81,3 @@ folium
 streamlit-folium
 branca
 pyarrow
-sqlite3
