@@ -4,15 +4,16 @@ import sqlite3
 import altair as alt
 
 # --- Configuración de la página ---
-st.set_page_config(page_title="⚖️ Comparador Criminalidad España", layout="wide")
+st.set_page_config(page_title="Comparador Criminalidad España", layout="wide")
 
 # --- Título ---
 st.title("⚖️ Comparador de Criminalidad en España")
 st.markdown("""
 Compara fácilmente los datos de [Balances trimestrales de criminalidad del Ministerio de Interior](https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/balances) entre municipios de más de 20.000 habitantes, provincias, comunidades autónomas y a nivel nacional desde 2015 hasta junio de 2025. 
 Los datos reportados por el ministerio son acumulados trimestralmente evitando que pueda analizarse la evolución trimestral. Para mejorar esta circunstancia, he tratado los datos desagregando por trimestre. Además, he cruzado con el censo de cada ubicación y año para calcular la tasa por cada 1,000 habitantes con lo que es posible comparar ubicaciones con disintos censos.
-Creado por [Sergio Velayos Fernández](https://www.linkedin.com/in/sergiovelayos/)
-""")
+<br>Creado por [Sergio Velayos Fernández](https://www.linkedin.com/in/sergiovelayos/).
+<hr>
+""", unsafe_allow_html=True) 
 
 
 
@@ -120,7 +121,7 @@ if not df.empty:
             tooltip=['geo', 'periodo', alt.Tooltip('tasa_por_1000', title='Tasa/1000 hab.', format='.2f'), 'POB']
         ).properties(
             height=400
-        ).interactive()
+        )
         st.altair_chart(chart_tasa, use_container_width=True)
         
         # --- GRÁFICO 2: VOLUMEN DE DELITOS (BARRAS) ---
@@ -133,7 +134,7 @@ if not df.empty:
             tooltip=['geo', 'periodo', 'valor']
         ).properties(
             height=400
-        ).interactive()
+        )
         st.altair_chart(chart_volumen, use_container_width=True)
 
     else:
