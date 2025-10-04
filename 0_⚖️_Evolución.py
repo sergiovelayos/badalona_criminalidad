@@ -79,7 +79,7 @@ if not df.empty:
     tipos_delito_disponibles = [t for t in tipos_en_orden if t in tipos_reales_en_datos]
 
     # Usamos columnas para organizar los filtros
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
 
     with col1:
         delito_seleccionado = st.selectbox("1. Elige el tipo de delito", tipos_delito_disponibles)
@@ -89,6 +89,8 @@ if not df.empty:
         # Creamos una lista para la segunda ubicación que excluye la ya seleccionada
         opciones_comparacion = ["(Ninguna)"] + [u for u in ubicaciones_disponibles if u != ubicacion_1]
         ubicacion_2 = st.selectbox("3. Compara con (opcional)", opciones_comparacion)
+    with col4:
+        metrica_seleccionada = st.selectbox("4. Elige la métrica", ["Tasa por 1,000 hab.", "Volumen de casos"], index=0)
 
     
     st.markdown("---") # Separador visual
@@ -112,30 +114,167 @@ if not df.empty:
             lambda row: (row['valor'] / row['POB']) * 1000 if row['POB'] > 0 else 0, axis=1
         )
 
-        # --- GRÁFICO 1: TASA DE CRIMINALIDAD (LÍNEAS) ---
-        st.subheader("Evolución de la Tasa de Criminalidad")
-        chart_tasa = alt.Chart(df_filtrado).mark_line().encode(
-            x=alt.X('periodo:N', title='Periodo Trimestral', sort=alt.SortField(field="periodo_sort")),
-            y=alt.Y('tasa_por_1000:Q', title='Tasa por 1,000 Habitantes'),
-            color=alt.Color('geo:N', title='Ubicación', legend=alt.Legend(orient='bottom')),
-            tooltip=['geo', 'periodo', alt.Tooltip('tasa_por_1000', title='Tasa/1000 hab.', format='.2f'), 'POB']
-        ).properties(
-            height=400
-        )
-        st.altair_chart(chart_tasa, use_container_width=True)
+        # --- CÁLCULO DE VARIACIÓN ---
+        variaciones = []
+        for ubicacion in ubicaciones_a_mostrar:
+            df_ubicacion = df_filtrado[df_filtrado['geo'] == ubicacion].sort_values('periodo_sort')
+            if len(df_ubicacion) >= 2:
+                tasa_inicial = df_ubicacion.iloc[0]['tasa_por_1000']
+                tasa_final = df_ubicacion.iloc[-1]['tasa_por_1000']
+                periodo_inicial = df_ubicacion.iloc[0]['periodo']
+                periodo_final = df_ubicacion.iloc[-1]['periodo']
+                
+                variacion_absoluta = tasa_final - tasa_inicial
+                variacion_porcentual = ((tasa_final - tasa_inicial) / tasa_inicial * 100) if tasa_inicial > 0 else 0
+                
+                variaciones.append({
+                    'Ubicación': ubicacion,
+                    'Periodo Inicial': periodo_inicial,
+                    'Tasa Inicial': f"{tasa_inicial:.2f}",
+                    'Periodo Final': periodo_final,
+                    'Tasa Final': f"{tasa_final:.2f}",
+                    'Variación Absoluta': f"{variacion_absoluta:+.2f}",
+                    'Variación %': f"{variacion_porcentual:+.1f}%"
+                })
         
-        # --- GRÁFICO 2: VOLUMEN DE DELITOS (BARRAS) ---
-        st.subheader("Evolución del Volumen de Delitos")
-        chart_volumen = alt.Chart(df_filtrado).mark_bar().encode(
-            x=alt.X('periodo:N', title='Periodo Trimestral', sort=alt.SortField(field="periodo_sort")),
-            y=alt.Y('valor:Q', title='Número de Casos'),
-            color=alt.Color('geo:N', title='Ubicación', legend=alt.Legend(orient='bottom')),
-            xOffset='geo:N',
-            tooltip=['geo', 'periodo', 'valor']
-        ).properties(
+        # Mostrar tabla de variaciones
+        if variaciones:
+            st.subheader("📊 Variación de la Tasa de Criminalidad (Inicio vs Final)")
+            df_variaciones = pd.DataFrame(variaciones)
+            
+            # Aplicar formato condicional con colores
+            def color_variacion(val):
+                if isinstance(val, str) and ('+' in val or '-' in val):
+                    if '+' in val:
+                        return 'background-color: rgba(255, 100, 100, 0.3)'
+                    else:
+                        return 'background-color: rgba(100, 255, 100, 0.3)'
+                return ''
+            
+            styled_df = df_variaciones.style.applymap(
+                color_variacion, 
+                subset=['Variación Absoluta', 'Variación %']
+            )
+            
+            st.dataframe(styled_df, use_container_width=True, hide_index=True)
+            
+            st.markdown("---")
+
+        # --- GRÁFICO: TASA O VOLUMEN (LÍNEAS SUAVIZADAS) ---
+        if metrica_seleccionada == "Tasa por 1,000 hab.":
+            titulo_grafico = f"Evolución de la Tasa de Criminalidad - {delito_seleccionado}"
+            titulo_y = "Tasa por 1,000 Habitantes"
+            campo_y = "tasa_por_1000"
+            formato_tooltip = ".2f"
+        else:
+            titulo_grafico = f"Evolución del Volumen de Delitos - {delito_seleccionado}"
+            titulo_y = "Número de Casos"
+            campo_y = "valor"
+            formato_tooltip = ","
+        
+        st.subheader(titulo_grafico)
+        
+        # Preparar datos para etiquetas finales
+        df_ultimos = df_filtrado.loc[df_filtrado.groupby('geo')['periodo_sort'].idxmax()].copy()
+        
+        # Ordenar por la métrica seleccionada para calcular desplazamiento vertical y evitar superposición
+        df_ultimos = df_ultimos.sort_values(campo_y).reset_index(drop=True)
+        
+        # Calcular desplazamiento si las etiquetas están muy cerca
+        if len(df_ultimos) > 1:
+            # Ajustar el umbral según la métrica
+            umbral = 2 if metrica_seleccionada == "Tasa por 1,000 hab." else 50
+            for i in range(1, len(df_ultimos)):
+                diff = df_ultimos.loc[i, campo_y] - df_ultimos.loc[i-1, campo_y]
+                # Si la diferencia es menor al umbral, ajustar la posición
+                if diff < umbral:
+                    df_ultimos.loc[i, campo_y] = df_ultimos.loc[i-1, campo_y] + umbral
+        
+        # Líneas suavizadas
+        lineas = alt.Chart(df_filtrado).mark_line(
+            strokeWidth=3,
+            interpolate='monotone'  # Suavizado de líneas
+        ).encode(
+            x=alt.X('periodo:N', title='Periodo Trimestral', sort=alt.SortField(field="periodo_sort"), axis=alt.Axis(labelAngle=-45)),
+            y=alt.Y(f'{campo_y}:Q', title=titulo_y),
+            color=alt.Color('geo:N', title='Ubicación', legend=None),
+            tooltip=['geo', 'periodo', alt.Tooltip(campo_y, title=titulo_y, format=formato_tooltip), 'POB']
+        )
+        
+        # Etiquetas al final de las líneas con ubicación y valor (con saltos de línea)
+        if metrica_seleccionada == "Tasa por 1,000 hab.":
+            formula_label = 'datum.geo + "\\n" + "' + delito_seleccionado + '" + "\\n" + format(datum.' + campo_y + ', ".1f")'
+        else:
+            formula_label = 'datum.geo + "\\n" + "' + delito_seleccionado + '" + "\\n" + format(datum.' + campo_y + ', ",")'
+        
+        etiquetas = alt.Chart(df_ultimos).mark_text(
+            align='left',
+            dx=7,
+            fontSize=11,
+            fontWeight='bold',
+            lineBreak='\n'
+        ).encode(
+            x=alt.X('periodo:N', sort=alt.SortField(field="periodo_sort")),
+            y=alt.Y(f'{campo_y}:Q'),
+            text=alt.Text('label:N'),
+            color=alt.Color('geo:N', legend=None)
+        ).transform_calculate(
+            label=formula_label
+        )
+        
+        # Combinar líneas y etiquetas
+        chart = (lineas + etiquetas).properties(
             height=400
         )
-        st.altair_chart(chart_volumen, use_container_width=True)
+        st.altair_chart(chart, use_container_width=True)
+        
+        # --- TABLA TOP 5 TASAS MÁS ALTAS Y MÁS BAJAS ---
+        st.subheader(f"📊 Ranking de Ubicaciones - {delito_seleccionado}")
+        
+        # Obtener el último periodo disponible para cada ubicación
+        df_ranking = df[df['tipo_display'] == delito_seleccionado].copy()
+        df_ranking['tasa_por_1000'] = df_ranking.apply(
+            lambda row: (row['valor'] / row['POB']) * 1000 if row['POB'] > 0 else 0, axis=1
+        )
+        
+        # Obtener último periodo de cada ubicación
+        df_ranking_ultimo = df_ranking.loc[df_ranking.groupby('geo')['periodo_sort'].idxmax()]
+        
+        # Ordenar y seleccionar top 5 más altas y más bajas
+        df_ranking_sorted = df_ranking_ultimo.sort_values('tasa_por_1000', ascending=False)
+        top_5_altas = df_ranking_sorted.head(5).copy()
+        top_5_bajas = df_ranking_sorted.tail(5).copy()
+        
+        # Crear dos columnas para mostrar las tablas lado a lado
+        col_alta, col_baja = st.columns(2)
+        
+        with col_alta:
+            st.markdown("**🔴 Top 5 Tasas Más Altas**")
+            top_5_altas_display = top_5_altas[['geo', 'tasa_por_1000', 'periodo', 'valor']].copy()
+            top_5_altas_display.columns = ['Ubicación', 'Tasa por 1,000 hab.', 'Periodo', 'Casos']
+            top_5_altas_display['Tasa por 1,000 hab.'] = top_5_altas_display['Tasa por 1,000 hab.'].apply(lambda x: f"{x:.2f}".replace('.', ','))
+            top_5_altas_display = top_5_altas_display.reset_index(drop=True)
+            
+            st.dataframe(
+                top_5_altas_display,
+                use_container_width=True,
+                hide_index=True
+            )
+        
+        with col_baja:
+            st.markdown("**🟢 Top 5 Tasas Más Bajas**")
+            top_5_bajas_display = top_5_bajas[['geo', 'tasa_por_1000', 'periodo', 'valor']].copy()
+            top_5_bajas_display.columns = ['Ubicación', 'Tasa por 1,000 hab.', 'Periodo', 'Casos']
+            top_5_bajas_display['Tasa por 1,000 hab.'] = top_5_bajas_display['Tasa por 1,000 hab.'].apply(lambda x: f"{x:.2f}".replace('.', ','))
+            top_5_bajas_display = top_5_bajas_display.reset_index(drop=True)
+            
+            st.dataframe(
+                top_5_bajas_display,
+                use_container_width=True,
+                hide_index=True
+            )
+        
+        st.markdown("---")
 
     else:
         st.warning("No se encontraron datos para la selección actual.")

@@ -39,8 +39,51 @@ for fichero in ficheros:
 # Unir todos los dataframes
 df_total = pd.concat(dfs, ignore_index=True)
 
+
+# # Guardar en SQLite delitos_raw
+# db_path = "archive/delitos_raw.db" 
+# if os.path.exists(db_path):
+#     os.remove(db_path)  # Elimina la base de datos si ya existe 
+
+# # --- 2. CONEXIÓN Y CARGA DE DATOS ---
+# try:
+#     # Conectarse a la base de datos (creará el fichero si no existe)
+#     conn = sqlite3.connect(db_path)
+#     #print(f"🔌 Conexión establecida con la nueva base de datos '{db_path}'.")
+
+#     # Definir el nombre de la tabla
+#     table_name = 'delitos'
+
+#     # Usar to_sql para insertar el DataFrame en la base de datos
+#     #print(f"🚀 Insertando {len(df_ccaa_pro_mun)} registros en la tabla '{table_name}'...")
+#     df_total.to_sql(
+#         name=table_name,
+#         con=conn,
+#         if_exists='replace', # Reemplaza la tabla si ya existe
+#         index=False          # No escribir el índice del DataFrame
+#     )
+
+#     #print(f"✅ ¡Éxito! Los datos han sido cargados en la base de datos.")
+
+#     # Guardar los cambios (commit) y cerrar la conexión
+#     conn.commit()
+#     conn.close()
+#     print("💾 Cambios guardados y conexión cerrada.")
+
+# except sqlite3.Error as e:
+#     print(f"❌ Error de SQLite: {e}")
+
+
+
+
+
+
 # Renombrar columnas
 df_total.columns = ["geo", "tipo", "periodo", "valor","fichero"]
+
+
+
+
 
 # Quitar los periodos de variación
 df_total = df_total[~df_total["periodo"].str.contains("Varia", case=False, na=False)]
@@ -473,8 +516,8 @@ df_ccaa_pro_mun.drop(columns=['trim_num', 'valor_original', 'valor_desacumulado'
 
 # Guardar en SQLite
 db_path = "data/delitos.db" 
-if os.path.exists(db_path):
-    os.remove(db_path)  # Elimina la base de datos si ya existe 
+# if os.path.exists(db_path):
+#     os.remove(db_path)  # Elimina la base de datos si ya existe 
 
 # --- 2. CONEXIÓN Y CARGA DE DATOS ---
 try:

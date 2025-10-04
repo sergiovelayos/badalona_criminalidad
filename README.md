@@ -89,5 +89,89 @@ Rehago el código para optimizar el proceso de tratamiento de datos para que los
 El principal problema es el campo geografía y su cruce con la población.
 La población la tenemos por municipio y los nombres de los municipios no coinciden en algunos casos. 
 
+## Descripción de los datos
+### Origen de los datos
+Los datos han sido obtenidos del Sistema Estadístico de Criminalidad (SEC). Para su cómputo se
+tienen en cuenta los hechos de los que han tenido conocimiento los siguientes cuerpos policiales:
+Policía Nacional, Guardia Civil, Policías dependientes de las diferentes comunidades autonómicas
+(Ertzaintza, Mossos d’Esquadra y Policía Foral de Navarra) y las Policías Locales que facilitan datos
+al SEC. [Fuente Ministerio](https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:b36b25ac-491b-49a6-be33-9cdcb168f0c9/01_Metodolog%C3%ADa_Balances_criminalidad.pdf)
+### Definición de conceptos
+Por hechos conocidos se entienden el conjunto de infracciones penales que han sido conocidas
+por las distintas Fuerzas y Cuerpos de Seguridad, bien por medio de denuncia interpuesta o por
+actuación policial realizada motu propio (labor preventiva o de investigación).
+### TIPOLOGÍAS PENALES (infracciones penales)
+I. CRIMINALIDAD CONVENCIONAL. Se obtiene excluyendo del cómputo del TOTAL
+CRIMINALIDAD la CIBERCRIMINALIDAD.
+1. Homicidios dolosos y asesinatos consumados: art. 138, 139, 140 CP. Homicidio doloso y
+asesinato (grado consumado).
+2. Homicidios dolosos y asesinatos en grado tentativa: art. 138, 139, 140 CP. Homicidio doloso
+y asesinato (grado tentativa).
+3. Delitos graves y menos graves de lesiones y riña tumultuaria: art. 147 a 152 y 154 CP.
+Delitos graves y menos graves. Lesiones y riña tumultuaria.
+4. Secuestro: art. 164 a 167 CP. Secuestros.
+5. Delitos contra la libertad sexual: Título VIII del Libro II CP. Delitos contra la libertad sexual,
+excluyendo los delitos asociados a la cibercriminalidad, que se computarían junto al resto de delitos
+de esta modalidad en el apartado 13 (Otros ciberdelitos).
+5.1. Agresión sexual con penetración: art. 179. Agresión sexual con penetración, excluyendo los
+delitos asociados a la cibercriminalidad, que se computarían junto al resto de delitos de esta
+modalidad en el apartado 13 (Otros ciberdelitos)
+5.2. Resto de delitos contra la libertad sexual: Título VIII del Libro II CP excepto delitos al art.
+179, excluyendo los delitos asociados a la cibercriminalidad, que se computarían junto al resto de
+delitos de esta modalidad en el apartado 13 (Otros ciberdelitos)
+6. Robos con violencia o intimidación: art. 242 CP. Robo con violencia o intimidación.
+7. Robos con fuerza en domicilios, establecimientos y otras instalaciones: art. 238 a 241 CP.
+Robo con fuerza en las cosas (lugar específico: viviendas, otras dependencias comunes/anexos de
+viviendas, establecimientos, oficina de correos, domicilio jurídico/oficina, fábrica e instalación
+militar).
+7.1. Robos con fuerza en domicilios: art. 238 a 241 CP. Robo con fuerza en las cosas (lugar
+específico: viviendas y otras dependencias comunes/anexos de viviendas).
+8. Hurtos: art. 234 a 236 CP. Hurto y hurto en el interior de vehículo.
+9. Sustracciones de vehículos: art. 244, 253 y 254 CP. Robo de vehículos, hurto de vehículos y
+apropiación indebida de vehículos.
+10. Tráfico de drogas: art. 368 a 371 CP. Tráfico de drogas.
+11. Resto de criminalidad CONVENCIONAL: Resto de delitos no contemplados en el global de
+los apartados 1, 2, 3, 4, 5, 6, 7, 8, 9 y 10, excepto los definidos en el Bloque II
+(CIBERCRIMINALIDAD).
+II. CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber): Tipología de
+hechos según el módulo de cómputo de la cibercriminalidad que puede ser consultado en el
+siguiente enlace:
+https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:d96d4063-98d8-
+4647-8c76-d46a331a4ba3/03_Metodolog%C3%ADa_Cibercriminalidad.pdf
+12. Estafas informáticas: Corresponde a las diferentes tipologías penales de ESTAFAS que
+figuran en el módulo de cómputo de la cibercriminalidad bajo el epígrafe: “FRAUDE INFORMÁTICO”
+(Ver enlace del Bloque II CIBERCRIMINALIDAD).
+13. Otros ciberdelitos: Corresponde a las diferentes tipologías penales que figuran en el módulo
+de cómputo de la cibercriminalidad bajo los epígrafes de “ACCESO E INTERCEPTACIÓN ILÍCITA,
+INTERFERENCIA EN LOS DATOS Y EN EL SISTEMA, FALSIFICACIÓN INFORMÁTICA,
+DELITOS SEXUALES, CONTRA LA PROPIEDAD INDUSTRIAL/INTELECTUAL, CONTRA EL
+HONOR y AMENAZAS Y COACCIONES” (Ver enlace del Bloque II CIBERCRIMINALIDAD).
+TOTAL DE INFRACCIÓNES PENALES: La suma de infracciones penales contempladas en la
+CRIMINALIDAD CONVENCIONAL Y CIBERCRIMINALIDAD.
+### Resumen datos por periodos
+1. Estructura Inicial (2016)
+Los ficheros correspondientes al año 2016 (20161 a 20164) presentan la estructura más reducida y estable, sirviendo como línea base:
+- Geografías distintas: 221
+- Tipologías penales distintas: 8
+- Volumen de registros: 5.304 por trimestre
 
-        
+2. Primera Gran Expansión (2017)
+A partir del primer trimestre de 2017 (20171), se produce el primer cambio estructural significativo:
+- Aumento de Geografías: De 221 a 321-323.
+- Aumento de Tipologías: De 8 a 14.
+- Volumen de registros: El volumen se duplica, estabilizándose en torno a los 13.482 - 13.566 registros por fichero.
+
+3. Segunda Expansión Geográfica (2021)
+El año 2021 marca una nueva fase de crecimiento en el detalle geográfico:
+- Aumento de Geografías: De 328 a 489.
+- Volumen de registros: Se incrementa de forma notable, pasando de ~14.700 a 22.005 registros por trimestre, con las tipologías penales manteniéndose estables en 15.
+
+4. Última Reestructuración y Mayor Volumen de Datos (2022 Q4 - 2023)
+El periodo final incluye el cambio más complejo y un aumento drástico en el volumen de datos:
+- Incremento de Tipologías (2022 Q4): En el cuarto trimestre de 2022 (20224), las Tipologías penales alcanzan su máximo histórico, pasando de 15 a 19.
+- Pico de Registros (2022 Q4): El fichero 20224 presenta un pico anómalo de 46.265 registros.
+- Nueva Base de Datos (2023 en adelante): A partir del primer trimestre de 2023, la estructura se consolida en una nueva base más alta:
+    - Tipologías penales: 19
+    - Geografías distintas: Estabilización en 490-497.
+    - Volumen de registros: Nueva línea base cercana a los 28.000 registros por fichero (27.930 - 28.329).
+
