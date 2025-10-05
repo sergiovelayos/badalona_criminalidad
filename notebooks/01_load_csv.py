@@ -81,6 +81,16 @@ df_total = pd.concat(dfs, ignore_index=True)
 # Renombrar columnas
 df_total.columns = ["geo", "tipo", "periodo", "valor","fichero"]
 
+# Eliminar los valores de la tipología 'I. CRIMINALIDAD CONVENCIONAL' para los años 2019 y 2021
+df_total = df_total[~((df_total["tipo"].isin(["I. CRIMINALIDAD CONVENCIONAL", "11. Resto de criminalidad convencional"])) & (df_total["fichero"] == 20224))]
+df_total = df_total[~((df_total["tipo"].isin(["II. CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)", "12.-Estafas informáticas","13.-Otros ciberdelitos"])) & (df_total["fichero"] == 20224))]
+df_total = df_total[~((df_total["tipo"] == "Resto de infracciones penales") & (df_total["fichero"] == 20184))]
+# filter = (df_total["tipo"].str.contains("CRIMINALIDAD CONVENCIONAL", case=False, na=False)) & (df_total["fichero"] == 20224)
+# # print(df_total[filter].head(10))  
+# print(df_total[filter].head(10))
+
+
+
 
 
 
@@ -418,7 +428,8 @@ TIPOLOGIA_NORMALIZAR = {
     "6.-TRÁFICO DE DROGAS (EU)": "10. Tráfico de drogas",
 
     # Daños
-    "7.-DAÑOS;": "11. Resto de criminalidad convencional",
+    #"7.-DAÑOS;": "11. Resto de criminalidad convencional",
+    "7.-DAÑOS;": "7. Daños",
 
     # Resto / totales
     "Resto de infracciones penales": "11. Resto de criminalidad convencional",
