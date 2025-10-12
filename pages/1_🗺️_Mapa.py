@@ -15,64 +15,100 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- RUTAS A LOS ARCHIVOS OPTIMIZADOS ---
-db_path = "data/delitos.db"
+# --- RUTAS A LOS ARCHIVOS ---
+# 1. RUTA DE LA BASE DE DATOS ACTUALIZADA
+db_path = "data/delitos_raw.db" 
 geojson_ccaa = "data/mapas/comunidades_simplificadas.geoparquet"
 geojson_provincias = "data/mapas/provincias_simplificadas.geoparquet"
 geojson_municipios = "data/mapas/municipios_simplificadas.geoparquet"
-dic_ccaa_path = "data/pob_ccaa.csv"
-dic_pro_path = "data/pob_provincias.csv"
-dic_mun_path = "data/pob_municipios.csv"
 
-
-# --- FUNCIONES DE CARGA DE DATOS ---
+# --- FUNCIONES DE CARGA Y PROCESAMIENTO DE DATOS ---
 
 @st.cache_data
 def load_optimized_crime_data():
-    """Carga los datos pre-procesados y optimizados desde la base de datos."""
+    """Carga los datos desde la nueva DB, los procesa y prepara para la app."""
     try:
+        # Conectar a la nueva base de datos y leer la tabla
         conn = sqlite3.connect(db_path)
-        df = pd.read_sql_query("SELECT * FROM datos_mapa_optimizados", conn)
+        query = "SELECT * FROM delitos_aux"
+        df = pd.read_sql_query(query, conn)
         conn.close()
+        
+        # Asignar nombres a las columnas según la estructura de delitos_aux
+        df.columns = ['periodo', 'geo', 'tipo', 'valor_acumulado', 'valor', 'pob', 'tasa_por_1000']
+
     except Exception as e:
-        st.error(f"Error al cargar datos: {e}")
+        st.error(f"Error al cargar datos desde '{db_path}': {e}")
         return pd.DataFrame(), {}
 
+    # --- Procesamiento de la columna 'geo' ---
+    df['tipo_geo'] = np.nan
+    df['codigo_geo'] = np.nan
+    df['nombre_geo'] = np.nan
+
+    # Municipios (empiezan con 5 dígitos)
+    mun_mask = df['geo'].str.match(r'^\d{5}')
+    df.loc[mun_mask, 'tipo_geo'] = 'municipio'
+    df.loc[mun_mask, 'codigo_geo'] = df.loc[mun_mask, 'geo'].str.slice(0, 5)
+    df.loc[mun_mask, 'nombre_geo'] = df.loc[mun_mask, 'geo'].str.slice(6)
+
+    # Provincias (empiezan con 'Provincia')
+    pro_mask = df['geo'].str.startswith('Provincia')
+    df.loc[pro_mask, 'tipo_geo'] = 'provincia'
+    df.loc[pro_mask, 'codigo_geo'] = df.loc[pro_mask, 'geo'].str.split().str[1]
+    df.loc[pro_mask, 'nombre_geo'] = df.loc[pro_mask, 'geo'].str.split(n=2).str[2]
+
+    # CCAA (empiezan con 'CCAA')
+    ccaa_mask = df['geo'].str.startswith('CCAA')
+    df.loc[ccaa_mask, 'tipo_geo'] = 'ccaa'
+    df.loc[ccaa_mask, 'codigo_geo'] = df.loc[ccaa_mask, 'geo'].str.split().str[1]
+    df.loc[ccaa_mask, 'nombre_geo'] = df.loc[ccaa_mask, 'geo'].str.split(n=2).str[2]
+    
+    # --- Formatear el periodo a trimestres ---
+    df['periodo_dt'] = pd.to_datetime(df['periodo'])
+    df['quarter'] = df['periodo_dt'].dt.quarter
+    df['year'] = df['periodo_dt'].dt.year
+    df['periodo'] = "T" + df['quarter'].astype(str) + " " + df['year'].astype(str)
+    
+    # --- Mapear nombres de delitos para una mejor visualización ---
+    # Se usan los nombres limpios de la DB como claves
+    # Diccionario para mapear los nombres de los delitos
     mapeo_delitos = {
-        'III. TOTAL INFRACCIONES PENALES': 'TOTAL DELITOS',
-        'I. CRIMINALIDAD CONVENCIONAL': 'Subtotal Criminalidad Convencional',
-        '1. Homicidios dolosos y asesinatos consumados': ' --- Homicidios y Asesinatos',
-        '2. Homicidios dolosos y asesinatos en grado tentativa': ' --- Homicidios en Tentativa',
-        '3. Delitos graves y menos graves de lesiones y riña tumultuaria': ' --- Lesiones y Riñas',
-        '4. Secuestro': ' --- Secuestros',
-        '5. Delitos contra la libertad sexual': ' --- Delitos Sexuales',
-        '5.1.-Agresión sexual con penetración': ' --- Agresiones Sexuales con Penetración',
-        '5.2.-Resto de delitos contra la libertad sexual': ' --- Otros Delitos Sexuales',
-        '6. Robos con violencia e intimidación': ' --- Robos con Violencia',
-        '7. Robos con fuerza en domicilios, establecimientos y otras instalaciones': ' --- Robos con Fuerza',
-        '7.1.-Robos con fuerza en domicilios': ' --- Robos en Domicilios',
-        '8. Hurtos': ' --- Hurtos',
-        '9. Sustracciones de vehículos': ' --- Sustracción de Vehículos',
-        '10. Tráfico de drogas': ' --- Tráfico de Drogas',
-        '11. Resto de criminalidad convencional': ' --- Otros Delitos Convencionales',
-        'II. CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)': 'Subtotal Cibriminalidad',
-        '12.-Estafas informáticas': ' --- Estafas Informáticas',
-        '13.-Otros ciberdelitos': ' --- Otros Ciberdelitos'
+        # Totales principales
+        'Total Criminalidad': '📊 TOTAL CRIMINALIDAD',
+        'Subtotal Criminalidad Convencional': '📁 Criminalidad Convencional',
+        'Subtotal Cibercriminalidad': '💻 Cibercriminalidad',
+        
+        # Delitos convencionales (subcategorías)
+        'Homicidios dolosos y asesinatos consumados': '\u00A0\u00A0• Homicidios y Asesinatos Consumados',
+        'Homicidios dolosos y asesinatos en grado tentativa': '\u00A0\u00A0• Homicidios y Asesinatos en Tentativa',
+        'Delitos graves y menos graves de lesiones y riña tumultuaria': '\u00A0\u00A0• Lesiones y Riña Tumultuaria',
+        'Secuestro': '\u00A0\u00A0• Secuestros',
+        'Delitos contra la libertad e indemnidad sexual': '\u00A0\u00A0• Delitos Sexuales (Total)',
+        'Agresión sexual con penetración': '\u00A0\u00A0\u00A0\u00A0└─ Agresión Sexual con Penetración',
+        'Resto de delitos contra la libertad sexual': '\u00A0\u00A0\u00A0\u00A0└─ Otros Delitos Sexuales',
+        'Robos con violencia e intimidación': '\u00A0\u00A0• Robos con Violencia e Intimidación',
+        'Robos con fuerza en domicilios, establecimientos y otras instalaciones': '\u00A0\u00A0• Robos con Fuerza',
+        'Hurtos': '\u00A0\u00A0• Hurtos',
+        'Sustracciones de vehículos': '\u00A0\u00A0• Sustracción de Vehículos',
+        'Tráfico de drogas': '\u00A0\u00A0• Tráfico de Drogas',
+        #'Daños': '\u00A0\u00A0• Daños',
+        
+        # Ciberdelitos (subcategorías)
+        'Estafas informáticas': '\u00A0\u00A0• Estafas Informáticas',
+        'Otros ciberdelitos': '\u00A0\u00A0• Otros Ciberdelitos',
+        
+        # Resto
+        'Resto de infracciones penales': '📋 Resto de Infracciones Penales'
     }
     df['tipo_display'] = df['tipo'].map(mapeo_delitos).fillna(df['tipo'])
-    return df, mapeo_delitos
 
-@st.cache_data
-def load_dictionaries():
-    """Carga los ficheros de población para obtener los nombres geográficos."""
-    try:
-        dic_ccaa = pd.read_csv(dic_ccaa_path, sep=";", dtype={'CODCCAA': str})
-        dic_pro = pd.read_csv(dic_pro_path, sep=";", dtype={'CPRO': str})
-        dic_mun = pd.read_csv(dic_mun_path, sep=";", dtype={'CP': str})
-        return dic_ccaa, dic_pro, dic_mun
-    except Exception as e:
-        st.error(f"Error al cargar archivos de diccionario: {e}")
-        return None, None, None
+    # Limpiar y asegurar tipos de datos correctos
+    df.drop(columns=['geo', 'valor_acumulado', 'pob', 'periodo_dt', 'quarter', 'year'], inplace=True)
+    df['valor'] = pd.to_numeric(df['valor'], errors='coerce')
+    df['tasa_por_1000'] = pd.to_numeric(df['tasa_por_1000'], errors='coerce')
+    
+    return df, mapeo_delitos
 
 @st.cache_data
 def load_geo_data(geoparquet_path, level):
@@ -165,12 +201,11 @@ def format_spanish(value, is_volume=False):
     else:
         return f"{value:,.2f}".replace(",", "TEMP").replace(".", ",").replace("TEMP", ".")
 
-# --- CSS PERSONALIZADO ---
-st.markdown("""<style> ... CSS styles ... </style>""", unsafe_allow_html=True) # Omitido por brevedad
+# --- CSS PERSONALIZADO (Omitido por brevedad) ---
+st.markdown("""<style> ... </style>""", unsafe_allow_html=True)
 
 # --- CARGA INICIAL DE DATOS ---
 df_crime, mapeo_delitos = load_optimized_crime_data()
-dic_ccaa, dic_pro, dic_mun = load_dictionaries()
 gdf_ccaa = load_geo_data(geojson_ccaa, "ccaa")
 gdf_pro = load_geo_data(geojson_provincias, "provincia")
 gdf_mun = load_geo_data(geojson_municipios, "municipio")
@@ -195,7 +230,7 @@ Creado por <strong><a href="https://www.linkedin.com/in/sergiovelayos/" target="
 <hr>
 """, unsafe_allow_html=True)
 
-# --- SIDEBAR (SOLO OPCIONES DE VISTA) ---
+# --- SIDEBAR ---
 with st.sidebar:
     st.header("Opciones de Vista")
     is_mobile = st.checkbox("Modo móvil optimizado", value=False, help="Activa para mejor experiencia en móvil")
@@ -208,7 +243,9 @@ if not df_crime.empty:
     
     col1, col2, col3, col4, col5, col6 = st.columns(6)
     with col1:
-        selected_crime = st.selectbox("Tipo de Delito:", options=sorted(list(mapeo_delitos.values())), index=sorted(list(mapeo_delitos.values())).index("TOTAL DELITOS"), help="Selecciona el tipo de delito a visualizar")
+        # Se eliminó sorted() para mantener el orden del diccionario
+        opciones_delito = list(mapeo_delitos.values())
+        selected_crime = st.selectbox("Tipo de Delito:", options=opciones_delito, index=opciones_delito.index("📊 TOTAL CRIMINALIDAD"), help="Selecciona el tipo de delito a visualizar")
     with col2:
         selected_period = st.selectbox("Periodo:", options=sorted(df_crime['periodo'].unique(), key=lambda x: int(x.split(' ')[1]) * 10 + int(x.split(' ')[0][1]), reverse=True), help="Selecciona el trimestre")
     with col3:
@@ -232,16 +269,10 @@ if not df_crime.empty:
     
     with col6:
         if not df_nivel.empty:
+            # Lógica de "Máximo" simplificada gracias a la columna 'nombre_geo'
             max_row = df_nivel.nlargest(1, source_column)
             valor_max = max_row.iloc[0][source_column]
-            codigo_max = max_row.iloc[0]['codigo_geo']
-            nombre_max = "N/A"
-            try:
-                if nivel_geo == 'ccaa' and dic_ccaa is not None: nombre_max = dic_ccaa.loc[dic_ccaa['CODCCAA'] == codigo_max, 'CCAA'].iloc[0]
-                elif nivel_geo == 'provincia' and dic_pro is not None: nombre_max = dic_pro.loc[dic_pro['CPRO'] == codigo_max, 'PROVINCIA'].iloc[0]
-                elif nivel_geo == 'municipio' and dic_mun is not None: nombre_max = dic_mun.loc[dic_mun['CP'] == codigo_max, 'MUNICIPIO'].drop_duplicates().iloc[0]
-            except (IndexError, KeyError):
-                nombre_max = "Desconocido"
+            nombre_max = max_row.iloc[0]['nombre_geo']
             st.metric(f"🔴 Máximo {nivel_geo.title()}", format_spanish(valor_max, is_volume), help=f"Mayor {metric_label.lower()} en {nivel_geo}: {nombre_max}")
         else:
             st.metric(f"🔴 Máximo {nivel_geo.title()}", "N/A")
@@ -286,4 +317,3 @@ else:
 
 # --- FOOTER ---
 st.markdown("---"); st.caption("📊 Datos de criminalidad en España | Visualización interactiva")
-

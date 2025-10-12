@@ -15,49 +15,54 @@ Los datos reportados por el ministerio son acumulados trimestralmente evitando q
 <hr>
 """, unsafe_allow_html=True) 
 
-
-
 # --- Carga de datos desde SQLite (con caché para mayor velocidad) ---
 @st.cache_data
 def load_data():
     """Carga los datos y los prepara para el análisis."""
-    conn = sqlite3.connect("data/delitos.db")
-    df = pd.read_sql_query("SELECT geo, tipo, periodo, valor, POB FROM delitos", conn)
+    conn = sqlite3.connect("data/delitos_raw.db")
+    df = pd.read_sql_query("SELECT geo, tipo, periodo, valor, pob,tasa FROM delitos_aux", conn)
     conn.close()
 
     # Diccionario para mapear los nombres de los delitos
     mapeo_delitos = {
-        'III. TOTAL INFRACCIONES PENALES': 'TOTAL DELITOS',
-        'I. CRIMINALIDAD CONVENCIONAL': 'Subtotal Criminalidad Convencional',
-        '1. Homicidios dolosos y asesinatos consumados': ' --- Homicidios y Asesinatos',
-        '2. Homicidios dolosos y asesinatos en grado tentativa': ' --- Homicidios en Tentativa',
-        '3. Delitos graves y menos graves de lesiones y riña tumultuaria': ' --- Lesiones y Riñas',
-        '4. Secuestro': ' --- Secuestros',
-        '5. Delitos contra la libertad sexual': ' --- Delitos Sexuales',
-        '5.1.-Agresión sexual con penetración': ' --- Agresiones Sexuales con Penetración',
-        '5.2.-Resto de delitos contra la libertad sexual': ' --- Otros Delitos Sexuales',
-        '6. Robos con violencia e intimidación': ' --- Robos con Violencia',
-        '7. Robos con fuerza en domicilios, establecimientos y otras instalaciones': ' --- Robos con Fuerza',
-        '7.1.-Robos con fuerza en domicilios': ' --- Robos en Domicilios',
-        '8. Hurtos': ' --- Hurtos',
-        '9. Sustracciones de vehículos': ' --- Sustracción de Vehículos',
-        '10. Tráfico de drogas': ' --- Tráfico de Drogas',
-        '11. Resto de criminalidad convencional': ' --- Otros Delitos Convencionales',
-        'II. CIBERCRIMINALIDAD (infracciones penales cometidas en/por medio ciber)': 'Subtotal Cibercriminalidad',
-        '12.-Estafas informáticas': ' --- Estafas Informáticas',
-        '13.-Otros ciberdelitos': ' --- Otros Ciberdelitos'
+        # Totales principales
+        'Total Criminalidad': '📊 TOTAL CRIMINALIDAD',
+        'Subtotal Criminalidad Convencional': '📁 Criminalidad Convencional',
+        'Subtotal Cibercriminalidad': '💻 Cibercriminalidad',
+        
+        # Delitos convencionales (subcategorías)
+        'Homicidios dolosos y asesinatos consumados': '\u00A0\u00A0• Homicidios y Asesinatos Consumados',
+        'Homicidios dolosos y asesinatos en grado tentativa': '\u00A0\u00A0• Homicidios y Asesinatos en Tentativa',
+        'Delitos graves y menos graves de lesiones y riña tumultuaria': '\u00A0\u00A0• Lesiones y Riña Tumultuaria',
+        'Secuestro': '\u00A0\u00A0• Secuestros',
+        'Delitos contra la libertad e indemnidad sexual': '\u00A0\u00A0• Delitos Sexuales (Total)',
+        'Agresión sexual con penetración': '\u00A0\u00A0\u00A0\u00A0└─ Agresión Sexual con Penetración',
+        'Resto de delitos contra la libertad sexual': '\u00A0\u00A0\u00A0\u00A0└─ Otros Delitos Sexuales',
+        'Robos con violencia e intimidación': '\u00A0\u00A0• Robos con Violencia e Intimidación',
+        'Robos con fuerza en domicilios, establecimientos y otras instalaciones': '\u00A0\u00A0• Robos con Fuerza',
+        'Hurtos': '\u00A0\u00A0• Hurtos',
+        'Sustracciones de vehículos': '\u00A0\u00A0• Sustracción de Vehículos',
+        'Tráfico de drogas': '\u00A0\u00A0• Tráfico de Drogas',
+        #'Daños': '\u00A0\u00A0• Daños',
+        
+        # Ciberdelitos (subcategorías)
+        'Estafas informáticas': '\u00A0\u00A0• Estafas Informáticas',
+        'Otros ciberdelitos': '\u00A0\u00A0• Otros Ciberdelitos',
+        
+        # Resto
+        'Resto de infracciones penales': '📋 Resto de Infracciones Penales'
     }
     
     # Aplicar el mapeo a una nueva columna
     df['tipo_display'] = df['tipo'].map(mapeo_delitos).fillna(df['tipo'])
     
-    # Preparamos el campo 'periodo' para que se ordene cronológicamente en el gráfico
-    df[['trimestre', 'año']] = df['periodo'].str.split(' ', expand=True)
-    df['periodo_sort'] = df['año'].astype(int) * 10 + df['trimestre'].str.replace('T', '').astype(int)
+    df['periodo'] = pd.to_datetime(df['periodo'])
+    df['trimestre_display'] = 'T' + df['periodo'].dt.quarter.astype(str) + ' ' + df['periodo'].dt.year.astype(str)
+    df['periodo_sort'] = df['periodo'].dt.year * 10 + df['periodo'].dt.quarter
     
     # Aseguramos que las columnas sean numéricas
     df['valor'] = pd.to_numeric(df['valor'], errors='coerce')
-    df['POB'] = pd.to_numeric(df['POB'], errors='coerce')
+    df['pob'] = pd.to_numeric(df['pob'], errors='coerce')
     
     # Devolvemos también el diccionario para usarlo fuera de la función
     return df, mapeo_delitos
@@ -109,20 +114,20 @@ if not df.empty:
     # --- Visualización de los gráficos ---
     if not df_filtrado.empty:
 
-        # --- CÁLCULO DEL RATIO ---
-        df_filtrado['tasa_por_1000'] = df_filtrado.apply(
-            lambda row: (row['valor'] / row['POB']) * 1000 if row['POB'] > 0 else 0, axis=1
-        )
+        # # --- CÁLCULO DEL RATIO ---
+        # df_filtrado['tasa_por_1000'] = df_filtrado.apply(
+        #     lambda row: (row['valor'] / row['POB']) * 1000 if row['POB'] > 0 else 0, axis=1
+        # )
 
         # --- CÁLCULO DE VARIACIÓN ---
         variaciones = []
         for ubicacion in ubicaciones_a_mostrar:
             df_ubicacion = df_filtrado[df_filtrado['geo'] == ubicacion].sort_values('periodo_sort')
             if len(df_ubicacion) >= 2:
-                tasa_inicial = df_ubicacion.iloc[0]['tasa_por_1000']
-                tasa_final = df_ubicacion.iloc[-1]['tasa_por_1000']
-                periodo_inicial = df_ubicacion.iloc[0]['periodo']
-                periodo_final = df_ubicacion.iloc[-1]['periodo']
+                tasa_inicial = df_ubicacion.iloc[0]['tasa']
+                tasa_final = df_ubicacion.iloc[-1]['tasa']
+                periodo_inicial = df_ubicacion.iloc[0]['trimestre_display']
+                periodo_final = df_ubicacion.iloc[-1]['trimestre_display']
                 
                 variacion_absoluta = tasa_final - tasa_inicial
                 variacion_porcentual = ((tasa_final - tasa_inicial) / tasa_inicial * 100) if tasa_inicial > 0 else 0
@@ -164,22 +169,22 @@ if not df.empty:
         if metrica_seleccionada == "Tasa por 1,000 hab.":
             titulo_grafico = f"Evolución de la Tasa de Criminalidad - {delito_seleccionado}"
             titulo_y = "Tasa por 1,000 Habitantes"
-            campo_y = "tasa_por_1000"
+            campo_y = "tasa"
             formato_tooltip = ".2f"
         else:
             titulo_grafico = f"Evolución del Volumen de Delitos - {delito_seleccionado}"
             titulo_y = "Número de Casos"
             campo_y = "valor"
             formato_tooltip = ","
-        
+
         st.subheader(titulo_grafico)
-        
+
         # Preparar datos para etiquetas finales
         df_ultimos = df_filtrado.loc[df_filtrado.groupby('geo')['periodo_sort'].idxmax()].copy()
-        
+
         # Ordenar por la métrica seleccionada para calcular desplazamiento vertical y evitar superposición
         df_ultimos = df_ultimos.sort_values(campo_y).reset_index(drop=True)
-        
+
         # Calcular desplazamiento si las etiquetas están muy cerca
         if len(df_ultimos) > 1:
             # Ajustar el umbral según la métrica
@@ -189,24 +194,32 @@ if not df.empty:
                 # Si la diferencia es menor al umbral, ajustar la posición
                 if diff < umbral:
                     df_ultimos.loc[i, campo_y] = df_ultimos.loc[i-1, campo_y] + umbral
-        
+
         # Líneas suavizadas
         lineas = alt.Chart(df_filtrado).mark_line(
             strokeWidth=3,
             interpolate='monotone'  # Suavizado de líneas
         ).encode(
-            x=alt.X('periodo:N', title='Periodo Trimestral', sort=alt.SortField(field="periodo_sort"), axis=alt.Axis(labelAngle=-45)),
+            x=alt.X('trimestre_display:N', 
+                    title='Periodo Trimestral', 
+                    sort=alt.EncodingSortField(field='periodo_sort'),
+                    axis=alt.Axis(labelAngle=-45)),
             y=alt.Y(f'{campo_y}:Q', title=titulo_y),
             color=alt.Color('geo:N', title='Ubicación', legend=None),
-            tooltip=['geo', 'periodo', alt.Tooltip(campo_y, title=titulo_y, format=formato_tooltip), 'POB']
+            tooltip=[
+                alt.Tooltip('geo:N', title='Ubicación'),
+                alt.Tooltip('trimestre_display:N', title='Periodo'),
+                alt.Tooltip(f'{campo_y}:Q', title=titulo_y, format=formato_tooltip),
+                alt.Tooltip('pob:Q', title='Población', format=',')
+            ]
         )
-        
+
         # Etiquetas al final de las líneas con ubicación y valor (con saltos de línea)
         if metrica_seleccionada == "Tasa por 1,000 hab.":
-            formula_label = 'datum.geo + "\\n" + "' + delito_seleccionado + '" + "\\n" + format(datum.' + campo_y + ', ".1f")'
+            formula_label = 'datum.geo + "\\n" + format(datum.' + campo_y + ', ".1f")'
         else:
-            formula_label = 'datum.geo + "\\n" + "' + delito_seleccionado + '" + "\\n" + format(datum.' + campo_y + ', ",")'
-        
+            formula_label = 'datum.geo + "\\n" + format(datum.' + campo_y + ', ",")'
+
         etiquetas = alt.Chart(df_ultimos).mark_text(
             align='left',
             dx=7,
@@ -214,14 +227,15 @@ if not df.empty:
             fontWeight='bold',
             lineBreak='\n'
         ).encode(
-            x=alt.X('periodo:N', sort=alt.SortField(field="periodo_sort")),
+            x=alt.X('trimestre_display:N', 
+                    sort=alt.EncodingSortField(field='periodo_sort')),
             y=alt.Y(f'{campo_y}:Q'),
             text=alt.Text('label:N'),
             color=alt.Color('geo:N', legend=None)
         ).transform_calculate(
             label=formula_label
         )
-        
+
         # Combinar líneas y etiquetas
         chart = (lineas + etiquetas).properties(
             height=400
@@ -233,15 +247,15 @@ if not df.empty:
         
         # Obtener el último periodo disponible para cada ubicación
         df_ranking = df[df['tipo_display'] == delito_seleccionado].copy()
-        df_ranking['tasa_por_1000'] = df_ranking.apply(
-            lambda row: (row['valor'] / row['POB']) * 1000 if row['POB'] > 0 else 0, axis=1
+        df_ranking['tasa'] = df_ranking.apply(
+            lambda row: (row['valor'] / row['pob']) * 1000 if row['pob'] > 0 else 0, axis=1
         )
         
         # Obtener último periodo de cada ubicación
         df_ranking_ultimo = df_ranking.loc[df_ranking.groupby('geo')['periodo_sort'].idxmax()]
         
         # Ordenar y seleccionar top 5 más altas y más bajas
-        df_ranking_sorted = df_ranking_ultimo.sort_values('tasa_por_1000', ascending=False)
+        df_ranking_sorted = df_ranking_ultimo.sort_values('tasa', ascending=False)
         top_5_altas = df_ranking_sorted.head(5).copy()
         top_5_bajas = df_ranking_sorted.tail(5).copy()
         
@@ -250,7 +264,7 @@ if not df.empty:
         
         with col_alta:
             st.markdown("**🔴 Top 5 Tasas Más Altas**")
-            top_5_altas_display = top_5_altas[['geo', 'tasa_por_1000', 'periodo', 'valor']].copy()
+            top_5_altas_display = top_5_altas[['geo', 'tasa', 'periodo', 'valor']].copy()
             top_5_altas_display.columns = ['Ubicación', 'Tasa por 1,000 hab.', 'Periodo', 'Casos']
             top_5_altas_display['Tasa por 1,000 hab.'] = top_5_altas_display['Tasa por 1,000 hab.'].apply(lambda x: f"{x:.2f}".replace('.', ','))
             top_5_altas_display = top_5_altas_display.reset_index(drop=True)
@@ -263,7 +277,7 @@ if not df.empty:
         
         with col_baja:
             st.markdown("**🟢 Top 5 Tasas Más Bajas**")
-            top_5_bajas_display = top_5_bajas[['geo', 'tasa_por_1000', 'periodo', 'valor']].copy()
+            top_5_bajas_display = top_5_bajas[['geo', 'tasa', 'periodo', 'valor']].copy()
             top_5_bajas_display.columns = ['Ubicación', 'Tasa por 1,000 hab.', 'Periodo', 'Casos']
             top_5_bajas_display['Tasa por 1,000 hab.'] = top_5_bajas_display['Tasa por 1,000 hab.'].apply(lambda x: f"{x:.2f}".replace('.', ','))
             top_5_bajas_display = top_5_bajas_display.reset_index(drop=True)
