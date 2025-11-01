@@ -11,7 +11,11 @@ st.title("⚖️ Comparador de Criminalidad en España")
 st.markdown("""
 Compara fácilmente los datos de [Balances trimestrales de criminalidad del Ministerio de Interior](https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/balances) entre municipios de más de 20.000 habitantes, provincias, comunidades autónomas y a nivel nacional desde 2015 hasta junio de 2025. 
 Los datos reportados por el ministerio son acumulados trimestralmente evitando que pueda analizarse la evolución trimestral. Para mejorar esta circunstancia, he tratado los datos desagregando por trimestre. Además, he cruzado con el censo de cada ubicación y año para calcular la tasa por cada 1,000 habitantes con lo que es posible comparar ubicaciones con disintos censos.
-<br>Creado por [Sergio Velayos Fernández](https://www.linkedin.com/in/sergiovelayos/).
+<strong>Fuente de los datos:</strong>
+<br>Los datos provienen de los <strong><a href="https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/balances" target="_blank">Balances Trimestrales de Criminalidad</a></strong> publicados por el Ministerio del Interior.
+<br><em>Últimos datos disponibles: Junio de 2025.</em>
+<br>
+Creado por <strong><a href="https://www.linkedin.com/in/sergiovelayos/" target="_blank">Sergio Velayos Fernández</a></strong>.
 <hr>
 """, unsafe_allow_html=True) 
 

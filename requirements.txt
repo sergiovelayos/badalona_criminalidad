@@ -73,11 +73,21 @@
 # urllib3==2.5.0
 # wcwidth==0.2.13
 # zipp==3.23.0
-streamlit
+
+#streamlit
+#pandas
+#numpy
+#geopandas
+#folium
+#streamlit-folium
+#branca
+#pyarrow
+
+
 pandas
 numpy
 geopandas
-folium
-streamlit-folium
-branca
 pyarrow
+folium==0.15.1
+streamlit-folium==0.13.0
+branca==0.6.0
